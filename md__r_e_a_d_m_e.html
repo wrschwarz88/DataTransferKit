@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Data Transfer Kit: Main Page</title>
+<title>Data Transfer Kit: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -35,8 +35,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -70,12 +69,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Data Transfer Kit Documentation</div>  </div>
+<div class="title">README </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>The DataTransferKit is a package providing parallel mesh search and field transfer services.</p>
+<h1>DEPENDENCIES</h1>
+<p>The DataTransferKit has direct dependecies on the following Trilinos packages:</p>
+<ul>
+<li>Teuchos</li>
+<li>Tpetra</li>
+<li>Shards</li>
+<li>Intrepid</li>
+<li>Zoltan</li>
+</ul>
+<p>In addition, the mesh database MOAB is required. DTK has been tested with a stable release version of MOAB 4.5. You can get MOAB <a href="http://trac.mcs.anl.gov/projects/ITAPS/wiki/MOAB">here</a>.</p>
+<p>For parallel builds, an MPI implementation is also required. Both Open MPI and MPICH have been tested.</p>
+<h1>CONFIGURE and BUILD</h1>
+<p>The DataTransferKit uses the TriBITS cmake build system. Look <a href="https://github.com/CNERG/DataTransferKit/tree/dev/doc/build_notes">here</a> for a sample configure script and additional configure/build documentation.</p>
+<p>The following compilers have been tested with DTK.</p>
+<ul>
+<li>gcc-4.7.0</li>
+<li>gcc-4.6.1</li>
+</ul>
+<h1>TEST</h1>
+<p>ctest - Run package the unit tests when enabled.</p>
+<h1>EXAMPLES</h1>
+<p>Several examples are provided for using the DataTransferKit for parallel search and transfer operations. See the example directory in each subpackage.</p>
+<h1>DOCUMENTATION</h1>
+<p>User and developer documentation is provided by Doxygen. A domain model document can be found <a href="https://github.com/CNERG/DataTransferKit/tree/dev/doc/domain_model">here</a>.</p>
+<h1>AUTHORS</h1>
+<p>The following people have made substantial contributions to the development of DataTransferKit:</p>
+<ul>
+<li><a href="http://github.com/sslattery">Stuart Slattery</a> </li>
+</ul>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on Mon Jul 16 2012 18:01:21 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
