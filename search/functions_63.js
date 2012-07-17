@@ -1,6 +1,7 @@
 var searchData=
 [
   ['celltopologyfactory',['CellTopologyFactory',['../class_data_transfer_kit_1_1_cell_topology_factory.html#a191271000fcf5eabedefdef02b919b22',1,'DataTransferKit::CellTopologyFactory']]],
+  ['comm',['comm',['../class_data_transfer_kit_1_1_mesh_manager.html#ac31baafb05e3a9d2175889f7068400f7',1,'DataTransferKit::MeshManager']]],
   ['computepointordinals',['computePointOrdinals',['../class_data_transfer_kit_1_1_consistent_evaluation.html#a29193ac90a4ffd845e901dceebd88709',1,'DataTransferKit::ConsistentEvaluation']]],
   ['connectivitybegin',['connectivityBegin',['../class_data_transfer_kit_1_1_mesh_container.html#a214ee9fc00705f31392819048df054f1',1,'DataTransferKit::MeshContainer::connectivityBegin()'],['../class_data_transfer_kit_1_1_mesh_traits.html#a46d1da9aff157e4486da389454236126',1,'DataTransferKit::MeshTraits::connectivityBegin()']]],
   ['connectivityend',['connectivityEnd',['../class_data_transfer_kit_1_1_mesh_container.html#aabc260c46f31d0b7b299f03e6222db81',1,'DataTransferKit::MeshContainer::connectivityEnd()'],['../class_data_transfer_kit_1_1_mesh_traits.html#af7104119cf92937433f5ca5dc2b51a98',1,'DataTransferKit::MeshTraits::connectivityEnd()']]],

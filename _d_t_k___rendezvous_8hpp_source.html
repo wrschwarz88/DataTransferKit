@@ -138,105 +138,106 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00062"></a>00062 <span class="keyword">namespace </span>DataTransferKit
 <a name="l00063"></a>00063 {
 <a name="l00064"></a>00064 
-<a name="l00065"></a>00065 <span class="keyword">template</span>&lt;<span class="keyword">class</span> Mesh&gt;
-<a name="l00066"></a><a class="code" href="class_data_transfer_kit_1_1_rendezvous.html">00066</a> <span class="keyword">class </span><a class="code" href="class_data_transfer_kit_1_1_rendezvous.html">Rendezvous</a>
-<a name="l00067"></a>00067 {
-<a name="l00068"></a>00068     
-<a name="l00069"></a>00069   <span class="keyword">public</span>:
-<a name="l00070"></a>00070 
-<a name="l00072"></a>00072 
-<a name="l00073"></a><a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#ab45da01f775c0e600cad5f3017834e38">00073</a>     <span class="keyword">typedef</span> Mesh                                        <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#ab45da01f775c0e600cad5f3017834e38" title="Typedefs.">mesh_type</a>;
-<a name="l00074"></a>00074     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MeshTraits&lt;Mesh&gt;</a>                            <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MT</a>;
-<a name="l00075"></a>00075     <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html#ac368b56f73eebbd94e5d1e153933d41c">MT::global_ordinal_type</a>            GlobalOrdinal;
-<a name="l00076"></a>00076     <span class="keyword">typedef</span> Teuchos::RCP&lt; MeshManager&lt;Mesh&gt; &gt;           RCP_MeshManager;
-<a name="l00077"></a>00077     <span class="keyword">typedef</span> <span class="keyword">typename</span> MeshManager&lt;Mesh&gt;::BlockIterator   BlockIterator;
-<a name="l00078"></a>00078     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainer&lt;GlobalOrdinal&gt;</a>                <a class="code" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainerType</a>;
-<a name="l00079"></a>00079     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">RendezvousMesh&lt;GlobalOrdinal&gt;</a>               <a class="code" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">RendezvousMeshType</a>;
-<a name="l00080"></a>00080     <span class="keyword">typedef</span> Teuchos::RCP&lt;RendezvousMeshType&gt;            RCP_RendezvousMesh;
-<a name="l00081"></a>00081     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_k_d_tree.html">KDTree&lt;GlobalOrdinal&gt;</a>                       <a class="code" href="class_data_transfer_kit_1_1_k_d_tree.html">KDTreeType</a>;
-<a name="l00082"></a>00082     <span class="keyword">typedef</span> Teuchos::RCP&lt;KDTreeType&gt;                    RCP_KDTree;
-<a name="l00083"></a>00083     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_r_c_b.html">RCB&lt;Mesh&gt;</a>                                   <a class="code" href="class_data_transfer_kit_1_1_r_c_b.html">RCBType</a>;
-<a name="l00084"></a>00084     <span class="keyword">typedef</span> Teuchos::RCP&lt;RCBType&gt;                       RCP_RCB;
-<a name="l00085"></a>00085     <span class="keyword">typedef</span> Teuchos::Comm&lt;int&gt;                          CommType;
-<a name="l00086"></a>00086     <span class="keyword">typedef</span> Teuchos::RCP&lt;const CommType&gt;                RCP_Comm;
-<a name="l00087"></a>00087     <span class="keyword">typedef</span> Tpetra::Map&lt;GlobalOrdinal&gt;                  TpetraMap;
-<a name="l00088"></a>00088     <span class="keyword">typedef</span> Teuchos::RCP&lt;const TpetraMap&gt;               RCP_TpetraMap;
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091     <span class="comment">// Constructor.</span>
-<a name="l00092"></a>00092     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a3586ad85071f9a497ee8298b58b2d94e" title="Constructor.">Rendezvous</a>( <span class="keyword">const</span> RCP_Comm&amp; comm, <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; global_box );
-<a name="l00093"></a>00093 
-<a name="l00094"></a>00094     <span class="comment">// Destructor.</span>
-<a name="l00095"></a>00095     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#aff2b3ff8fa05e817c3aea0a1854ddc0c" title="Destructor.">~Rendezvous</a>();
+<a name="l00065"></a>00065 <span class="comment">//---------------------------------------------------------------------------//</span>
+<a name="l00070"></a>00070 <span class="comment"></span><span class="comment">//---------------------------------------------------------------------------//</span>
+<a name="l00071"></a>00071 <span class="keyword">template</span>&lt;<span class="keyword">class</span> Mesh&gt;
+<a name="l00072"></a><a class="code" href="class_data_transfer_kit_1_1_rendezvous.html">00072</a> <span class="keyword">class </span><a class="code" href="class_data_transfer_kit_1_1_rendezvous.html">Rendezvous</a>
+<a name="l00073"></a>00073 {
+<a name="l00074"></a>00074     
+<a name="l00075"></a>00075   <span class="keyword">public</span>:
+<a name="l00076"></a>00076 
+<a name="l00078"></a>00078 
+<a name="l00079"></a><a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#ab45da01f775c0e600cad5f3017834e38">00079</a>     <span class="keyword">typedef</span> Mesh                                        <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#ab45da01f775c0e600cad5f3017834e38" title="Typedefs.">mesh_type</a>;
+<a name="l00080"></a>00080     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MeshTraits&lt;Mesh&gt;</a>                            <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MT</a>;
+<a name="l00081"></a>00081     <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html#ac368b56f73eebbd94e5d1e153933d41c">MT::global_ordinal_type</a>            GlobalOrdinal;
+<a name="l00082"></a>00082     <span class="keyword">typedef</span> Teuchos::RCP&lt; MeshManager&lt;Mesh&gt; &gt;           RCP_MeshManager;
+<a name="l00083"></a>00083     <span class="keyword">typedef</span> <span class="keyword">typename</span> MeshManager&lt;Mesh&gt;::BlockIterator   BlockIterator;
+<a name="l00084"></a>00084     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainer&lt;GlobalOrdinal&gt;</a>                <a class="code" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainerType</a>;
+<a name="l00085"></a>00085     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">RendezvousMesh&lt;GlobalOrdinal&gt;</a>               <a class="code" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">RendezvousMeshType</a>;
+<a name="l00086"></a>00086     <span class="keyword">typedef</span> Teuchos::RCP&lt;RendezvousMeshType&gt;            RCP_RendezvousMesh;
+<a name="l00087"></a>00087     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_k_d_tree.html">KDTree&lt;GlobalOrdinal&gt;</a>                       <a class="code" href="class_data_transfer_kit_1_1_k_d_tree.html">KDTreeType</a>;
+<a name="l00088"></a>00088     <span class="keyword">typedef</span> Teuchos::RCP&lt;KDTreeType&gt;                    RCP_KDTree;
+<a name="l00089"></a>00089     <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCB&lt;Mesh&gt;</a>                                   <a class="code" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCBType</a>;
+<a name="l00090"></a>00090     <span class="keyword">typedef</span> Teuchos::RCP&lt;RCBType&gt;                       RCP_RCB;
+<a name="l00091"></a>00091     <span class="keyword">typedef</span> Teuchos::Comm&lt;int&gt;                          CommType;
+<a name="l00092"></a>00092     <span class="keyword">typedef</span> Teuchos::RCP&lt;const CommType&gt;                RCP_Comm;
+<a name="l00093"></a>00093     <span class="keyword">typedef</span> Tpetra::Map&lt;GlobalOrdinal&gt;                  TpetraMap;
+<a name="l00094"></a>00094     <span class="keyword">typedef</span> Teuchos::RCP&lt;const TpetraMap&gt;               RCP_TpetraMap;
 <a name="l00096"></a>00096 
-<a name="l00097"></a>00097     <span class="comment">// Build the rendezvous decomposition.</span>
-<a name="l00098"></a>00098     <span class="keywordtype">void</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#afcb0e4ef9dc6f0fa727b32f3bbc4e941" title="Build the rendezvous decomposition.">build</a>( <span class="keyword">const</span> RCP_MeshManager&amp; mesh_manager );
+<a name="l00097"></a>00097     <span class="comment">// Constructor.</span>
+<a name="l00098"></a>00098     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a3586ad85071f9a497ee8298b58b2d94e" title="Constructor.">Rendezvous</a>( <span class="keyword">const</span> RCP_Comm&amp; comm, <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; global_box );
 <a name="l00099"></a>00099 
-<a name="l00100"></a>00100     <span class="comment">// Get the rendezvous processes for a list of node coordinates.</span>
-<a name="l00101"></a>00101     Teuchos::Array&lt;int&gt; 
-<a name="l00102"></a>00102     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a89cbfa47a9ea627f91fb62c794e793af" title="Get the rendezvous processes for a blocked list of coordinates.">getRendezvousProcs</a>( <span class="keyword">const</span> Teuchos::ArrayRCP&lt;double&gt; &amp;coords ) <span class="keyword">const</span>;
-<a name="l00103"></a>00103 
-<a name="l00104"></a>00104     <span class="comment">// Get the native mesh elements in the rendezvous decomposition containing</span>
-<a name="l00105"></a>00105     <span class="comment">// a blocked list of coordinates.</span>
-<a name="l00106"></a>00106     Teuchos::Array&lt;GlobalOrdinal&gt;
-<a name="l00107"></a>00107     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a4402eb1e71bffbf5905a0edbe0007af2" title="Get the native mesh elements containing a blocked list of coordinates.">getElements</a>( <span class="keyword">const</span> Teuchos::ArrayRCP&lt;double&gt;&amp; coords ) <span class="keyword">const</span>;
-<a name="l00108"></a>00108 
-<a name="l00109"></a>00109     <span class="comment">// Get the rendezvous mesh.</span>
-<a name="l00110"></a>00110     <span class="keyword">const</span> RCP_RendezvousMesh&amp; getMesh()<span class="keyword"> const</span>
-<a name="l00111"></a>00111 <span class="keyword">    </span>{ <span class="keywordflow">return</span> d_rendezvous_mesh; }
-<a name="l00112"></a>00112 
-<a name="l00113"></a>00113   <span class="keyword">private</span>:
+<a name="l00100"></a>00100     <span class="comment">// Destructor.</span>
+<a name="l00101"></a>00101     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#aff2b3ff8fa05e817c3aea0a1854ddc0c" title="Destructor.">~Rendezvous</a>();
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103     <span class="comment">// Build the rendezvous decomposition.</span>
+<a name="l00104"></a>00104     <span class="keywordtype">void</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#afcb0e4ef9dc6f0fa727b32f3bbc4e941" title="Build the rendezvous decomposition.">build</a>( <span class="keyword">const</span> RCP_MeshManager&amp; mesh_manager );
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106     <span class="comment">// Get the rendezvous processes for a list of node coordinates.</span>
+<a name="l00107"></a>00107     Teuchos::Array&lt;int&gt; 
+<a name="l00108"></a>00108     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a89cbfa47a9ea627f91fb62c794e793af" title="Get the rendezvous processes for a blocked list of coordinates.">getRendezvousProcs</a>( <span class="keyword">const</span> Teuchos::ArrayRCP&lt;double&gt; &amp;coords ) <span class="keyword">const</span>;
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110     <span class="comment">// Get the native mesh elements in the rendezvous decomposition containing</span>
+<a name="l00111"></a>00111     <span class="comment">// a blocked list of coordinates.</span>
+<a name="l00112"></a>00112     Teuchos::Array&lt;GlobalOrdinal&gt;
+<a name="l00113"></a>00113     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a4402eb1e71bffbf5905a0edbe0007af2" title="Get the native mesh elements containing a blocked list of coordinates.">getElements</a>( <span class="keyword">const</span> Teuchos::ArrayRCP&lt;double&gt;&amp; coords ) <span class="keyword">const</span>;
 <a name="l00114"></a>00114 
-<a name="l00115"></a>00115     <span class="comment">// Extract the mesh block nodes and elements that are in a bounding box.</span>
-<a name="l00116"></a>00116     <span class="keywordtype">void</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#ad1c609e92bd5e6862ec144c2bad0cdfe" title="Extract the mesh nodes and elements that are in a bounding box.">getMeshInBox</a>( <span class="keyword">const</span> RCP_MeshManager&amp; mesh_manager,
-<a name="l00117"></a>00117                        <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; box );
+<a name="l00116"></a><a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a28ea26c7544f13fa911f400e09539ae3">00116</a>     <span class="keyword">const</span> RCP_RendezvousMesh&amp; <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a28ea26c7544f13fa911f400e09539ae3" title="Get the rendezvous mesh.">getMesh</a>()<span class="keyword"> const</span>
+<a name="l00117"></a>00117 <span class="keyword">    </span>{ <span class="keywordflow">return</span> d_rendezvous_mesh; }
 <a name="l00118"></a>00118 
-<a name="l00119"></a>00119     <span class="comment">// Send the mesh to the rendezvous decomposition and build the concrete</span>
-<a name="l00120"></a>00120     <span class="comment">// mesh block.</span>
-<a name="l00121"></a>00121     <a class="code" href="class_data_transfer_kit_1_1_mesh_manager.html" title="Manager object for mesh.">MeshManager&lt;MeshContainerType&gt;</a> 
-<a name="l00122"></a>00122     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a38990466e07c60b0ad52b15a80dd68e5" title="Send the mesh to the rendezvous decomposition and build the concrete mesh.">sendMeshToRendezvous</a>( <span class="keyword">const</span> RCP_MeshManager&amp; mesh_manager );
-<a name="l00123"></a>00123 
-<a name="l00124"></a>00124     <span class="comment">// Setup the import communication patterns.</span>
-<a name="l00125"></a>00125     <span class="keywordtype">void</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a5ab0cb8207f6470a3670ac3934349fca" title="Setup the import communication patterns.">setupImportCommunication</a>( 
-<a name="l00126"></a>00126         <span class="keyword">const</span> Mesh&amp; mesh,
-<a name="l00127"></a>00127         <span class="keyword">const</span> Teuchos::ArrayView&lt;short int&gt;&amp; elements_in_box,
-<a name="l00128"></a>00128         Teuchos::Array&lt;GlobalOrdinal&gt;&amp; rendezvous_nodes,
-<a name="l00129"></a>00129         Teuchos::Array&lt;GlobalOrdinal&gt;&amp; rendezvous_elements );
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131   <span class="keyword">private</span>:
-<a name="l00132"></a>00132 
-<a name="l00133"></a>00133     <span class="comment">// Global communicator over which to perform the rendezvous.</span>
-<a name="l00134"></a>00134     RCP_Comm d_comm;
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136     <span class="comment">// Bounding box in which to perform the rendezvous.</span>
-<a name="l00137"></a>00137     <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a> d_global_box;
+<a name="l00119"></a>00119   <span class="keyword">private</span>:
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121     <span class="comment">// Extract the mesh block nodes and elements that are in a bounding box.</span>
+<a name="l00122"></a>00122     <span class="keywordtype">void</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#ad1c609e92bd5e6862ec144c2bad0cdfe" title="Extract the mesh nodes and elements that are in a bounding box.">getMeshInBox</a>( <span class="keyword">const</span> RCP_MeshManager&amp; mesh_manager,
+<a name="l00123"></a>00123                        <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; box );
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125     <span class="comment">// Send the mesh to the rendezvous decomposition and build the concrete</span>
+<a name="l00126"></a>00126     <span class="comment">// mesh block.</span>
+<a name="l00127"></a>00127     <a class="code" href="class_data_transfer_kit_1_1_mesh_manager.html" title="Manager object for mesh.">MeshManager&lt;MeshContainerType&gt;</a> 
+<a name="l00128"></a>00128     <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a38990466e07c60b0ad52b15a80dd68e5" title="Send the mesh to the rendezvous decomposition and build the concrete mesh.">sendMeshToRendezvous</a>( <span class="keyword">const</span> RCP_MeshManager&amp; mesh_manager );
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130     <span class="comment">// Setup the import communication patterns.</span>
+<a name="l00131"></a>00131     <span class="keywordtype">void</span> <a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a5ab0cb8207f6470a3670ac3934349fca" title="Setup the import communication patterns.">setupImportCommunication</a>( 
+<a name="l00132"></a>00132         <span class="keyword">const</span> Mesh&amp; mesh,
+<a name="l00133"></a>00133         <span class="keyword">const</span> Teuchos::ArrayView&lt;short int&gt;&amp; elements_in_box,
+<a name="l00134"></a>00134         Teuchos::Array&lt;GlobalOrdinal&gt;&amp; rendezvous_nodes,
+<a name="l00135"></a>00135         Teuchos::Array&lt;GlobalOrdinal&gt;&amp; rendezvous_elements );
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137   <span class="keyword">private</span>:
 <a name="l00138"></a>00138 
-<a name="l00139"></a>00139     <span class="comment">// Mesh node dimension.</span>
-<a name="l00140"></a>00140     std::size_t d_node_dim;
+<a name="l00139"></a>00139     <span class="comment">// Global communicator over which to perform the rendezvous.</span>
+<a name="l00140"></a>00140     RCP_Comm d_comm;
 <a name="l00141"></a>00141 
-<a name="l00142"></a>00142     <span class="comment">// Rendezvous partitioning.</span>
-<a name="l00143"></a>00143     RCP_RCB d_rcb;
+<a name="l00142"></a>00142     <span class="comment">// Bounding box in which to perform the rendezvous.</span>
+<a name="l00143"></a>00143     <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a> d_global_box;
 <a name="l00144"></a>00144 
-<a name="l00145"></a>00145     <span class="comment">// Rendezvous on-process mesh.</span>
-<a name="l00146"></a>00146     RCP_RendezvousMesh d_rendezvous_mesh;
+<a name="l00145"></a>00145     <span class="comment">// Mesh node dimension.</span>
+<a name="l00146"></a>00146     std::size_t d_node_dim;
 <a name="l00147"></a>00147 
-<a name="l00148"></a>00148     <span class="comment">// Rendezvous on-process kD-tree.</span>
-<a name="l00149"></a>00149     RCP_KDTree d_kdtree;
-<a name="l00150"></a>00150 };
-<a name="l00151"></a>00151 
-<a name="l00152"></a>00152 } <span class="comment">// end namespace DataTransferKit</span>
+<a name="l00148"></a>00148     <span class="comment">// Rendezvous partitioning.</span>
+<a name="l00149"></a>00149     RCP_RCB d_rcb;
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151     <span class="comment">// Rendezvous on-process mesh.</span>
+<a name="l00152"></a>00152     RCP_RendezvousMesh d_rendezvous_mesh;
 <a name="l00153"></a>00153 
-<a name="l00154"></a>00154 <span class="comment">//---------------------------------------------------------------------------//</span>
-<a name="l00155"></a>00155 <span class="comment">// Template includes.</span>
-<a name="l00156"></a>00156 <span class="comment">//---------------------------------------------------------------------------//</span>
+<a name="l00154"></a>00154     <span class="comment">// Rendezvous on-process kD-tree.</span>
+<a name="l00155"></a>00155     RCP_KDTree d_kdtree;
+<a name="l00156"></a>00156 };
 <a name="l00157"></a>00157 
-<a name="l00158"></a>00158 <span class="preprocessor">#include &quot;<a class="code" href="_d_t_k___rendezvous__def_8hpp.html" title="Rendezvous definition.">DTK_Rendezvous_def.hpp</a>&quot;</span>
+<a name="l00158"></a>00158 } <span class="comment">// end namespace DataTransferKit</span>
 <a name="l00159"></a>00159 
-<a name="l00160"></a>00160 <span class="preprocessor">#endif // end DTK_RENDEZVOUS_HPP</span>
-<a name="l00161"></a>00161 <span class="preprocessor"></span>
+<a name="l00160"></a>00160 <span class="comment">//---------------------------------------------------------------------------//</span>
+<a name="l00161"></a>00161 <span class="comment">// Template includes.</span>
 <a name="l00162"></a>00162 <span class="comment">//---------------------------------------------------------------------------//</span>
-<a name="l00163"></a>00163 <span class="comment">// end DTK_Rendezvous.hpp</span>
-<a name="l00164"></a>00164 <span class="comment">//---------------------------------------------------------------------------//</span>
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164 <span class="preprocessor">#include &quot;<a class="code" href="_d_t_k___rendezvous__def_8hpp.html" title="Rendezvous definition.">DTK_Rendezvous_def.hpp</a>&quot;</span>
 <a name="l00165"></a>00165 
+<a name="l00166"></a>00166 <span class="preprocessor">#endif // end DTK_RENDEZVOUS_HPP</span>
+<a name="l00167"></a>00167 <span class="preprocessor"></span>
+<a name="l00168"></a>00168 <span class="comment">//---------------------------------------------------------------------------//</span>
+<a name="l00169"></a>00169 <span class="comment">// end DTK_Rendezvous.hpp</span>
+<a name="l00170"></a>00170 <span class="comment">//---------------------------------------------------------------------------//</span>
+<a name="l00171"></a>00171 
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -255,7 +256,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2012 21:35:04 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 16 2012 22:49:25 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -5,7 +5,7 @@ var searchData=
   ['d_5fmoab',['d_moab',['../class_data_transfer_kit_1_1_rendezvous_mesh.html#ad98689a1ce66d512ef35669afee732ed',1,'DataTransferKit::RendezvousMesh']]],
   ['datatransferkit',['DataTransferKit',['../namespace_data_transfer_kit.html',1,'']]],
   ['datatransferkit_5ffieldversion',['DataTransferKit_FieldVersion',['../namespace_data_transfer_kit.html#a8de37ac15b6c99f87a73d43124e1f856',1,'DataTransferKit']]],
-  ['dim',['dim',['../class_data_transfer_kit_1_1_field_traits.html#a4ac015a1314c37b9b205a0601030c27b',1,'DataTransferKit::FieldTraits']]],
+  ['dim',['dim',['../class_data_transfer_kit_1_1_mesh_manager.html#af0b9a4e1dd421bd9257d04314e6277f6',1,'DataTransferKit::MeshManager::dim()'],['../class_data_transfer_kit_1_1_field_traits.html#a4ac015a1314c37b9b205a0601030c27b',1,'DataTransferKit::FieldTraits::dim()']]],
   ['dtk_5fboundingbox_2ecpp',['DTK_BoundingBox.cpp',['../_d_t_k___bounding_box_8cpp.html',1,'']]],
   ['dtk_5fboundingbox_2ehpp',['DTK_BoundingBox.hpp',['../_d_t_k___bounding_box_8hpp.html',1,'']]],
   ['dtk_5fcelltopologyfactory_2ecpp',['DTK_CellTopologyFactory.cpp',['../_d_t_k___cell_topology_factory_8cpp.html',1,'']]],

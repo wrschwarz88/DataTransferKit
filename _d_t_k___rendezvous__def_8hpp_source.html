@@ -161,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00094"></a>00094 
 <a name="l00095"></a>00095     <span class="comment">// Construct the rendezvous decomposition of the mesh with RCB using the</span>
 <a name="l00096"></a>00096     <span class="comment">// nodes that are in the box.</span>
-<a name="l00097"></a>00097     d_rcb = Teuchos::rcp( <span class="keyword">new</span> <a class="code" href="class_data_transfer_kit_1_1_r_c_b.html">RCB&lt;Mesh&gt;</a>( mesh_manager ) );
+<a name="l00097"></a>00097     d_rcb = Teuchos::rcp( <span class="keyword">new</span> <a class="code" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCB&lt;Mesh&gt;</a>( mesh_manager ) );
 <a name="l00098"></a>00098     testPostcondition( d_rcb != Teuchos::null,
 <a name="l00099"></a>00099                        <span class="stringliteral">&quot;Error creating RCB decomposition.&quot;</span> );
 <a name="l00100"></a>00100     d_rcb-&gt;partition();
@@ -739,7 +739,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 16 2012 21:35:04 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 16 2012 22:49:25 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
