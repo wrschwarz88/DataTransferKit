@@ -209,7 +209,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="class_data_transfer_kit_1_1_field_tools.html#a86dbfae75d04182b24c1e2d16ee1d1dc" title="Get a non-const view of the field. The ArrayRCP object will not manage the memory.">FieldTools&lt;CoordinateField&gt;::nonConstView</a>( coordinate_field );</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    Teuchos::Array&lt;int&gt; rendezvous_procs = </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        rendezvous.<a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a89cbfa47a9ea627f91fb62c794e793af" title="Get the rendezvous destination processes for a blocked list of coordinates that are in the primary de...">getRendezvousProcs</a>( coords_view );</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        rendezvous.<a class="code" href="class_data_transfer_kit_1_1_rendezvous.html#a52f221b78109a0c4d5d5b59523d12fb5" title="Get the rendezvous destination processes for a blocked list of coordinates that are in the primary de...">procsContainingPoints</a>( coords_view );</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">// Via an inverse communication operation, move the global point ordinals</span></div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// to the rendezvous decomposition.</span></div>
@@ -461,7 +461,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 23 2012 15:53:17 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 23 2012 15:55:20 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
