@@ -1,6 +1,7 @@
 var searchData=
 [
   ['elementsbegin',['elementsBegin',['../class_data_transfer_kit_1_1_mesh_container.html#abdf4d4aaf11bec0dfd50ad4f2a15ca0c',1,'DataTransferKit::MeshContainer::elementsBegin()'],['../class_data_transfer_kit_1_1_mesh_traits.html#a5c3b6652e5b6ab698adc8b42d6b4c15a',1,'DataTransferKit::MeshTraits::elementsBegin()']]],
+  ['elementscontainingpoints',['elementsContainingPoints',['../class_data_transfer_kit_1_1_rendezvous.html#a35db3f8daeb578c68c235c14bd1d4d3a',1,'DataTransferKit::Rendezvous']]],
   ['elementsend',['elementsEnd',['../class_data_transfer_kit_1_1_mesh_container.html#a14427a1d840e842ce78d2234c5dfc1db',1,'DataTransferKit::MeshContainer::elementsEnd()'],['../class_data_transfer_kit_1_1_mesh_traits.html#ac620f0e077b4c19cb8fb89d3b30fc474',1,'DataTransferKit::MeshTraits::elementsEnd()']]],
   ['elementsnonconstview',['elementsNonConstView',['../class_data_transfer_kit_1_1_mesh_tools.html#a4cd9afdbb95cddb755be7befe41dbf2f',1,'DataTransferKit::MeshTools']]],
   ['elementsview',['elementsView',['../class_data_transfer_kit_1_1_mesh_tools.html#a5f79b959ee91af24abf8247cd384d9e1',1,'DataTransferKit::MeshTools']]],
