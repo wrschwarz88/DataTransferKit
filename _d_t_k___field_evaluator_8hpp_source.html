@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_evaluator.html#a4a9ecf1fc2bfdf60b6ff6a342b3eb802">   59</a></span>&#160;    <span class="keyword">typedef</span> Mesh                                <a class="code" href="class_data_transfer_kit_1_1_field_evaluator.html#a4a9ecf1fc2bfdf60b6ff6a342b3eb802" title="Typedefs.">mesh_type</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MeshTraits&lt;Mesh&gt;</a>                    <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MT</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html#ac368b56f73eebbd94e5d1e153933d41c">MT::global_ordinal_type</a>    global_ordinal_type;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="class_data_transfer_kit_1_1_mesh_traits.html#ac368b56f73eebbd94e5d1e153933d41c">MT::global_ordinal_type</a>    GlobalOrdinal;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">typedef</span> Field                               field_type;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="class_data_transfer_kit_1_1_field_traits.html" title="Field traits definitions.">FieldTraits&lt;Field&gt;</a>                  <a class="code" href="class_data_transfer_kit_1_1_field_traits.html" title="Field traits definitions.">FT</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="class_data_transfer_kit_1_1_field_traits.html#a94ca7ff6f5b1368829386124a2ce6512">FT::value_type</a>             data_type;</div>
@@ -152,8 +152,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_evaluator.html#a1afb785bed7ce2a2e782ab3cc7f0f923">   72</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_data_transfer_kit_1_1_field_evaluator.html#a1afb785bed7ce2a2e782ab3cc7f0f923" title="Destructor.">~FieldEvaluator</a>()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    { <span class="comment">/* ... */</span> }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> Field <a class="code" href="class_data_transfer_kit_1_1_field_evaluator.html#ac17eba35c1c3d2955195ad34c2f1c4a6" title="Evaluate the field in the given elements at the given coordinates and return the evaluations in a Fie...">evaluate</a>( </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">const</span> Teuchos::ArrayRCP&lt;global_ordinal_type&gt;&amp; elements,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> Field <a class="code" href="class_data_transfer_kit_1_1_field_evaluator.html#ad41e6f1f5fa55d93aee6593b04347455" title="Evaluate the function in the given elements at the given coordinates and return the evaluations in a ...">evaluate</a>( </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">const</span> Teuchos::ArrayRCP&lt;GlobalOrdinal&gt;&amp; elements,</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">const</span> Teuchos::ArrayRCP&lt;double&gt;&amp; coords ) = 0;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
@@ -168,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 23 2012 15:55:20 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 09:22:43 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

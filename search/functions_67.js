@@ -28,6 +28,6 @@ var searchData=
   ['getnumimport',['getNumImport',['../class_data_transfer_kit_1_1_r_c_b.html#ac7cbc51b37461117cb3f7df3958d4739',1,'DataTransferKit::RCB']]],
   ['getobjectlist',['getObjectList',['../class_data_transfer_kit_1_1_r_c_b.html#afb370e303f235b16f50a9767d69184cb',1,'DataTransferKit::RCB']]],
   ['globalboundingbox',['globalBoundingBox',['../class_data_transfer_kit_1_1_mesh_manager.html#a5f60d06e4dd21bb8a867469060fcd9bf',1,'DataTransferKit::MeshManager::globalBoundingBox()'],['../class_data_transfer_kit_1_1_mesh_tools.html#aebcc24c2fe7a7fd7419ec4f68d5dce0b',1,'DataTransferKit::MeshTools::globalBoundingBox()']]],
-  ['globallength',['globalLength',['../class_data_transfer_kit_1_1_field_tools.html#ac87a21209a7de0970a0c3c7d41ef1c07',1,'DataTransferKit::FieldTools']]],
-  ['globalnumelements',['globalNumElements',['../class_data_transfer_kit_1_1_mesh_manager.html#ab6aef69e4100e51895e9ec9a07877e6e',1,'DataTransferKit::MeshManager']]]
+  ['globalnumelements',['globalNumElements',['../class_data_transfer_kit_1_1_mesh_manager.html#ab6aef69e4100e51895e9ec9a07877e6e',1,'DataTransferKit::MeshManager']]],
+  ['globalsize',['globalSize',['../class_data_transfer_kit_1_1_field_tools.html#aba77e9581f3b514d5fcddb73b96cf631',1,'DataTransferKit::FieldTools']]]
 ];

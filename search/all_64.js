@@ -6,11 +6,12 @@ var searchData=
   ['datatransferkit',['DataTransferKit',['../namespace_data_transfer_kit.html',1,'']]],
   ['datatransferkit_5ffieldversion',['DataTransferKit_FieldVersion',['../namespace_data_transfer_kit.html#a8de37ac15b6c99f87a73d43124e1f856',1,'DataTransferKit']]],
   ['dim',['dim',['../class_data_transfer_kit_1_1_mesh_manager.html#af0b9a4e1dd421bd9257d04314e6277f6',1,'DataTransferKit::MeshManager::dim()'],['../class_data_transfer_kit_1_1_field_traits.html#a4ac015a1314c37b9b205a0601030c27b',1,'DataTransferKit::FieldTraits::dim()']]],
+  ['dimbegin',['dimBegin',['../class_data_transfer_kit_1_1_field_tools.html#a52aed1254a6386fbe4adae7dec40b355',1,'DataTransferKit::FieldTools::dimBegin(Field &amp;field, const std::size_t dim)'],['../class_data_transfer_kit_1_1_field_tools.html#a01aa5ef12fdd7ea8869b943fc02d9355',1,'DataTransferKit::FieldTools::dimBegin(const Field &amp;field, const std::size_t dim)']]],
+  ['dimend',['dimEnd',['../class_data_transfer_kit_1_1_field_tools.html#af4252c7968652278f3900f6fd58d867c',1,'DataTransferKit::FieldTools::dimEnd(Field &amp;field, const std::size_t dim)'],['../class_data_transfer_kit_1_1_field_tools.html#a79c00df6d8b365d571f36b1847870742',1,'DataTransferKit::FieldTools::dimEnd(const Field &amp;field, const std::size_t dim)']]],
   ['dtk_5fboundingbox_2ecpp',['DTK_BoundingBox.cpp',['../_d_t_k___bounding_box_8cpp.html',1,'']]],
   ['dtk_5fboundingbox_2ehpp',['DTK_BoundingBox.hpp',['../_d_t_k___bounding_box_8hpp.html',1,'']]],
   ['dtk_5fcelltopologyfactory_2ecpp',['DTK_CellTopologyFactory.cpp',['../_d_t_k___cell_topology_factory_8cpp.html',1,'']]],
   ['dtk_5fcelltopologyfactory_2ehpp',['DTK_CellTopologyFactory.hpp',['../_d_t_k___cell_topology_factory_8hpp.html',1,'']]],
-  ['dtk_5fconsistentevaluation_2ehpp',['DTK_ConsistentEvaluation.hpp',['../_d_t_k___consistent_evaluation_8hpp.html',1,'']]],
   ['dtk_5felementtopology',['DTK_ElementTopology',['../namespace_data_transfer_kit.html#a673ffda6737b51597f90991c5ba8d3a5',1,'DataTransferKit']]],
   ['dtk_5ffieldevaluator_2ehpp',['DTK_FieldEvaluator.hpp',['../_d_t_k___field_evaluator_8hpp.html',1,'']]],
   ['dtk_5ffieldmanager_2ehpp',['DTK_FieldManager.hpp',['../_d_t_k___field_manager_8hpp.html',1,'']]],
@@ -35,6 +36,5 @@ var searchData=
   ['dtk_5frendezvousmesh_5fdef_2ehpp',['DTK_RendezvousMesh_def.hpp',['../_d_t_k___rendezvous_mesh__def_8hpp.html',1,'']]],
   ['dtk_5ftopologytools_2ecpp',['DTK_TopologyTools.cpp',['../_d_t_k___topology_tools_8cpp.html',1,'']]],
   ['dtk_5ftopologytools_2ehpp',['DTK_TopologyTools.hpp',['../_d_t_k___topology_tools_8hpp.html',1,'']]],
-  ['dtk_5ftransferoperator_2ehpp',['DTK_TransferOperator.hpp',['../_d_t_k___transfer_operator_8hpp.html',1,'']]],
   ['data_20transfer_20kit',['Data Transfer Kit',['../index.html',1,'']]]
 ];

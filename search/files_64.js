@@ -4,7 +4,6 @@ var searchData=
   ['dtk_5fboundingbox_2ehpp',['DTK_BoundingBox.hpp',['../_d_t_k___bounding_box_8hpp.html',1,'']]],
   ['dtk_5fcelltopologyfactory_2ecpp',['DTK_CellTopologyFactory.cpp',['../_d_t_k___cell_topology_factory_8cpp.html',1,'']]],
   ['dtk_5fcelltopologyfactory_2ehpp',['DTK_CellTopologyFactory.hpp',['../_d_t_k___cell_topology_factory_8hpp.html',1,'']]],
-  ['dtk_5fconsistentevaluation_2ehpp',['DTK_ConsistentEvaluation.hpp',['../_d_t_k___consistent_evaluation_8hpp.html',1,'']]],
   ['dtk_5ffieldevaluator_2ehpp',['DTK_FieldEvaluator.hpp',['../_d_t_k___field_evaluator_8hpp.html',1,'']]],
   ['dtk_5ffieldmanager_2ehpp',['DTK_FieldManager.hpp',['../_d_t_k___field_manager_8hpp.html',1,'']]],
   ['dtk_5ffieldmanager_5fdef_2ehpp',['DTK_FieldManager_def.hpp',['../_d_t_k___field_manager__def_8hpp.html',1,'']]],
@@ -27,6 +26,5 @@ var searchData=
   ['dtk_5frendezvousmesh_2ehpp',['DTK_RendezvousMesh.hpp',['../_d_t_k___rendezvous_mesh_8hpp.html',1,'']]],
   ['dtk_5frendezvousmesh_5fdef_2ehpp',['DTK_RendezvousMesh_def.hpp',['../_d_t_k___rendezvous_mesh__def_8hpp.html',1,'']]],
   ['dtk_5ftopologytools_2ecpp',['DTK_TopologyTools.cpp',['../_d_t_k___topology_tools_8cpp.html',1,'']]],
-  ['dtk_5ftopologytools_2ehpp',['DTK_TopologyTools.hpp',['../_d_t_k___topology_tools_8hpp.html',1,'']]],
-  ['dtk_5ftransferoperator_2ehpp',['DTK_TransferOperator.hpp',['../_d_t_k___transfer_operator_8hpp.html',1,'']]]
+  ['dtk_5ftopologytools_2ehpp',['DTK_TopologyTools.hpp',['../_d_t_k___topology_tools_8hpp.html',1,'']]]
 ];
