@@ -8,5 +8,6 @@ var searchData=
   ['elementtopology',['elementTopology',['../class_data_transfer_kit_1_1_mesh_traits.html#adb17cc714372b5a81215c61d5bc5d29f',1,'DataTransferKit::MeshTraits']]],
   ['empty',['empty',['../class_data_transfer_kit_1_1_field_traits.html#ad862834d8a07e7490c2c788f5d03f08d',1,'DataTransferKit::FieldTraits']]],
   ['end',['end',['../class_data_transfer_kit_1_1_field_traits.html#aff51abf28187dfa45d15d787d0a82081',1,'DataTransferKit::FieldTraits']]],
+  ['equal',['equal',['../class_data_transfer_kit_1_1_comm_tools.html#a1b02f829f3f52c0a1a8c0ec5acd044b6',1,'DataTransferKit::CommTools']]],
   ['evaluate',['evaluate',['../class_data_transfer_kit_1_1_field_evaluator.html#ad41e6f1f5fa55d93aee6593b04347455',1,'DataTransferKit::FieldEvaluator']]]
 ];

@@ -171,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Construct the rendezvous partitioning for the mesh with RCB using the</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// nodes that are in the box.</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    d_rcb = Teuchos::rcp( <span class="keyword">new</span> <a class="code" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCB&lt;Mesh&gt;</a>( mesh_manager ) );</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    testPostcondition( d_rcb != Teuchos::null,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( d_rcb != Teuchos::null,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                       <span class="stringliteral">&quot;Error creating RCB decomposition.&quot;</span> );</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    d_rcb-&gt;partition();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
@@ -182,13 +182,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Build the concrete rendezvous mesh from the mesh container.</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    d_rendezvous_mesh = <a class="code" href="namespace_data_transfer_kit.html#ad0e3e47c3c2f0aee90100ba832d3512b" title="Create a RendezvousMesh from a mesh manager.">createRendezvousMesh</a>( rendezvous_mesh_manager );</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    testPostcondition( d_rendezvous_mesh != Teuchos::null,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( d_rendezvous_mesh != Teuchos::null,</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                       <span class="stringliteral">&quot;Error creating rendezvous mesh.&quot;</span> );</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// Create a kD-tree in the rendezvous decomposition.</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    d_kdtree = Teuchos::rcp( </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">new</span> <a class="code" href="class_data_transfer_kit_1_1_k_d_tree.html" title="A KDTree data structure for local mesh searching in the rendezvous decomposition.">KDTree&lt;GlobalOrdinal&gt;</a>( d_rendezvous_mesh , d_node_dim ) );</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    testPostcondition( d_kdtree != Teuchos::null,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( d_kdtree != Teuchos::null,</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                       <span class="stringliteral">&quot;Error creating rendezvous kD-tree.&quot;</span> );</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    d_kdtree-&gt;build();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
@@ -394,7 +394,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            export_node_arcp();</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        RCP_TpetraMap export_node_map = Tpetra::createNonContigMap&lt;GlobalOrdinal&gt;( </div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            export_node_view, d_comm );</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        testPostcondition( export_node_map != Teuchos::null,</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( export_node_map != Teuchos::null,</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                           <span class="stringliteral">&quot;Error creating node export map.&quot;</span> );</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">// Setup import node map.</span></div>
@@ -402,7 +402,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            rendezvous_nodes();</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        RCP_TpetraMap import_node_map = Tpetra::createNonContigMap&lt;GlobalOrdinal&gt;(</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            rendezvous_nodes_view, d_comm );</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        testPostcondition( import_node_map != Teuchos::null,</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( import_node_map != Teuchos::null,</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                           <span class="stringliteral">&quot;Error creating node import map.&quot;</span> );</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="comment">// Setup export element map.</span></div>
@@ -415,7 +415,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        RCP_TpetraMap export_element_map = </div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            Tpetra::createNonContigMap&lt;GlobalOrdinal&gt;(</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                export_element_view, d_comm );</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        testPostcondition( export_element_map != Teuchos::null,</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( export_element_map != Teuchos::null,</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                           <span class="stringliteral">&quot;Error creating element export map.&quot;</span> );</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="comment">// Setup import element map.</span></div>
@@ -424,7 +424,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        RCP_TpetraMap import_element_map = </div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            Tpetra::createNonContigMap&lt;GlobalOrdinal&gt;(</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                rendezvous_elements_view, d_comm );</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        testPostcondition( import_element_map != Teuchos::null,</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( import_element_map != Teuchos::null,</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                           <span class="stringliteral">&quot;Error creating element import map.&quot;</span> );</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="comment">// Setup importers.</span></div>
@@ -727,7 +727,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 09:22:43 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 18:00:29 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

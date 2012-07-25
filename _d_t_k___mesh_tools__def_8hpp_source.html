@@ -236,7 +236,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::size_t num_permutation = </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        std::distance( MT::permutationBegin( mesh ),</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                       MT::permutationEnd( mesh ) );</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    testInvariant( num_permutation == MT::nodesPerElement( mesh ),</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d" title="Test for a Invariant exception.">testInvariant</a>( num_permutation == MT::nodesPerElement( mesh ),</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                   <span class="stringliteral">&quot;Permutation list size != nodes per mesh element&quot;</span> );</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> Teuchos::ArrayRCP&lt;const std::size_t&gt;(</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        &amp;*MT::permutationBegin( mesh ), 0, num_permutation, false );</div>
@@ -250,7 +250,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    std::size_t num_permutation = </div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        std::distance( MT::permutationBegin( mesh ),</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                       MT::permutationEnd( mesh ) );</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    testInvariant( num_permutation == MT::nodesPerElement( mesh ),</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d" title="Test for a Invariant exception.">testInvariant</a>( num_permutation == MT::nodesPerElement( mesh ),</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                   <span class="stringliteral">&quot;Permutation list size != nodes per mesh element&quot;</span> );</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">return</span> Teuchos::ArrayRCP&lt;std::size_t&gt;(</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        (std::size_t*) &amp;*MT::permutationBegin( mesh ), 0, </div>
@@ -368,7 +368,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 09:22:43 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 18:00:28 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

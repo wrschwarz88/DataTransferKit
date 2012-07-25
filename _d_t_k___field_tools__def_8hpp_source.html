@@ -143,8 +143,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_tools.html#a52aed1254a6386fbe4adae7dec40b355">   62</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_tools.html#a52aed1254a6386fbe4adae7dec40b355" title="Iterators.">FieldTools&lt;Field&gt;::dimBegin</a>( Field&amp; field, <span class="keyword">const</span> std::size_t dim )</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    testPrecondition( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    testPrecondition( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    size_type field_size = FT::size( field );</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    size_type dim_size = field_size / field_dim;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> FT::begin(field) + dim*dim_size;</div>
@@ -156,8 +156,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_tools.html#a01aa5ef12fdd7ea8869b943fc02d9355">   78</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_tools.html#a52aed1254a6386fbe4adae7dec40b355" title="Iterators.">FieldTools&lt;Field&gt;::dimBegin</a>( <span class="keyword">const</span> Field&amp; field, <span class="keyword">const</span> std::size_t dim )</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    testPrecondition( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    testPrecondition( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    size_type field_size = FT::size( field );</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    size_type dim_size = field_size / field_dim;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> FT::begin(field) + dim*dim_size;</div>
@@ -169,8 +169,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_tools.html#af4252c7968652278f3900f6fd58d867c">   94</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_tools.html#af4252c7968652278f3900f6fd58d867c" title="Get an iterator to the end of a dimension.">FieldTools&lt;Field&gt;::dimEnd</a>( Field&amp; field, <span class="keyword">const</span> std::size_t dim )</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    testPrecondition( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    testPrecondition( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    size_type field_size = FT::size( field );</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    size_type dim_size = field_size / field_dim;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> FT::begin(field) + (dim+1)*dim_size;</div>
@@ -182,8 +182,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_tools.html#a79c00df6d8b365d571f36b1847870742">  110</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_tools.html#af4252c7968652278f3900f6fd58d867c" title="Get an iterator to the end of a dimension.">FieldTools&lt;Field&gt;::dimEnd</a>( <span class="keyword">const</span> Field&amp; field, <span class="keyword">const</span> std::size_t dim )</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    testPrecondition( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    testPrecondition( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( field_dim &gt; 0, <span class="stringliteral">&quot;Field dimension must be &gt; 0.&quot;</span> );</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( dim &gt;= 0 &amp;&amp; dim &lt; field_dim, <span class="stringliteral">&quot;Dimension not valid.&quot;</span> );</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    size_type field_size = FT::size( field );</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    size_type dim_size = field_size / field_dim;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> FT::begin(field) + (dim+1)*dim_size;</div>
@@ -220,7 +220,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Field&amp; field, <span class="keyword">const</span> Teuchos::ArrayView&lt;value_type&gt;&amp; scalars )</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    testInvariant( field_dim == (std::size_t) scalars.size(), </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d" title="Test for a Invariant exception.">testInvariant</a>( field_dim == (std::size_t) scalars.size(), </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                   <span class="stringliteral">&quot;Number of scalars != field dimension.&quot;</span> );</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    size_type field_size = FT::size( field );</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">for</span> ( std::size_t d = 0; d &lt; field_dim; ++d )</div>
@@ -251,7 +251,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                               <span class="keyword">const</span> Teuchos::ArrayView&lt;value_type&gt;&amp; scalars )</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    testPrecondition( field_dim == (std::size_t) scalars.size(), </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( field_dim == (std::size_t) scalars.size(), </div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                   <span class="stringliteral">&quot;Number of scalars != field dimension.&quot;</span> );</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    size_type field_size = FT::size( field );</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    iterator dim_iterator;</div>
@@ -357,7 +357,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; q,</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                               Teuchos::Array&lt;value_type&gt;&amp; norms )</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    testPrecondition( q &gt; 0, <span class="stringliteral">&quot;q must be &gt; 0. Use normInf if q = 0.&quot;</span> );</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( q &gt; 0, <span class="stringliteral">&quot;q must be &gt; 0. Use normInf if q = 0.&quot;</span> );</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    norms.resize( field_dim );</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    const_iterator dim_iterator;</div>
@@ -396,7 +396,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    size_type global_length = </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="class_data_transfer_kit_1_1_field_tools.html#aba77e9581f3b514d5fcddb73b96cf631" title="Get the global size of the field (all dimensions, all instances).">FieldTools&lt;Field&gt;::globalSize</a>( field, comm );</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    testPrecondition( global_length &gt; 0, </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( global_length &gt; 0, </div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;             <span class="stringliteral">&quot;Global field size must be greater than 0 to compute average.&quot;</span> );</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    std::size_t field_dim = FT::dim( field );</div>
@@ -475,7 +475,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    }</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">if</span> ( dim &gt; 3 )</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    {</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keywordflow">throw</span> PreconditionException( </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_data_transfer_kit_1_1_precondition_exception.html" title="Exception class to be thrown when function preconditions are not met.">PreconditionException</a>( </div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            <span class="stringliteral">&quot;Points with greater than 3 dimensions not supported&quot;</span> );</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    }</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
@@ -540,7 +540,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 09:22:43 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 18:00:28 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

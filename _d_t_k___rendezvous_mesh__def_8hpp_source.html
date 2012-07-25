@@ -177,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// Create a moab interface.</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    moab::ErrorCode error;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    Teuchos::RCP&lt;moab::Interface&gt; moab = Teuchos::rcp( <span class="keyword">new</span> moab::Core() );</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    testPostcondition( moab != Teuchos::null,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0" title="Test for a postcondition exception.">testPostcondition</a>( moab != Teuchos::null,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                       <span class="stringliteral">&quot;Error creating MOAB interface&quot;</span> );</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Set the mesh dimension.</span></div>
@@ -195,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        GlobalOrdinal num_coords = </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            std::distance( MT::coordsBegin( *block_iterator ),</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                           MT::coordsEnd( *block_iterator ) );</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        testInvariant( </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d" title="Test for a Invariant exception.">testInvariant</a>( </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            num_coords == (GlobalOrdinal) node_dim * num_nodes,</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="stringliteral">&quot;Number of coordinates provided != node_dim * number of nodes&quot;</span> );</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
@@ -221,7 +221,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                vertex_coords[d] = 0.0;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            error = moab-&gt;create_vertex( vertex_coords, moab_vertex );</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            testInvariant( moab::MB_SUCCESS == error, </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d" title="Test for a Invariant exception.">testInvariant</a>( moab::MB_SUCCESS == error, </div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                           <span class="stringliteral">&quot;Failed to create vertices in MOAB.&quot;</span> );</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            vertex_handle_map[ *node_iterator ] = moab_vertex;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
@@ -234,7 +234,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        GlobalOrdinal num_connect = </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            std::distance( MT::connectivityBegin( *block_iterator ),</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                           MT::connectivityEnd( *block_iterator ) );</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        testPrecondition( </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136" title="Test for a precondition exception.">testPrecondition</a>( </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            num_elements == num_connect / nodes_per_element &amp;&amp;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            num_connect % nodes_per_element == 0,</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="stringliteral">&quot;Connectivity array inconsistent with element description.&quot;</span> );</div>
@@ -264,7 +264,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                    vertex_handle_map.find( </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                        mesh_connectivity[ conn_index ] )-&gt;second;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            testInvariant( (<span class="keywordtype">int</span>) element_connectivity.size() == nodes_per_element,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d" title="Test for a Invariant exception.">testInvariant</a>( (<span class="keywordtype">int</span>) element_connectivity.size() == nodes_per_element,</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                           <span class="stringliteral">&quot;Element connectivity size != nodes per element.&quot;</span> );</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="comment">// Create the element in moab.</span></div>
@@ -275,7 +275,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                          &amp;element_connectivity[0],</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                          element_connectivity.size(),</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                                          moab_element );</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            testInvariant( moab::MB_SUCCESS == error,</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <a class="code" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d" title="Test for a Invariant exception.">testInvariant</a>( moab::MB_SUCCESS == error,</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                           <span class="stringliteral">&quot;Failed to create element in MOAB.&quot;</span> );</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            moab_elements.insert( moab_element );</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
@@ -302,7 +302,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 09:22:43 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 18:00:29 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
