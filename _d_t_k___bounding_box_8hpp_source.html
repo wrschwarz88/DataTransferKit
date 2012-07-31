@@ -127,82 +127,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;Teuchos_Tuple.hpp&gt;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;Teuchos_Array.hpp&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;Teuchos_SerializationTraits.hpp&gt;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>DataTransferKit</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span><span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_bounding_box.html">   62</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// Default constructor.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a1882a112986602256fd8986834a7fcac" title="Default constructor.">BoundingBox</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Constructor.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a1882a112986602256fd8986834a7fcac" title="Default constructor.">BoundingBox</a>( <span class="keyword">const</span> <span class="keywordtype">double</span> x_min, <span class="keyword">const</span> <span class="keywordtype">double</span> y_min, <span class="keyword">const</span> <span class="keywordtype">double</span> z_min,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                 <span class="keyword">const</span> <span class="keywordtype">double</span> x_max, <span class="keyword">const</span> <span class="keywordtype">double</span> y_max, <span class="keyword">const</span> <span class="keywordtype">double</span> z_max );</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Tuple constructor.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a1882a112986602256fd8986834a7fcac" title="Default constructor.">BoundingBox</a>( <span class="keyword">const</span> Teuchos::Tuple&lt;double,6&gt;&amp; bounds );</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// Destructor.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a53a62d1520f80b8e3283ad810753532b" title="Destructor.">~BoundingBox</a>();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Determine if a point is in the box.</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a5163b11428099041bc1bb19fdf8f2460" title="Determine if a point is in the box. A point on the box boundary will return true.">pointInBox</a>( <span class="keyword">const</span> Teuchos::Array&lt;double&gt;&amp; coords ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Get the boundaries of the box.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Teuchos::Tuple&lt;double,6&gt; getBounds()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">return</span> Teuchos::tuple( d_x_min, d_y_min, d_z_min, </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                             d_x_max, d_y_max, d_z_max ); }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Compute the volume of the box given its dimension.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#ab3247d944871b816ce87da5f1ba24dc3" title="Compute the volume of the bounding box given its dimension.">volume</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> dim ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Static function for box intersection.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a0203f8a13480644a6ca7e3886f2a034a" title="Static function for box intersection. Return false if they do not intersect.">intersectBoxes</a>( <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; box_A,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; box_B,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; intersection );</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// X min.</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">double</span> d_x_min;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Y min.</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">double</span> d_y_min;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Z min.</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">double</span> d_z_min;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// X max.</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">double</span> d_x_max;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// Y max.</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">double</span> d_y_max;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// Z max.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">double</span> d_z_max;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;} <span class="comment">// end namespace DataTransferKit</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // end DTK_BOUNDINGBOX_HPP</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">// end DTK_BoundingBox.hpp</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>DataTransferKit</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span><span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_bounding_box.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Default constructor.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a1882a112986602256fd8986834a7fcac" title="Default constructor.">BoundingBox</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Constructor.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a1882a112986602256fd8986834a7fcac" title="Default constructor.">BoundingBox</a>( <span class="keyword">const</span> <span class="keywordtype">double</span> x_min, <span class="keyword">const</span> <span class="keywordtype">double</span> y_min, <span class="keyword">const</span> <span class="keywordtype">double</span> z_min,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                 <span class="keyword">const</span> <span class="keywordtype">double</span> x_max, <span class="keyword">const</span> <span class="keywordtype">double</span> y_max, <span class="keyword">const</span> <span class="keywordtype">double</span> z_max );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Tuple constructor.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a1882a112986602256fd8986834a7fcac" title="Default constructor.">BoundingBox</a>( <span class="keyword">const</span> Teuchos::Tuple&lt;double,6&gt;&amp; bounds );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Destructor.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a53a62d1520f80b8e3283ad810753532b" title="Destructor.">~BoundingBox</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Determine if a point is in the box.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a5163b11428099041bc1bb19fdf8f2460" title="Determine if a point is in the box. A point on the box boundary will return true.">pointInBox</a>( <span class="keyword">const</span> Teuchos::Array&lt;double&gt;&amp; coords ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// Get the boundaries of the box.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    Teuchos::Tuple&lt;double,6&gt; getBounds()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">return</span> Teuchos::tuple( d_x_min, d_y_min, d_z_min, </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                             d_x_max, d_y_max, d_z_max ); }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// Compute the volume of the box given its dimension.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#ab3247d944871b816ce87da5f1ba24dc3" title="Compute the volume of the bounding box given its dimension.">volume</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> dim ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Static function for box intersection.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html#a0203f8a13480644a6ca7e3886f2a034a" title="Static function for box intersection. Return false if they do not intersect.">intersectBoxes</a>( <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; box_A,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                <span class="keyword">const</span> <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; box_B,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                <a class="code" href="class_data_transfer_kit_1_1_bounding_box.html" title="Axis-aligned Cartesian bounding box container.">BoundingBox</a>&amp; intersection );</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// X min.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">double</span> d_x_min;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// Y min.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">double</span> d_y_min;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// Z min.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">double</span> d_z_min;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// X max.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">double</span> d_x_max;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// Y max.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">double</span> d_y_max;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Z max.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">double</span> d_z_max;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <span class="comment">// end namespace DataTransferKit</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif // end DTK_BOUNDINGBOX_HPP</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">// end DTK_BoundingBox.hpp</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 18:00:28 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 31 2012 18:06:53 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

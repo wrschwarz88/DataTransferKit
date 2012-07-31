@@ -161,18 +161,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a52f221b78109a0c4d5d5b59523d12fb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52f221b78109a0c4d5d5b59523d12fb5"></a>
 Teuchos::Array&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a52f221b78109a0c4d5d5b59523d12fb5">procsContainingPoints</a> (const Teuchos::ArrayRCP&lt; double &gt; &amp;coords) const </td></tr>
 <tr class="memdesc:a52f221b78109a0c4d5d5b59523d12fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rendezvous destination processes for a blocked list of coordinates that are in the primary decomposition. <br/></td></tr>
-<tr class="memitem:a35db3f8daeb578c68c235c14bd1d4d3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35db3f8daeb578c68c235c14bd1d4d3a"></a>
-Teuchos::Array&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a35db3f8daeb578c68c235c14bd1d4d3a">elementsContainingPoints</a> (const Teuchos::ArrayRCP&lt; double &gt; &amp;coords) const </td></tr>
-<tr class="memdesc:a35db3f8daeb578c68c235c14bd1d4d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native mesh elements in the rendezvous decomposition containing a blocked list of coordinates also in the rendezvous decomposition. <br/></td></tr>
+<tr class="memitem:a4cfd8a0764f01771e6aa059200a43ef7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cfd8a0764f01771e6aa059200a43ef7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a4cfd8a0764f01771e6aa059200a43ef7">elementsContainingPoints</a> (const Teuchos::ArrayRCP&lt; double &gt; &amp;coords, Teuchos::Array&lt; GlobalOrdinal &gt; &amp;elements, Teuchos::Array&lt; int &gt; &amp;element_src_procs) const </td></tr>
+<tr class="memdesc:a4cfd8a0764f01771e6aa059200a43ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native mesh elements in the rendezvous decomposition containing a blocked list of coordinates also in the rendezvous decomposition. If a point is not found in an element, return an invalid element ordinal and source decomposition proc, -1, for that point. <br/></td></tr>
 <tr class="memitem:a28ea26c7544f13fa911f400e09539ae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28ea26c7544f13fa911f400e09539ae3"></a>
 const RCP_RendezvousMesh &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a28ea26c7544f13fa911f400e09539ae3">getMesh</a> () const </td></tr>
 <tr class="memdesc:a28ea26c7544f13fa911f400e09539ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rendezvous mesh. <br/></td></tr>
+<tr class="memitem:aff3e58bf04b88546c130fd608839119c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff3e58bf04b88546c130fd608839119c"></a>
+const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#aff3e58bf04b88546c130fd608839119c">getBox</a> () const </td></tr>
+<tr class="memdesc:aff3e58bf04b88546c130fd608839119c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bounding box. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ad1c609e92bd5e6862ec144c2bad0cdfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1c609e92bd5e6862ec144c2bad0cdfe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#ad1c609e92bd5e6862ec144c2bad0cdfe">getMeshInBox</a> (const RCP_MeshManager &amp;mesh_manager, const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> &amp;box)</td></tr>
-<tr class="memdesc:ad1c609e92bd5e6862ec144c2bad0cdfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the mesh nodes and elements that are in a bounding box. <br/></td></tr>
+<tr class="memitem:ae510bb3e9c42643170fe4ffd31b842f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae510bb3e9c42643170fe4ffd31b842f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#ae510bb3e9c42643170fe4ffd31b842f7">getMeshInBox</a> (const RCP_MeshManager &amp;mesh_manager)</td></tr>
+<tr class="memdesc:ae510bb3e9c42643170fe4ffd31b842f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the mesh nodes and elements that are in a bounding box. <br/></td></tr>
 <tr class="memitem:a38990466e07c60b0ad52b15a80dd68e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38990466e07c60b0ad52b15a80dd68e5"></a>
 <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">MeshManager</a>&lt; <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainerType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a38990466e07c60b0ad52b15a80dd68e5">sendMeshToRendezvous</a> (const RCP_MeshManager &amp;mesh_manager)</td></tr>
 <tr class="memdesc:a38990466e07c60b0ad52b15a80dd68e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the mesh to the rendezvous decomposition and build the concrete mesh blocks. <br/></td></tr>
@@ -190,6 +193,8 @@ RCP_Comm&#160;</td><td class="memItemRight" valign="bottom"><b>d_comm</b></td></
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>d_node_dim</b></td></tr>
 <tr class="memitem:a395c18ad9a4d11935d3405e5f3588dd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395c18ad9a4d11935d3405e5f3588dd4"></a>
 RCP_RCB&#160;</td><td class="memItemRight" valign="bottom"><b>d_rcb</b></td></tr>
+<tr class="memitem:af588fe1d0e4576b80864cada1a4c7990"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af588fe1d0e4576b80864cada1a4c7990"></a>
+std::map&lt; GlobalOrdinal, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_element_src_procs_map</b></td></tr>
 <tr class="memitem:a66749af5badf07855fe58b66183231d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66749af5badf07855fe58b66183231d2"></a>
 RCP_RendezvousMesh&#160;</td><td class="memItemRight" valign="bottom"><b>d_rendezvous_mesh</b></td></tr>
 <tr class="memitem:a383df31f1c094780c05e03f964d6a957"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a383df31f1c094780c05e03f964d6a957"></a>
@@ -207,7 +212,7 @@ class DataTransferKit::Rendezvous&lt; Mesh &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 18:00:29 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 31 2012 18:06:54 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

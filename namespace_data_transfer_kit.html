@@ -116,7 +116,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html">KDTree</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html" title="A KDTree data structure for local mesh searching in the rendezvous decomposition.">KDTree</a> data structure for local mesh searching in the rendezvous decomposition.  <a href="class_data_transfer_kit_1_1_k_d_tree.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for rebuilding mesh data after serialization.  <a href="class_data_transfer_kit_1_1_mesh_container.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for rebuilding mesh data in the rendezvous decomposition after serialization.  <a href="class_data_transfer_kit_1_1_mesh_container.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_traits_3_01_mesh_container_3_01_global_ordinal_01_4_01_4.html">MeshTraits&lt; MeshContainer&lt; GlobalOrdinal &gt; &gt;</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">MeshManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager object for mesh.  <a href="class_data_transfer_kit_1_1_mesh_manager.html#details">More...</a><br/></td></tr>
@@ -145,6 +145,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html">FieldTraits</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field traits definitions.  <a href="class_data_transfer_kit_1_1_field_traits.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits_3_01_mesh_traits_3_01_mesh_type_01_4_01_4.html">FieldTraits&lt; MeshTraits&lt; MeshType &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">SharedDomainMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map for shared domain problems.  <a href="class_data_transfer_kit_1_1_shared_domain_map.html#details">More...</a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -156,10 +158,11 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<b>DTK_QUADRILATERAL</b>, 
 <b>DTK_TETRAHEDRON</b>, 
-<b>DTK_HEXAHEDRON</b>, 
 <b>DTK_PYRAMID</b>, 
+<b>DTK_WEDGE</b>, 
 <br/>
-&#160;&#160;<b>DTK_ElementTopology_MAX</b> =  DTK_PYRAMID
+&#160;&#160;<b>DTK_HEXAHEDRON</b>, 
+<b>DTK_ElementTopology_MAX</b> =  DTK_HEXAHEDRON
 <br/>
  }</td></tr>
 <tr class="memdesc:a673ffda6737b51597f90991c5ba8d3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element topology enumerations. <br/></td></tr>
@@ -184,16 +187,55 @@ template&lt;class Mesh &gt; </td></tr>
 <tr class="memitem:a8de37ac15b6c99f87a73d43124e1f856"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8de37ac15b6c99f87a73d43124e1f856"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#a8de37ac15b6c99f87a73d43124e1f856">DataTransferKit_FieldVersion</a> ()</td></tr>
 <tr class="memdesc:a8de37ac15b6c99f87a73d43124e1f856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the fieldversion of <a class="el" href="namespace_data_transfer_kit.html" title="DTK_MeshTraits.hpp.">DataTransferKit</a>. <br/></td></tr>
+<tr class="memitem:a975b748d1544e9f219c52d29802c1dc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a975b748d1544e9f219c52d29802c1dc0"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#a975b748d1544e9f219c52d29802c1dc0">DataTransferKit_MapVersion</a> ()</td></tr>
+<tr class="memdesc:a975b748d1544e9f219c52d29802c1dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the version of <a class="el" href="namespace_data_transfer_kit.html" title="DTK_MeshTraits.hpp.">DataTransferKit</a>. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ac7f34a000a4a27fe9402e9bc8509baca"><td class="memItemLeft" align="right" valign="top">const moab::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#ac7f34a000a4a27fe9402e9bc8509baca">moab_topology_table</a> []</td></tr>
 <tr class="memdesc:ac7f34a000a4a27fe9402e9bc8509baca"><td class="mdescLeft">&#160;</td><td class="mdescRight">DTK to MOAB topology translation table.  <a href="#ac7f34a000a4a27fe9402e9bc8509baca"></a><br/></td></tr>
+<tr class="memitem:a656cc854f19e511cd7c245eac46df5a0"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#a656cc854f19e511cd7c245eac46df5a0">moab_error_table</a> []</td></tr>
+<tr class="memdesc:a656cc854f19e511cd7c245eac46df5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">MOAB ErrorCode table.  <a href="#a656cc854f19e511cd7c245eac46df5a0"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="_d_t_k___mesh_traits_8hpp_source.html">DTK_MeshTraits.hpp</a>. </p>
 <dl class="section author"><dt>Author:</dt><dd>Stuart R. Slattery Declaration of mesh traits. </dd></dl>
 </div><hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="a656cc854f19e511cd7c245eac46df5a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string DataTransferKit::moab_error_table[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"></div>
+<div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;MB_SUCCESS&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_INDEX_OUT_OF_RANGE&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_TYPE_OUT_OF_RANGE&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_MEMORY_ALLOCATION_FAILED&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_ENTITY_NOT_FOUND&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_MULTIPLE_ENTITIES_FOUND&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_TAG_NOT_FOUND&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_FILE_DOES_NOT_EXIST&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_FILE_WRITE_ERROR&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_NOT_IMPLEMENTED&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_ALREADY_ALLOCATED&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_VARIABLE_DATA_LENGTH&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_INVALID_SIZE&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_UNSUPPORTED_OPERATION&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_UNHANDLED_OPTION&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_STRUCTURED_MESH&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;MB_FAILURE&quot;</span></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>MOAB ErrorCode table. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac7f34a000a4a27fe9402e9bc8509baca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -205,13 +247,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"></div>
 <div class="line">{</div>
-<div class="line">    moab::MBVERTEX, </div>
-<div class="line">    moab::MBEDGE,   </div>
-<div class="line">    moab::MBTRI,    </div>
-<div class="line">    moab::MBQUAD,   </div>
-<div class="line">    moab::MBTET,    </div>
-<div class="line">    moab::MBHEX,    </div>
-<div class="line">    moab::MBPYRAMID </div>
+<div class="line">    moab::MBVERTEX,  </div>
+<div class="line">    moab::MBEDGE,    </div>
+<div class="line">    moab::MBTRI,     </div>
+<div class="line">    moab::MBQUAD,    </div>
+<div class="line">    moab::MBTET,     </div>
+<div class="line">    moab::MBPYRAMID, </div>
+<div class="line">    moab::MBPRISM,   </div>
+<div class="line">    moab::MBHEX      </div>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>DTK to MOAB topology translation table. </p>
@@ -221,7 +264,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 18:00:29 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 31 2012 18:06:53 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

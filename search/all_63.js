@@ -8,6 +8,7 @@ var searchData=
   ['commtools',['CommTools',['../class_data_transfer_kit_1_1_comm_tools.html',1,'DataTransferKit']]],
   ['commtools',['CommTools',['../class_data_transfer_kit_1_1_comm_tools.html#a0854ffd6e31b95e179b4430bfcaf95e5',1,'DataTransferKit::CommTools']]],
   ['commtype',['CommType',['../class_data_transfer_kit_1_1_comm_indexer.html#a4e399a59da4dd374431de18da1b87379',1,'DataTransferKit::CommIndexer::CommType()'],['../class_data_transfer_kit_1_1_comm_tools.html#a7a637fb19cccb603fdc2258f271c9d43',1,'DataTransferKit::CommTools::CommType()']]],
+  ['computepointordinals',['computePointOrdinals',['../class_data_transfer_kit_1_1_shared_domain_map.html#a1fe5f316f6533a55d07499b503d23ae7',1,'DataTransferKit::SharedDomainMap']]],
   ['connectivitybegin',['connectivityBegin',['../class_data_transfer_kit_1_1_mesh_container.html#a214ee9fc00705f31392819048df054f1',1,'DataTransferKit::MeshContainer::connectivityBegin()'],['../class_data_transfer_kit_1_1_mesh_traits.html#a46d1da9aff157e4486da389454236126',1,'DataTransferKit::MeshTraits::connectivityBegin()']]],
   ['connectivityend',['connectivityEnd',['../class_data_transfer_kit_1_1_mesh_container.html#aabc260c46f31d0b7b299f03e6222db81',1,'DataTransferKit::MeshContainer::connectivityEnd()'],['../class_data_transfer_kit_1_1_mesh_traits.html#af7104119cf92937433f5ca5dc2b51a98',1,'DataTransferKit::MeshTraits::connectivityEnd()']]],
   ['connectivitynonconstview',['connectivityNonConstView',['../class_data_transfer_kit_1_1_mesh_tools.html#a0b9baba8d0bd97f459900f17adb6b7dd',1,'DataTransferKit::MeshTools']]],

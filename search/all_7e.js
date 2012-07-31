@@ -14,5 +14,6 @@ var searchData=
   ['_7ercb',['~RCB',['../class_data_transfer_kit_1_1_r_c_b.html#a502fa022604ca4cc9857536e3fe061a7',1,'DataTransferKit::RCB']]],
   ['_7erendezvous',['~Rendezvous',['../class_data_transfer_kit_1_1_rendezvous.html#aff2b3ff8fa05e817c3aea0a1854ddc0c',1,'DataTransferKit::Rendezvous']]],
   ['_7erendezvousmesh',['~RendezvousMesh',['../class_data_transfer_kit_1_1_rendezvous_mesh.html#a4be67da3488f0311c08cd93795a47854',1,'DataTransferKit::RendezvousMesh']]],
+  ['_7eshareddomainmap',['~SharedDomainMap',['../class_data_transfer_kit_1_1_shared_domain_map.html#a846270d991e5d145958df281d06f0a4e',1,'DataTransferKit::SharedDomainMap']]],
   ['_7etopologytools',['~TopologyTools',['../class_data_transfer_kit_1_1_topology_tools.html#aefb62a15c2fb261494c22eb6481e4bb2',1,'DataTransferKit::TopologyTools']]]
 ];
