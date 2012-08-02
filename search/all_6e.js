@@ -11,5 +11,6 @@ var searchData=
   ['norm2',['norm2',['../class_data_transfer_kit_1_1_field_tools.html#ab442d06e798dd9e5ff93774e4bb19c23',1,'DataTransferKit::FieldTools']]],
   ['norminf',['normInf',['../class_data_transfer_kit_1_1_field_tools.html#a41606937808a7a8a0cc405c61f9d3ec2',1,'DataTransferKit::FieldTools']]],
   ['normq',['normQ',['../class_data_transfer_kit_1_1_field_tools.html#a9c68111cf653ad703fe57e51c37bf51c',1,'DataTransferKit::FieldTools']]],
-  ['numlinearnodes',['numLinearNodes',['../class_data_transfer_kit_1_1_topology_tools.html#acd47831d335959aee319e4fd6ceb82b5',1,'DataTransferKit::TopologyTools']]]
+  ['numelements',['numElements',['../class_data_transfer_kit_1_1_mesh_tools.html#ad66d40d6c6cdfc4296440ccf5283ac61',1,'DataTransferKit::MeshTools']]],
+  ['numnodes',['numNodes',['../class_data_transfer_kit_1_1_mesh_tools.html#adeae96db122a1e8c4ab627c011f87841',1,'DataTransferKit::MeshTools']]]
 ];

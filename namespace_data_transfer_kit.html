@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -99,16 +100,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map the process ids of a local communicator into a global communicator that encompasses it.  <a href="class_data_transfer_kit_1_1_comm_indexer.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html">CommTools</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stateless class with tools for operating on communicators.  <a href="class_data_transfer_kit_1_1_comm_tools.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_precondition_exception.html">PreconditionException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception class to be thrown when function preconditions are not met.  <a href="class_data_transfer_kit_1_1_precondition_exception.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_postcondition_exception.html">PostconditionException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception class to be thrown when function postconditions are not met.  <a href="class_data_transfer_kit_1_1_postcondition_exception.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_invariant_exception.html">InvariantException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception class to be thrown when a function alters an invariant.  <a href="class_data_transfer_kit_1_1_invariant_exception.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_exception.html">MeshException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for mesh errors.  <a href="class_data_transfer_kit_1_1_mesh_exception.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_point_not_found.html">PointNotFound</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception class to be thrown when a point is not found in a mesh during a search process.  <a href="class_data_transfer_kit_1_1_point_not_found.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_exception.html">Exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for DTK exceptions. This structure is heavily based on that in Nemesis developed by Tom Evans.  <a href="class_data_transfer_kit_1_1_exception.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis-aligned Cartesian bounding box container.  <a href="class_data_transfer_kit_1_1_bounding_box.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_cell_topology_factory.html">CellTopologyFactory</a></td></tr>
@@ -169,15 +162,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad8a8614f640da86c8facee1b3911e136"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a8614f640da86c8facee1b3911e136"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#ad8a8614f640da86c8facee1b3911e136">testPrecondition</a> (bool throw_if_false, const std::string &amp;msg)</td></tr>
-<tr class="memdesc:ad8a8614f640da86c8facee1b3911e136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for a precondition exception. <br/></td></tr>
-<tr class="memitem:ada4a9516b9ca9d2e8787753a7237a1c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada4a9516b9ca9d2e8787753a7237a1c0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#ada4a9516b9ca9d2e8787753a7237a1c0">testPostcondition</a> (bool throw_if_false, const std::string &amp;msg)</td></tr>
-<tr class="memdesc:ada4a9516b9ca9d2e8787753a7237a1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for a postcondition exception. <br/></td></tr>
-<tr class="memitem:a88321e9a3c672854041e4b399a1c423d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88321e9a3c672854041e4b399a1c423d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#a88321e9a3c672854041e4b399a1c423d">testInvariant</a> (bool throw_if_false, const std::string &amp;msg)</td></tr>
-<tr class="memdesc:a88321e9a3c672854041e4b399a1c423d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for a Invariant exception. <br/></td></tr>
+<tr class="memitem:a8b5c3c4037fc5e6468622a43e95c4dc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b5c3c4037fc5e6468622a43e95c4dc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>throwException</b> (const std::string &amp;cond, const std::string &amp;file, const int line)</td></tr>
 <tr class="memitem:ad0e3e47c3c2f0aee90100ba832d3512b"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad0e3e47c3c2f0aee90100ba832d3512b"></a>
 template&lt;class Mesh &gt; </td></tr>
 <tr class="memitem:ad0e3e47c3c2f0aee90100ba832d3512b"><td class="memTemplItemLeft" align="right" valign="top">Teuchos::RCP&lt; <a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">RendezvousMesh</a><br class="typebreak"/>
@@ -195,47 +181,11 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 Variables</h2></td></tr>
 <tr class="memitem:ac7f34a000a4a27fe9402e9bc8509baca"><td class="memItemLeft" align="right" valign="top">const moab::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#ac7f34a000a4a27fe9402e9bc8509baca">moab_topology_table</a> []</td></tr>
 <tr class="memdesc:ac7f34a000a4a27fe9402e9bc8509baca"><td class="mdescLeft">&#160;</td><td class="mdescRight">DTK to MOAB topology translation table.  <a href="#ac7f34a000a4a27fe9402e9bc8509baca"></a><br/></td></tr>
-<tr class="memitem:a656cc854f19e511cd7c245eac46df5a0"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_data_transfer_kit.html#a656cc854f19e511cd7c245eac46df5a0">moab_error_table</a> []</td></tr>
-<tr class="memdesc:a656cc854f19e511cd7c245eac46df5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">MOAB ErrorCode table.  <a href="#a656cc854f19e511cd7c245eac46df5a0"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="_d_t_k___mesh_traits_8hpp_source.html">DTK_MeshTraits.hpp</a>. </p>
 <dl class="section author"><dt>Author:</dt><dd>Stuart R. Slattery Declaration of mesh traits. </dd></dl>
 </div><hr/><h2>Variable Documentation</h2>
-<a class="anchor" id="a656cc854f19e511cd7c245eac46df5a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string DataTransferKit::moab_error_table[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"></div>
-<div class="line">{</div>
-<div class="line">    <span class="stringliteral">&quot;MB_SUCCESS&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_INDEX_OUT_OF_RANGE&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_TYPE_OUT_OF_RANGE&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_MEMORY_ALLOCATION_FAILED&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_ENTITY_NOT_FOUND&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_MULTIPLE_ENTITIES_FOUND&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_TAG_NOT_FOUND&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_FILE_DOES_NOT_EXIST&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_FILE_WRITE_ERROR&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_NOT_IMPLEMENTED&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_ALREADY_ALLOCATED&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_VARIABLE_DATA_LENGTH&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_INVALID_SIZE&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_UNSUPPORTED_OPERATION&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_UNHANDLED_OPTION&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_STRUCTURED_MESH&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;MB_FAILURE&quot;</span></div>
-<div class="line">}</div>
-</div><!-- fragment -->
-<p>MOAB ErrorCode table. </p>
-
-</div>
-</div>
 <a class="anchor" id="ac7f34a000a4a27fe9402e9bc8509baca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +214,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 31 2012 18:06:53 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 2 2012 14:51:00 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -62,7 +63,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -167,9 +167,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a28ea26c7544f13fa911f400e09539ae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28ea26c7544f13fa911f400e09539ae3"></a>
 const RCP_RendezvousMesh &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a28ea26c7544f13fa911f400e09539ae3">getMesh</a> () const </td></tr>
 <tr class="memdesc:a28ea26c7544f13fa911f400e09539ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rendezvous mesh. <br/></td></tr>
-<tr class="memitem:aff3e58bf04b88546c130fd608839119c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff3e58bf04b88546c130fd608839119c"></a>
-const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#aff3e58bf04b88546c130fd608839119c">getBox</a> () const </td></tr>
-<tr class="memdesc:aff3e58bf04b88546c130fd608839119c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bounding box. <br/></td></tr>
+<tr class="memitem:aff3e58bf04b88546c130fd608839119c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#aff3e58bf04b88546c130fd608839119c">getBox</a> () const </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -178,7 +176,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ae510bb3e9c42643170fe4ffd31b842f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the mesh nodes and elements that are in a bounding box. <br/></td></tr>
 <tr class="memitem:a38990466e07c60b0ad52b15a80dd68e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38990466e07c60b0ad52b15a80dd68e5"></a>
 <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">MeshManager</a>&lt; <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainerType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a38990466e07c60b0ad52b15a80dd68e5">sendMeshToRendezvous</a> (const RCP_MeshManager &amp;mesh_manager)</td></tr>
-<tr class="memdesc:a38990466e07c60b0ad52b15a80dd68e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the mesh to the rendezvous decomposition and build the concrete mesh blocks. <br/></td></tr>
+<tr class="memdesc:a38990466e07c60b0ad52b15a80dd68e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the mesh to the rendezvous decomposition and rebuild the mesh blocks. <br/></td></tr>
 <tr class="memitem:a5ab0cb8207f6470a3670ac3934349fca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ab0cb8207f6470a3670ac3934349fca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html#a5ab0cb8207f6470a3670ac3934349fca">setupImportCommunication</a> (const Mesh &amp;mesh, const Teuchos::ArrayView&lt; short int &gt; &amp;elements_in_box, Teuchos::Array&lt; GlobalOrdinal &gt; &amp;rendezvous_nodes, Teuchos::Array&lt; GlobalOrdinal &gt; &amp;rendezvous_elements)</td></tr>
 <tr class="memdesc:a5ab0cb8207f6470a3670ac3934349fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the import communication patterns for moving mesh from the primary decomposition to the rendezvous decomposition. <br/></td></tr>
@@ -205,14 +203,41 @@ RCP_KDTree&#160;</td><td class="memItemRight" valign="bottom"><b>d_kdtree</b></t
 class DataTransferKit::Rendezvous&lt; Mesh &gt;</h3>
 
 <p><a class="el" href="class_data_transfer_kit_1_1_rendezvous.html" title="Rendezvous decomposition generator.">Rendezvous</a> decomposition generator. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aff3e58bf04b88546c130fd608839119c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a>&amp; <a class="el" href="class_data_transfer_kit_1_1_rendezvous.html">DataTransferKit::Rendezvous</a>&lt; Mesh &gt;::getBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the bounding box over which the rendezvous decomposition was generated. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>mesh/src/<a class="el" href="_d_t_k___rendezvous_8hpp_source.html">DTK_Rendezvous.hpp</a></li>
 <li>mesh/src/<a class="el" href="_d_t_k___rendezvous__def_8hpp_source.html">DTK_Rendezvous_def.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 31 2012 18:06:54 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 2 2012 14:51:00 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

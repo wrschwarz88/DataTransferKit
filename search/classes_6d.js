@@ -1,7 +1,6 @@
 var searchData=
 [
   ['meshcontainer',['MeshContainer',['../class_data_transfer_kit_1_1_mesh_container.html',1,'DataTransferKit']]],
-  ['meshexception',['MeshException',['../class_data_transfer_kit_1_1_mesh_exception.html',1,'DataTransferKit']]],
   ['meshmanager',['MeshManager',['../class_data_transfer_kit_1_1_mesh_manager.html',1,'DataTransferKit']]],
   ['meshtools',['MeshTools',['../class_data_transfer_kit_1_1_mesh_tools.html',1,'DataTransferKit']]],
   ['meshtraits',['MeshTraits',['../class_data_transfer_kit_1_1_mesh_traits.html',1,'DataTransferKit']]],

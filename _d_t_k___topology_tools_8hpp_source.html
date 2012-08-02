@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -145,31 +146,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_topology_tools.html#aefb62a15c2fb261494c22eb6481e4bb2">   67</a></span>&#160;    <a class="code" href="class_data_transfer_kit_1_1_topology_tools.html#aefb62a15c2fb261494c22eb6481e4bb2" title="Destructor.">~TopologyTools</a>()</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    { <span class="comment">/* ... */</span> }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Get the number of linear nodes for a particular iMesh topology.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_data_transfer_kit_1_1_topology_tools.html#acd47831d335959aee319e4fd6ceb82b5" title="Get the number of linear nodes for a particular iMesh topology.">numLinearNodes</a>( <span class="keyword">const</span> moab::EntityType element_topology );</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Reorder a list of element nodes from MBCN ordering to Shards ordering.</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_data_transfer_kit_1_1_topology_tools.html#acb71e7ffe3e9dd055687a949c6ffe9c3" title="Reorder a list of element nodes from MBCN ordering to Shards ordering.">MBCN2Shards</a>( std::vector&lt;moab::EntityHandle&gt;&amp; element_nodes, </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">int</span> num_nodes,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                             <span class="keyword">const</span> moab::EntityType entity_topology );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Point in element query.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_data_transfer_kit_1_1_topology_tools.html#a420a96829389b278f5026590e17a9f75" title="Point in element query.">pointInElement</a>( Teuchos::Array&lt;double&gt; coords,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                <span class="keyword">const</span> moab::EntityHandle element,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                <span class="keyword">const</span> Teuchos::RCP&lt;moab::Interface&gt;&amp; moab );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// end namepsace DataTransferKit</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Point in element query.</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_data_transfer_kit_1_1_topology_tools.html#a420a96829389b278f5026590e17a9f75" title="Point in element query.">pointInElement</a>( Teuchos::Array&lt;double&gt; coords,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                <span class="keyword">const</span> moab::EntityHandle element,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                <span class="keyword">const</span> Teuchos::RCP&lt;moab::Interface&gt;&amp; moab );</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// end namepsace DataTransferKit</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // end DTK_TOPOLOGYTOOLS_HPP</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// end DTK_TopologyTools.hpp</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // end DTK_TOPOLOGYTOOLS_HPP</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// end DTK_TopologyTools.hpp</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 31 2012 18:06:53 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 2 2012 14:51:00 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

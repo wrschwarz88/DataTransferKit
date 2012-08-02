@@ -4,6 +4,7 @@ var searchData=
   ['_7ecelltopologyfactory',['~CellTopologyFactory',['../class_data_transfer_kit_1_1_cell_topology_factory.html#a5d939e93f53857dc993f745669dacd5f',1,'DataTransferKit::CellTopologyFactory']]],
   ['_7ecommindexer',['~CommIndexer',['../class_data_transfer_kit_1_1_comm_indexer.html#adc5e104bb620eb3b2b9a0ef82afe25a3',1,'DataTransferKit::CommIndexer']]],
   ['_7ecommtools',['~CommTools',['../class_data_transfer_kit_1_1_comm_tools.html#a65f1dbceb4f937f68511a7e35ad1898c',1,'DataTransferKit::CommTools']]],
+  ['_7eexception',['~Exception',['../class_data_transfer_kit_1_1_exception.html#a5e15437b2785b4fbebc4f6f58eaf49af',1,'DataTransferKit::Exception']]],
   ['_7efieldevaluator',['~FieldEvaluator',['../class_data_transfer_kit_1_1_field_evaluator.html#a1afb785bed7ce2a2e782ab3cc7f0f923',1,'DataTransferKit::FieldEvaluator']]],
   ['_7efieldmanager',['~FieldManager',['../class_data_transfer_kit_1_1_field_manager.html#a29690f35ba4fd9fc2c53f9be0938727d',1,'DataTransferKit::FieldManager']]],
   ['_7efieldtools',['~FieldTools',['../class_data_transfer_kit_1_1_field_tools.html#a35337fe9b0b8d6ec55aa940737458e60',1,'DataTransferKit::FieldTools']]],

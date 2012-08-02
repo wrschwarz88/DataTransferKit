@@ -1,11 +1,11 @@
 var searchData=
 [
+  ['generate_5foutput',['generate_output',['../class_data_transfer_kit_1_1_exception.html#af7ad0f92ec8e516c40db5dbd494ab91c',1,'DataTransferKit::Exception']]],
   ['getactiveelements',['getActiveElements',['../class_data_transfer_kit_1_1_mesh_manager.html#abb7b9b6a76d0fffbb68ad10b17bb1619',1,'DataTransferKit::MeshManager']]],
   ['getactivenodes',['getActiveNodes',['../class_data_transfer_kit_1_1_mesh_manager.html#aa5af9588cc3b4ff76957ff72159d9e14',1,'DataTransferKit::MeshManager']]],
   ['getblock',['getBlock',['../class_data_transfer_kit_1_1_mesh_manager.html#a1f95cfeae966321a5a9cae4ce21b49bd',1,'DataTransferKit::MeshManager']]],
   ['getbox',['getBox',['../class_data_transfer_kit_1_1_rendezvous.html#aff3e58bf04b88546c130fd608839119c',1,'DataTransferKit::Rendezvous']]],
   ['getdestinationproc',['getDestinationProc',['../class_data_transfer_kit_1_1_r_c_b.html#a004463edac8731efceb967d8452ef500',1,'DataTransferKit::RCB']]],
-  ['getelements',['getElements',['../class_data_transfer_kit_1_1_rendezvous_mesh.html#ac6e16bccbba6cab9f8023e01b39c614c',1,'DataTransferKit::RendezvousMesh']]],
   ['getelementtopology',['getElementTopology',['../class_data_transfer_kit_1_1_mesh_container.html#a2a928b4a9780c8499c4c8d6b9d3ca96b',1,'DataTransferKit::MeshContainer']]],
   ['getexportglobalids',['getExportGlobalIds',['../class_data_transfer_kit_1_1_r_c_b.html#afb1a3ba0202a817810fa9db24e770eac',1,'DataTransferKit::RCB']]],
   ['getexportlocalids',['getExportLocalIds',['../class_data_transfer_kit_1_1_r_c_b.html#a7db2e7c7e56054c05298eca9c78eaa8c',1,'DataTransferKit::RCB']]],
