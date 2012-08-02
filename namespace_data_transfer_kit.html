@@ -96,12 +96,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_assertion.html">Assertion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for DTK assertions. This structure is heavily based on that in Nemesis developed by Tom Evans. We derive from std::logic_error here as the DBC checks that utilize this class are meant to find errors that can be prevented before runtime.  <a href="class_data_transfer_kit_1_1_assertion.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html">CommIndexer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map the process ids of a local communicator into a global communicator that encompasses it.  <a href="class_data_transfer_kit_1_1_comm_indexer.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html">CommTools</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stateless class with tools for operating on communicators.  <a href="class_data_transfer_kit_1_1_comm_tools.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_exception.html">Exception</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for DTK exceptions. This structure is heavily based on that in Nemesis developed by Tom Evans.  <a href="class_data_transfer_kit_1_1_exception.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis-aligned Cartesian bounding box container.  <a href="class_data_transfer_kit_1_1_bounding_box.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_cell_topology_factory.html">CellTopologyFactory</a></td></tr>
@@ -162,8 +162,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8b5c3c4037fc5e6468622a43e95c4dc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b5c3c4037fc5e6468622a43e95c4dc2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>throwException</b> (const std::string &amp;cond, const std::string &amp;file, const int line)</td></tr>
+<tr class="memitem:a9ebcbd941a9d93a06e706782a21b2454"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ebcbd941a9d93a06e706782a21b2454"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>throwAssertion</b> (const std::string &amp;cond, const std::string &amp;file, const int line)</td></tr>
 <tr class="memitem:ad0e3e47c3c2f0aee90100ba832d3512b"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad0e3e47c3c2f0aee90100ba832d3512b"></a>
 template&lt;class Mesh &gt; </td></tr>
 <tr class="memitem:ad0e3e47c3c2f0aee90100ba832d3512b"><td class="memTemplItemLeft" align="right" valign="top">Teuchos::RCP&lt; <a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">RendezvousMesh</a><br class="typebreak"/>
@@ -214,7 +214,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 2 2012 14:51:00 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 2 2012 16:05:05 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
