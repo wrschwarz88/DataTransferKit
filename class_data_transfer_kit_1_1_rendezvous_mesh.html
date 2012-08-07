@@ -117,16 +117,17 @@ GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HandleM
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a140174746eec6aa83b9eddf6df342cbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a140174746eec6aa83b9eddf6df342cbf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html#a140174746eec6aa83b9eddf6df342cbf">RendezvousMesh</a> (const RCP_Moab &amp;moab, const HandleMap &amp;handle_map)</td></tr>
-<tr class="memdesc:a140174746eec6aa83b9eddf6df342cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:a140174746eec6aa83b9eddf6df342cbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html#a140174746eec6aa83b9eddf6df342cbf">RendezvousMesh</a> (const RCP_Moab &amp;moab, const HandleMap &amp;handle_map)</td></tr>
+<tr class="memdesc:a140174746eec6aa83b9eddf6df342cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a140174746eec6aa83b9eddf6df342cbf"></a><br/></td></tr>
 <tr class="memitem:a4be67da3488f0311c08cd93795a47854"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4be67da3488f0311c08cd93795a47854"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html#a4be67da3488f0311c08cd93795a47854">~RendezvousMesh</a> ()</td></tr>
 <tr class="memdesc:a4be67da3488f0311c08cd93795a47854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
 <tr class="memitem:a480b13e11ea9b9dc6991d4730faa8026"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a480b13e11ea9b9dc6991d4730faa8026"></a>
 const RCP_Moab &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html#a480b13e11ea9b9dc6991d4730faa8026">getMoab</a> () const </td></tr>
 <tr class="memdesc:a480b13e11ea9b9dc6991d4730faa8026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Moab interface. <br/></td></tr>
-<tr class="memitem:a6ace9b1760fce891ee9a66e9eaf0041a"><td class="memItemLeft" align="right" valign="top">GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html#a6ace9b1760fce891ee9a66e9eaf0041a">getNativeOrdinal</a> (const moab::EntityHandle &amp;moab_handle) const </td></tr>
+<tr class="memitem:a6ace9b1760fce891ee9a66e9eaf0041a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ace9b1760fce891ee9a66e9eaf0041a"></a>
+GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html#a6ace9b1760fce891ee9a66e9eaf0041a">getNativeOrdinal</a> (const moab::EntityHandle &amp;moab_handle) const </td></tr>
+<tr class="memdesc:a6ace9b1760fce891ee9a66e9eaf0041a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a moab element handle return the corresponding native element. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -142,31 +143,42 @@ HandleMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 class DataTransferKit::RendezvousMesh&lt; GlobalOrdinal &gt;</h3>
 
 <p>Concrete mesh data structure for building mesh in the rendezvous decomposition. </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a6ace9b1760fce891ee9a66e9eaf0041a"></a>
+<p>A <a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html" title="Concrete mesh data structure for building mesh in the rendezvous decomposition.">RendezvousMesh</a> contains and provides access to the Moab database that is generated in the rendezvous decomposition. It also maintains the relationship between the Moab database and the client mesh. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a140174746eec6aa83b9eddf6df342cbf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename GlobalOrdinal &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GlobalOrdinal <a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">DataTransferKit::RendezvousMesh</a>&lt; GlobalOrdinal &gt;::getNativeOrdinal </td>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">DataTransferKit::RendezvousMesh</a>&lt; GlobalOrdinal &gt;::<a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html">RendezvousMesh</a> </td>
           <td>(</td>
-          <td class="paramtype">const moab::EntityHandle &amp;&#160;</td>
-          <td class="paramname"><em>moab_handle</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const RCP_Moab &amp;&#160;</td>
+          <td class="paramname"><em>moab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const HandleMap &amp;&#160;</td>
+          <td class="paramname"><em>handle_map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Given a moab element handle return the corresponding native element global ordinal. </p>
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moab</td><td>The Moab interface to build the <a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html" title="Concrete mesh data structure for building mesh in the rendezvous decomposition.">RendezvousMesh</a> with.</td></tr>
+    <tr><td class="paramname">handle_map</td><td>A map relating the client element global ordinals to the Moab element handles. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -177,7 +189,7 @@ template&lt;typename GlobalOrdinal &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Tools based on concrete mesh topologies.  
+<p>A stateless class with tools for operating on mesh topologies.  
  <a href="class_data_transfer_kit_1_1_topology_tools.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_d_t_k___topology_tools_8hpp_source.html">DTK_TopologyTools.hpp</a>&gt;</code></p>
@@ -112,20 +112,71 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a420a96829389b278f5026590e17a9f75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a420a96829389b278f5026590e17a9f75"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_topology_tools.html#a420a96829389b278f5026590e17a9f75">pointInElement</a> (Teuchos::Array&lt; double &gt; coords, const moab::EntityHandle element, const Teuchos::RCP&lt; moab::Interface &gt; &amp;moab)</td></tr>
-<tr class="memdesc:a420a96829389b278f5026590e17a9f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point in element query. <br/></td></tr>
+<tr class="memitem:a420a96829389b278f5026590e17a9f75"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_topology_tools.html#a420a96829389b278f5026590e17a9f75">pointInElement</a> (Teuchos::Array&lt; double &gt; coords, const moab::EntityHandle element, const Teuchos::RCP&lt; moab::Interface &gt; &amp;moab)</td></tr>
+<tr class="memdesc:a420a96829389b278f5026590e17a9f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point in element query.  <a href="#a420a96829389b278f5026590e17a9f75"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Tools based on concrete mesh topologies. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>A stateless class with tools for operating on mesh topologies. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a420a96829389b278f5026590e17a9f75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataTransferKit::TopologyTools::pointInElement </td>
+          <td>(</td>
+          <td class="paramtype">Teuchos::Array&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const moab::EntityHandle&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Teuchos::RCP&lt; moab::Interface &gt; &amp;&#160;</td>
+          <td class="paramname"><em>moab</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Point in element query. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>The coords to search the element with. The coordinates must have a dimension less than or equal to 3.</td></tr>
+    <tr><td class="paramname">element</td><td>The Moab mesh element to check for point inclusion.</td></tr>
+    <tr><td class="paramname">moab</td><td>The Moab interface owning the element.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Return true if the point is in the element, false if not. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___topology_tools_8hpp_source.html">DTK_TopologyTools.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___topology_tools_8cpp.html">DTK_TopologyTools.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

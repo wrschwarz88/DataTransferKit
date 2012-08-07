@@ -106,7 +106,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:ad46c110a4b132f8b756f6ccf25ce7190"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad46c110a4b132f8b756f6ccf25ce7190"></a>
 typedef FieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#ad46c110a4b132f8b756f6ccf25ce7190">field_type</a></td></tr>
 <tr class="memdesc:ad46c110a4b132f8b756f6ccf25ce7190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for field type. <br/></td></tr>
-<tr class="memitem:a94ca7ff6f5b1368829386124a2ce6512"><td class="memItemLeft" align="right" valign="top">typedef FieldType::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a94ca7ff6f5b1368829386124a2ce6512">value_type</a></td></tr>
+<tr class="memitem:a94ca7ff6f5b1368829386124a2ce6512"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94ca7ff6f5b1368829386124a2ce6512"></a>
+typedef FieldType::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a94ca7ff6f5b1368829386124a2ce6512">value_type</a></td></tr>
+<tr class="memdesc:a94ca7ff6f5b1368829386124a2ce6512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for value type. <br/></td></tr>
 <tr class="memitem:a1aef979c10c101466a203223658b108c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1aef979c10c101466a203223658b108c"></a>
 typedef FieldType::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a1aef979c10c101466a203223658b108c">size_type</a></td></tr>
 <tr class="memdesc:a1aef979c10c101466a203223658b108c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for size type. <br/></td></tr>
@@ -114,7 +116,7 @@ typedef FieldType::size_type&#160;</td><td class="memItemRight" valign="bottom">
 typedef std::iterator<br class="typebreak"/>
 &lt; std::random_access_iterator_tag, <br class="typebreak"/>
 <a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a94ca7ff6f5b1368829386124a2ce6512">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a6da08b13856002a8b1b24d171679eaac">iterator</a></td></tr>
-<tr class="memdesc:a6da08b13856002a8b1b24d171679eaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for field value random access iterators. <br/></td></tr>
+<tr class="memdesc:a6da08b13856002a8b1b24d171679eaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedefs for field value random access iterators. <br/></td></tr>
 <tr class="memitem:a63a9db120bfb3ebc4d6172d92835dce3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63a9db120bfb3ebc4d6172d92835dce3"></a>
 typedef std::iterator<br class="typebreak"/>
 &lt; std::random_access_iterator_tag, <br class="typebreak"/>
@@ -122,9 +124,9 @@ const <a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a94ca7ff
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ac015a1314c37b9b205a0601030c27b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ac015a1314c37b9b205a0601030c27b"></a>
-static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a4ac015a1314c37b9b205a0601030c27b">dim</a> (const FieldType &amp;field)</td></tr>
-<tr class="memdesc:a4ac015a1314c37b9b205a0601030c27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dimensionality of the field ( i.e. 1 for a scalar, 3 for a 3 vector, 9 for a 3x3 tensor, etc. ). <br/></td></tr>
+<tr class="memitem:ac8866ae00b1b54b50087b70e9c976958"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8866ae00b1b54b50087b70e9c976958"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#ac8866ae00b1b54b50087b70e9c976958">dim</a> (const FieldType &amp;field)</td></tr>
+<tr class="memdesc:ac8866ae00b1b54b50087b70e9c976958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dimensionality of the field ( i.e. 1 for a scalar, 3 for a 3 vector, 9 for a 3x3 tensor, etc. ). <br/></td></tr>
 <tr class="memitem:adf7f94e45817ca3ded345cb33e030354"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf7f94e45817ca3ded345cb33e030354"></a>
 static <a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a1aef979c10c101466a203223658b108c">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#adf7f94e45817ca3ded345cb33e030354">size</a> (const FieldType &amp;field)</td></tr>
 <tr class="memdesc:adf7f94e45817ca3ded345cb33e030354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of elements in the field. <br/></td></tr>
@@ -134,13 +136,13 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a4084617cff127fba72fde32aa7b03072"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4084617cff127fba72fde32aa7b03072"></a>
 static <a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a6da08b13856002a8b1b24d171679eaac">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a4084617cff127fba72fde32aa7b03072">begin</a> (FieldType &amp;field)</td></tr>
-<tr class="memdesc:a4084617cff127fba72fde32aa7b03072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the iterator to the beginning of the field. The data is required to be blocked by dimensions ( d0, d1, d2, ... , dM ) as ( d0_0, d0_1, ... , d0_N, d1_0, d1_1, ... , d1_N, ... , dM_N ) <br/></td></tr>
+<tr class="memdesc:a4084617cff127fba72fde32aa7b03072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the iterator to the beginning of the field. The data is required to be blocked by dimensions. <br/></td></tr>
 <tr class="memitem:af86b1b65f6694bcbe8a84962e37873e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af86b1b65f6694bcbe8a84962e37873e9"></a>
 static const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> (const FieldType &amp;field)</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aff51abf28187dfa45d15d787d0a82081"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff51abf28187dfa45d15d787d0a82081"></a>
 static <a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a6da08b13856002a8b1b24d171679eaac">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_traits.html#aff51abf28187dfa45d15d787d0a82081">end</a> (FieldType &amp;field)</td></tr>
-<tr class="memdesc:aff51abf28187dfa45d15d787d0a82081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the iterator to the end of the field. The data is required to be blocked by dimensions ( d0, d1, d2, ... , dM ) as ( d0_0, d0_1, ... , d0_N, d1_0, d1_1, ... , d1_N, ... , dM_N ) <br/></td></tr>
+<tr class="memdesc:aff51abf28187dfa45d15d787d0a82081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the iterator to the end of the field. The data is required to be blocked by dimensions. <br/></td></tr>
 <tr class="memitem:af5ac288f126c24a2ae914e66dc4d3f24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5ac288f126c24a2ae914e66dc4d3f24"></a>
 static const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> (const FieldType &amp;field)</td></tr>
 </table>
@@ -149,32 +151,17 @@ static const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end<
 class DataTransferKit::FieldTraits&lt; FieldType &gt;</h3>
 
 <p>Field traits definitions. </p>
-<p><a class="el" href="class_data_transfer_kit_1_1_field_traits.html" title="Field traits definitions.">FieldTraits</a> adapter for mesh coordinates.</p>
-<p>These traits correlate to the basic concept of a field within DTK. A field can contain anything in an array, but it must store its objects in contiguous memory that is blocked by dimension.</p>
-<p>This allows the coordinate information stored in a block of mesh to be accessed as a field with field traits. Other mesh information is not available through this interface. The mesh object must have mesh traits. </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a94ca7ff6f5b1368829386124a2ce6512"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename FieldType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef FieldType::value_type <a class="el" href="class_data_transfer_kit_1_1_field_traits.html">DataTransferKit::FieldTraits</a>&lt; FieldType &gt;::<a class="el" href="class_data_transfer_kit_1_1_field_traits.html#a94ca7ff6f5b1368829386124a2ce6512">value_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Typedef for value type. The field type must implement Teuchos::ScalarTraits. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<p>In the most general sense, a field refers to the degrees of freedom computed by a physics code or the responses derived from those degrees of freedom that have been discretized across the domain. The field is implicitly bound to the geometric domain through the degrees of freedom and their association with a mesh or other geometric components. In a physics simulation, examples of degrees of freedom include pressure and velocity distributions and examples of computed reponses include heat flux or reaction rates. In order to access DTK field services, a subset of information needed to describe the field is required. A field has a dimension of arbitrary size. As examples, for scalar fields this dimension is 1, for 3-vectors (such as the velocity example above in a 3 dimensional computation) the dimension is 3, and for a 3x3 tensor the dimension is 9. All local instances of the field must have the same dimension. A field can have an arbitrary number of local degrees of freedom and this size can differ from local domain to local domain. No knowledge of the global field decomposition is required, however, it must exist on a single communicator.</p>
+<p>These traits correlate to the basic concept of a field within DTK. A field can contain anything in an array, but it must store its objects in contiguous memory that is blocked by dimension and accessible by random access iterators. The blocked data storage is arranged as follows:</p>
+<p>The data will have D dimensions <img class="formulaInl" alt="$ \Big[ f_0, f_1, f_2, ..., f_D \big] $" src="form_25.png"/></p>
+<p>Each local instance of the field will have N elements in each dimension, blocked such that the data layout is: <img class="formulaInl" alt="$ \Big[ f^0_0, f^1_0, f^2_0, ..., f^N_0, f^0_1, f^1_1, f^2_1, ..., f^N_1, ... , f^0_D, f^1_D, f^2_D, ..., f^N_D \Big] $" src="form_24.png"/> </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="_d_t_k___field_traits_8hpp_source.html">DTK_FieldTraits.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

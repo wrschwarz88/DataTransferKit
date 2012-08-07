@@ -117,24 +117,21 @@ typedef Teuchos::RCP<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae332ff22556dbba06d9cd9ab3cddba7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae332ff22556dbba06d9cd9ab3cddba7c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#ae332ff22556dbba06d9cd9ab3cddba7c">KDTree</a> (const RCP_RendezvousMesh &amp;mesh, const int dim)</td></tr>
-<tr class="memdesc:ae332ff22556dbba06d9cd9ab3cddba7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:ae332ff22556dbba06d9cd9ab3cddba7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#ae332ff22556dbba06d9cd9ab3cddba7c">KDTree</a> (const RCP_RendezvousMesh &amp;mesh, const int dim)</td></tr>
+<tr class="memdesc:ae332ff22556dbba06d9cd9ab3cddba7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ae332ff22556dbba06d9cd9ab3cddba7c"></a><br/></td></tr>
 <tr class="memitem:a0aa70fc86bda4098377b60de28fe6738"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa70fc86bda4098377b60de28fe6738"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#a0aa70fc86bda4098377b60de28fe6738">~KDTree</a> ()</td></tr>
 <tr class="memdesc:a0aa70fc86bda4098377b60de28fe6738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
 <tr class="memitem:ae36e8df6a23e897a81396485de668194"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36e8df6a23e897a81396485de668194"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#ae36e8df6a23e897a81396485de668194">build</a> ()</td></tr>
 <tr class="memdesc:ae36e8df6a23e897a81396485de668194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the kD-tree. <br/></td></tr>
-<tr class="memitem:aaa915b38f3aff5fe6ddf0038ccad4b0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa915b38f3aff5fe6ddf0038ccad4b0a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#aaa915b38f3aff5fe6ddf0038ccad4b0a">findPoint</a> (const Teuchos::Array&lt; double &gt; &amp;coords, GlobalOrdinal &amp;element)</td></tr>
-<tr class="memdesc:aaa915b38f3aff5fe6ddf0038ccad4b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a point in the tree. Return false if we didn't find it in the tree. <br/></td></tr>
+<tr class="memitem:aaa915b38f3aff5fe6ddf0038ccad4b0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#aaa915b38f3aff5fe6ddf0038ccad4b0a">findPoint</a> (const Teuchos::Array&lt; double &gt; &amp;coords, GlobalOrdinal &amp;element)</td></tr>
+<tr class="memdesc:aaa915b38f3aff5fe6ddf0038ccad4b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a point in the tree. Return false if we didn't find it in the tree.  <a href="#aaa915b38f3aff5fe6ddf0038ccad4b0a"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a3b0a39081c13ddd51a623bd72fa60387"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b0a39081c13ddd51a623bd72fa60387"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#a3b0a39081c13ddd51a623bd72fa60387">findPointInLeaf</a> (const Teuchos::Array&lt; double &gt; &amp;coords, const moab::EntityHandle leaf, moab::EntityHandle &amp;element)</td></tr>
-<tr class="memdesc:a3b0a39081c13ddd51a623bd72fa60387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a point in a leaf. Return if the point was not found. <br/></td></tr>
+<tr class="memitem:a3b0a39081c13ddd51a623bd72fa60387"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html#a3b0a39081c13ddd51a623bd72fa60387">findPointInLeaf</a> (const Teuchos::Array&lt; double &gt; &amp;coords, const moab::EntityHandle leaf, moab::EntityHandle &amp;element)</td></tr>
+<tr class="memdesc:a3b0a39081c13ddd51a623bd72fa60387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a point in a leaf by doing point-in-volume on all elements in the leaf. Return if the point was not found.  <a href="#a3b0a39081c13ddd51a623bd72fa60387"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -152,14 +149,145 @@ moab::EntityHandle&#160;</td><td class="memItemRight" valign="bottom"><b>d_root<
 class DataTransferKit::KDTree&lt; GlobalOrdinal &gt;</h3>
 
 <p>A <a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html" title="A KDTree data structure for local mesh searching in the rendezvous decomposition.">KDTree</a> data structure for local mesh searching in the rendezvous decomposition. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<p>A kD-tree provides n*log(n) construction time and space complexity with log(n) search time complexity. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae332ff22556dbba06d9cd9ab3cddba7c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GlobalOrdinal &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html">DataTransferKit::KDTree</a>&lt; GlobalOrdinal &gt;::<a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html">KDTree</a> </td>
+          <td>(</td>
+          <td class="paramtype">const RCP_RendezvousMesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>dim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The <a class="el" href="class_data_transfer_kit_1_1_rendezvous_mesh.html" title="Concrete mesh data structure for building mesh in the rendezvous decomposition.">RendezvousMesh</a> over which to build the kD-tree.</td></tr>
+    <tr><td class="paramname">dim</td><td>The dimension of the kD-tree. This should be the same as the dimension mesh. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aaa915b38f3aff5fe6ddf0038ccad4b0a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GlobalOrdinal &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html">DataTransferKit::KDTree</a>&lt; GlobalOrdinal &gt;::findPoint </td>
+          <td>(</td>
+          <td class="paramtype">const Teuchos::Array&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GlobalOrdinal &amp;&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a point in the tree. Return false if we didn't find it in the tree. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>Point coordinates to locate in the tree. Point dimensions less than or equal to 3 are valid but the point most be the same dimension as the tree.</td></tr>
+    <tr><td class="paramname">element</td><td>The global ordinal of the client element the point was found in. This global ordinal is not valid if this function returns false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Return true if the point was found in the kD-tree, false if not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3b0a39081c13ddd51a623bd72fa60387"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GlobalOrdinal &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_data_transfer_kit_1_1_k_d_tree.html">DataTransferKit::KDTree</a>&lt; GlobalOrdinal &gt;::findPointInLeaf </td>
+          <td>(</td>
+          <td class="paramtype">const Teuchos::Array&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const moab::EntityHandle&#160;</td>
+          <td class="paramname"><em>leaf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">moab::EntityHandle &amp;&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find a point in a leaf by doing point-in-volume on all elements in the leaf. Return if the point was not found. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>Point coordinates to locate in the tree. Point dimensions less than or equal to 3 are valid but the point most be the same dimension as the tree.</td></tr>
+    <tr><td class="paramname">leaf</td><td>The subset of mesh elements to search for the point in.</td></tr>
+    <tr><td class="paramname">element</td><td>The leaf element the point was found in. This element is not valid if this function returns false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Return true if the point was found in the leaf, false if not. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___k_d_tree_8hpp_source.html">DTK_KDTree.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___k_d_tree__def_8hpp_source.html">DTK_KDTree_def.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

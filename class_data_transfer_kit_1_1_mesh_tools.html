@@ -87,7 +87,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">DataTransferKit::MeshTools&lt; Mesh &gt; Class Template Reference</div>  </div>
 </div><!--header-->
@@ -127,57 +128,44 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a777a418e284b8263ea95f80e91b13d3e"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
-&lt; const GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a777a418e284b8263ea95f80e91b13d3e">nodesView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a777a418e284b8263ea95f80e91b13d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounds-checking mesh data access methods.  <a href="#a777a418e284b8263ea95f80e91b13d3e"></a><br/></td></tr>
-<tr class="memitem:ac359ab9607febf204da5c2d21e7cbff4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac359ab9607febf204da5c2d21e7cbff4"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
-&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#ac359ab9607febf204da5c2d21e7cbff4">nodesNonConstView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:ac359ab9607febf204da5c2d21e7cbff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh nodes. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr class="memitem:adeae96db122a1e8c4ab627c011f87841"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeae96db122a1e8c4ab627c011f87841"></a>
-static GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#adeae96db122a1e8c4ab627c011f87841">numNodes</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:adeae96db122a1e8c4ab627c011f87841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of nodes in a mesh block. <br/></td></tr>
-<tr class="memitem:a54b8f075979ed432c05adb8cbf378ea9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54b8f075979ed432c05adb8cbf378ea9"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
+<tr class="memitem:a6d0926b48356a39257c88e919136bd46"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
+&lt; const GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a6d0926b48356a39257c88e919136bd46">verticesView</a> (const Mesh &amp;mesh)</td></tr>
+<tr class="memdesc:a6d0926b48356a39257c88e919136bd46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const view of the of the mesh vertex global ordinals. The ArrayRCP object will not manage the memory.  <a href="#a6d0926b48356a39257c88e919136bd46"></a><br/></td></tr>
+<tr class="memitem:a90dcc9ec075d8dd53696ad0b45e39cb6"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
+&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a90dcc9ec075d8dd53696ad0b45e39cb6">verticesNonConstView</a> (const Mesh &amp;mesh)</td></tr>
+<tr class="memdesc:a90dcc9ec075d8dd53696ad0b45e39cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh vertex global ordinals. The ArrayRCP object will not manage the memory.  <a href="#a90dcc9ec075d8dd53696ad0b45e39cb6"></a><br/></td></tr>
+<tr class="memitem:a3f18cbd5b274bf073b68900dd4c84aa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f18cbd5b274bf073b68900dd4c84aa2"></a>
+static GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a3f18cbd5b274bf073b68900dd4c84aa2">numVertices</a> (const Mesh &amp;mesh)</td></tr>
+<tr class="memdesc:a3f18cbd5b274bf073b68900dd4c84aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of vertices in a mesh block. <br/></td></tr>
+<tr class="memitem:a54b8f075979ed432c05adb8cbf378ea9"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; const double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a54b8f075979ed432c05adb8cbf378ea9">coordsView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a54b8f075979ed432c05adb8cbf378ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh coordinates. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr class="memitem:abcc0f589ad93201d8d1960e1285e7ac9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcc0f589ad93201d8d1960e1285e7ac9"></a>
-static Teuchos::ArrayRCP&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#abcc0f589ad93201d8d1960e1285e7ac9">coordsNonConstView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:abcc0f589ad93201d8d1960e1285e7ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh coordinates. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr class="memitem:a5f79b959ee91af24abf8247cd384d9e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f79b959ee91af24abf8247cd384d9e1"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
+<tr class="memdesc:a54b8f075979ed432c05adb8cbf378ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh vertex coordinates. The ArrayRCP object will not manage the memory.  <a href="#a54b8f075979ed432c05adb8cbf378ea9"></a><br/></td></tr>
+<tr class="memitem:abcc0f589ad93201d8d1960e1285e7ac9"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#abcc0f589ad93201d8d1960e1285e7ac9">coordsNonConstView</a> (const Mesh &amp;mesh)</td></tr>
+<tr class="memdesc:abcc0f589ad93201d8d1960e1285e7ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh vertex coordinates. The ArrayRCP object will not manage the memory.  <a href="#abcc0f589ad93201d8d1960e1285e7ac9"></a><br/></td></tr>
+<tr class="memitem:a5f79b959ee91af24abf8247cd384d9e1"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; const GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a5f79b959ee91af24abf8247cd384d9e1">elementsView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a5f79b959ee91af24abf8247cd384d9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh elements. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr class="memitem:a4cd9afdbb95cddb755be7befe41dbf2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cd9afdbb95cddb755be7befe41dbf2f"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
+<tr class="memdesc:a5f79b959ee91af24abf8247cd384d9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh element global ordinals. The ArrayRCP object will not manage the memory.  <a href="#a5f79b959ee91af24abf8247cd384d9e1"></a><br/></td></tr>
+<tr class="memitem:a4cd9afdbb95cddb755be7befe41dbf2f"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a4cd9afdbb95cddb755be7befe41dbf2f">elementsNonConstView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a4cd9afdbb95cddb755be7befe41dbf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh elements. The ArrayRCP object will not manage the memory. <br/></td></tr>
+<tr class="memdesc:a4cd9afdbb95cddb755be7befe41dbf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh element global ordinals. The ArrayRCP object will not manage the memory.  <a href="#a4cd9afdbb95cddb755be7befe41dbf2f"></a><br/></td></tr>
 <tr class="memitem:ad66d40d6c6cdfc4296440ccf5283ac61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad66d40d6c6cdfc4296440ccf5283ac61"></a>
 static GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#ad66d40d6c6cdfc4296440ccf5283ac61">numElements</a> (const Mesh &amp;mesh)</td></tr>
 <tr class="memdesc:ad66d40d6c6cdfc4296440ccf5283ac61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements in a mesh block. <br/></td></tr>
-<tr class="memitem:a624a779b9ef447a6a8f9fda211a996f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a624a779b9ef447a6a8f9fda211a996f2"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
+<tr class="memitem:a624a779b9ef447a6a8f9fda211a996f2"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; const GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a624a779b9ef447a6a8f9fda211a996f2">connectivityView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a624a779b9ef447a6a8f9fda211a996f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh connectivity. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr class="memitem:a0b9baba8d0bd97f459900f17adb6b7dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b9baba8d0bd97f459900f17adb6b7dd"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
+<tr class="memdesc:a624a779b9ef447a6a8f9fda211a996f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh element connectivity. The ArrayRCP object will not manage the memory.  <a href="#a624a779b9ef447a6a8f9fda211a996f2"></a><br/></td></tr>
+<tr class="memitem:a0b9baba8d0bd97f459900f17adb6b7dd"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a0b9baba8d0bd97f459900f17adb6b7dd">connectivityNonConstView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a0b9baba8d0bd97f459900f17adb6b7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh connectivity. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr class="memitem:acebedca5fc6b0c6ed0988ded84719cf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acebedca5fc6b0c6ed0988ded84719cf2"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
-&lt; const std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#acebedca5fc6b0c6ed0988ded84719cf2">permutationView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:acebedca5fc6b0c6ed0988ded84719cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh connectivity permutation list. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr class="memitem:a92e8f6ef4db7a75d6848f26d83553b6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92e8f6ef4db7a75d6848f26d83553b6f"></a>
-static Teuchos::ArrayRCP<br class="typebreak"/>
-&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a92e8f6ef4db7a75d6848f26d83553b6f">permutationNonConstView</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a92e8f6ef4db7a75d6848f26d83553b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh connectivity permutation list. The ArrayRCP object will not manage the memory. <br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memdesc:a0b9baba8d0bd97f459900f17adb6b7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh element connectivity. The ArrayRCP object will not manage the memory.  <a href="#a0b9baba8d0bd97f459900f17adb6b7dd"></a><br/></td></tr>
+<tr class="memitem:a12d1c774ade84f97e27bd008b8a1aa85"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP<br class="typebreak"/>
+&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a12d1c774ade84f97e27bd008b8a1aa85">permutationView</a> (const Mesh &amp;mesh)</td></tr>
+<tr class="memdesc:a12d1c774ade84f97e27bd008b8a1aa85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a view of the of the mesh connectivity permutation list. The ArrayRCP object will not manage the memory.  <a href="#a12d1c774ade84f97e27bd008b8a1aa85"></a><br/></td></tr>
+<tr class="memitem:a59f4d8dcfb3573fa4c7c973a9e0885a3"><td class="memItemLeft" align="right" valign="top">static Teuchos::ArrayRCP&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a59f4d8dcfb3573fa4c7c973a9e0885a3">permutationNonConstView</a> (const Mesh &amp;mesh)</td></tr>
+<tr class="memdesc:a59f4d8dcfb3573fa4c7c973a9e0885a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a non-const view of the of the mesh connectivity permutation list. The ArrayRCP object will not manage the memory.  <a href="#a59f4d8dcfb3573fa4c7c973a9e0885a3"></a><br/></td></tr>
 <tr class="memitem:a7d2269a92cf8feecd4f55ea18a22f137"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#a7d2269a92cf8feecd4f55ea18a22f137">localBoundingBox</a> (const Mesh &amp;mesh)</td></tr>
-<tr class="memdesc:a7d2269a92cf8feecd4f55ea18a22f137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounding box methods.  <a href="#a7d2269a92cf8feecd4f55ea18a22f137"></a><br/></td></tr>
-<tr class="memitem:aebcc24c2fe7a7fd7419ec4f68d5dce0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebcc24c2fe7a7fd7419ec4f68d5dce0b"></a>
-static <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#aebcc24c2fe7a7fd7419ec4f68d5dce0b">globalBoundingBox</a> (const Mesh &amp;mesh, const RCP_Comm &amp;comm)</td></tr>
-<tr class="memdesc:aebcc24c2fe7a7fd7419ec4f68d5dce0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global bounding box for a mesh block over the given communicator. <br/></td></tr>
+<tr class="memdesc:a7d2269a92cf8feecd4f55ea18a22f137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local bounding box for a mesh block.  <a href="#a7d2269a92cf8feecd4f55ea18a22f137"></a><br/></td></tr>
+<tr class="memitem:aebcc24c2fe7a7fd7419ec4f68d5dce0b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html#aebcc24c2fe7a7fd7419ec4f68d5dce0b">globalBoundingBox</a> (const Mesh &amp;mesh, const RCP_Comm &amp;comm)</td></tr>
+<tr class="memdesc:aebcc24c2fe7a7fd7419ec4f68d5dce0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global bounding box for a mesh block over the given communicator.  <a href="#aebcc24c2fe7a7fd7419ec4f68d5dce0b"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Mesh&gt;<br/>
@@ -185,6 +173,262 @@ class DataTransferKit::MeshTools&lt; Mesh &gt;</h3>
 
 <p>A stateless class with tools for operating on single mesh blocks. </p>
 </div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a0b9baba8d0bd97f459900f17adb6b7dd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; typename <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">MeshTools</a>&lt; Mesh &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::connectivityNonConstView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a non-const view of the of the mesh element connectivity. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A non-const view of the mesh element connectivity. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a624a779b9ef447a6a8f9fda211a996f2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; const typename <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">MeshTools</a>&lt; Mesh &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::connectivityView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a view of the of the mesh element connectivity. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A const view of the mesh element connectivity. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abcc0f589ad93201d8d1960e1285e7ac9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; double &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::coordsNonConstView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a non-const view of the of the mesh vertex coordinates. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A non-const view of the mesh vertex coordinates. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54b8f075979ed432c05adb8cbf378ea9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; const double &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::coordsView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a view of the of the mesh vertex coordinates. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A const view of the mesh vertex coordinates. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4cd9afdbb95cddb755be7befe41dbf2f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; typename <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">MeshTools</a>&lt; Mesh &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::elementsNonConstView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a non-const view of the of the mesh element global ordinals. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A non-const view of the mesh element global ordinals. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f79b959ee91af24abf8247cd384d9e1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; const typename <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">MeshTools</a>&lt; Mesh &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::elementsView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a view of the of the mesh element global ordinals. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A const view of the mesh element global ordinals. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aebcc24c2fe7a7fd7419ec4f68d5dce0b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::globalBoundingBox </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the global bounding box for a mesh block over the given communicator. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh block over which to get the global bounding box.</td></tr>
+    <tr><td class="paramname">comm</td><td>The communicator over which the mesh block is defined.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>The global bounding box over the mesh block. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7d2269a92cf8feecd4f55ea18a22f137"></a>
 <div class="memitem">
 <div class="memproto">
@@ -209,12 +453,18 @@ template&lt;class Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Bounding box methods. </p>
 <p>Get the local bounding box for a mesh block. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh block for which to get the local bounding box.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>The local bounding box around the mesh block. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a777a418e284b8263ea95f80e91b13d3e"></a>
+<a class="anchor" id="a59f4d8dcfb3573fa4c7c973a9e0885a3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -224,7 +474,7 @@ template&lt;class Mesh &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Teuchos::ArrayRCP&lt; const typename <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">MeshTools</a>&lt; Mesh &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::nodesView </td>
+          <td class="memname">Teuchos::ArrayRCP&lt; int &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::permutationNonConstView </td>
           <td>(</td>
           <td class="paramtype">const Mesh &amp;&#160;</td>
           <td class="paramname"><em>mesh</em></td><td>)</td>
@@ -238,8 +488,119 @@ template&lt;class Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Bounds-checking mesh data access methods. </p>
-<p>Get a view of the of the mesh nodes. The ArrayRCP object will not manage the memory. </p>
+<p>Get a non-const view of the of the mesh connectivity permutation list. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A non-const view of the mesh connectivity permutation. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a12d1c774ade84f97e27bd008b8a1aa85"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; const int &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::permutationView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a view of the of the mesh connectivity permutation list. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A non-const view of the mesh connectivity permutation. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90dcc9ec075d8dd53696ad0b45e39cb6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; typename <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">MeshTools</a>&lt; Mesh &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::verticesNonConstView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a non-const view of the of the mesh vertex global ordinals. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A non-const view of the mesh vertex global ordinals. The view will not manage the memory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d0926b48356a39257c88e919136bd46"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayRCP&lt; const typename <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">MeshTools</a>&lt; Mesh &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_mesh_tools.html">DataTransferKit::MeshTools</a>&lt; Mesh &gt;::verticesView </td>
+          <td>(</td>
+          <td class="paramtype">const Mesh &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a const view of the of the mesh vertex global ordinals. The ArrayRCP object will not manage the memory. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to get the view for. This object must have mesh traits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A const view of the mesh vertex global ordinals. This view will not manage the memory. </dd></dl>
 
 </div>
 </div>
@@ -250,7 +611,7 @@ template&lt;class Mesh &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

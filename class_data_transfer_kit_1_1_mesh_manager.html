@@ -123,21 +123,18 @@ typedef Teuchos::ArrayRCP<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7f1d4d0df1f69edad9efe2db63afe5d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f1d4d0df1f69edad9efe2db63afe5d7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a7f1d4d0df1f69edad9efe2db63afe5d7">MeshManager</a> (const Teuchos::ArrayRCP&lt; Mesh &gt; &amp;mesh_blocks, const RCP_Comm &amp;<a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ac31baafb05e3a9d2175889f7068400f7">comm</a>, const std::size_t <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#af0b9a4e1dd421bd9257d04314e6277f6">dim</a>)</td></tr>
-<tr class="memdesc:a7f1d4d0df1f69edad9efe2db63afe5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:a2b61f7bc31f5ef56b47ff7b72043a4ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a2b61f7bc31f5ef56b47ff7b72043a4ca">MeshManager</a> (const Teuchos::ArrayRCP&lt; Mesh &gt; &amp;mesh_blocks, const RCP_Comm &amp;<a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ac31baafb05e3a9d2175889f7068400f7">comm</a>, const int <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ae29f9ceab775e9b527b0d1628df55f50">dim</a>)</td></tr>
+<tr class="memdesc:a2b61f7bc31f5ef56b47ff7b72043a4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. If Design-By-Contract is enabled, the constructor will validate the mesh description to the domain model. This requires a few global communications.  <a href="#a2b61f7bc31f5ef56b47ff7b72043a4ca"></a><br/></td></tr>
 <tr class="memitem:a17c532a67c9e9f13dadd6061e0887b67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17c532a67c9e9f13dadd6061e0887b67"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a17c532a67c9e9f13dadd6061e0887b67">~MeshManager</a> ()</td></tr>
 <tr class="memdesc:a17c532a67c9e9f13dadd6061e0887b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
 <tr class="memitem:ac2aa8ec2b47b86c798ccdf4340a592bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2aa8ec2b47b86c798ccdf4340a592bd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ac2aa8ec2b47b86c798ccdf4340a592bd">getNumBlocks</a> () const </td></tr>
 <tr class="memdesc:ac2aa8ec2b47b86c798ccdf4340a592bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of mesh blocks. <br/></td></tr>
-<tr class="memitem:a96d14dd86ab68c06be4664fdf09fa66d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96d14dd86ab68c06be4664fdf09fa66d"></a>
-GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a96d14dd86ab68c06be4664fdf09fa66d">localNumElements</a> () const </td></tr>
-<tr class="memdesc:a96d14dd86ab68c06be4664fdf09fa66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local number of elements in the mesh. <br/></td></tr>
-<tr class="memitem:ab6aef69e4100e51895e9ec9a07877e6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6aef69e4100e51895e9ec9a07877e6e"></a>
-GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ab6aef69e4100e51895e9ec9a07877e6e">globalNumElements</a> () const </td></tr>
-<tr class="memdesc:ab6aef69e4100e51895e9ec9a07877e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global number of elements in the mesh. <br/></td></tr>
+<tr class="memitem:a96d14dd86ab68c06be4664fdf09fa66d"><td class="memItemLeft" align="right" valign="top">GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a96d14dd86ab68c06be4664fdf09fa66d">localNumElements</a> () const </td></tr>
+<tr class="memdesc:a96d14dd86ab68c06be4664fdf09fa66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local number of elements in the mesh across all mesh blocks.  <a href="#a96d14dd86ab68c06be4664fdf09fa66d"></a><br/></td></tr>
+<tr class="memitem:ab6aef69e4100e51895e9ec9a07877e6e"><td class="memItemLeft" align="right" valign="top">GlobalOrdinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ab6aef69e4100e51895e9ec9a07877e6e">globalNumElements</a> () const </td></tr>
+<tr class="memdesc:ab6aef69e4100e51895e9ec9a07877e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global number of elements in the mesh across all mesh blocks.  <a href="#ab6aef69e4100e51895e9ec9a07877e6e"></a><br/></td></tr>
 <tr class="memitem:abd3a503902695009233ba31701e16b07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd3a503902695009233ba31701e16b07"></a>
 BlockIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#abd3a503902695009233ba31701e16b07">blocksBegin</a> () const </td></tr>
 <tr class="memdesc:abd3a503902695009233ba31701e16b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iterator to the beginning of the mesh blocks. <br/></td></tr>
@@ -150,24 +147,23 @@ const Mesh &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="memitem:ac31baafb05e3a9d2175889f7068400f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac31baafb05e3a9d2175889f7068400f7"></a>
 const RCP_Comm &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ac31baafb05e3a9d2175889f7068400f7">comm</a> () const </td></tr>
 <tr class="memdesc:ac31baafb05e3a9d2175889f7068400f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the communicator for the mesh. <br/></td></tr>
-<tr class="memitem:af0b9a4e1dd421bd9257d04314e6277f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0b9a4e1dd421bd9257d04314e6277f6"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#af0b9a4e1dd421bd9257d04314e6277f6">dim</a> () const </td></tr>
-<tr class="memdesc:af0b9a4e1dd421bd9257d04314e6277f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical dimension of the mesh. <br/></td></tr>
-<tr class="memitem:a03be0cbe2b78ee9f6521c48ea724a3d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03be0cbe2b78ee9f6521c48ea724a3d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a03be0cbe2b78ee9f6521c48ea724a3d0">setActiveNodes</a> (const Teuchos::Array&lt; short int &gt; &amp;active_nodes, const int block_id)</td></tr>
-<tr class="memdesc:a03be0cbe2b78ee9f6521c48ea724a3d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the active nodes for a block. <br/></td></tr>
+<tr class="memitem:ae29f9ceab775e9b527b0d1628df55f50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae29f9ceab775e9b527b0d1628df55f50"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ae29f9ceab775e9b527b0d1628df55f50">dim</a> () const </td></tr>
+<tr class="memdesc:ae29f9ceab775e9b527b0d1628df55f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical dimension of the mesh. <br/></td></tr>
+<tr class="memitem:a440c2243484a34b176ac1903b1982d55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a440c2243484a34b176ac1903b1982d55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a440c2243484a34b176ac1903b1982d55">setActiveVertices</a> (const Teuchos::Array&lt; short int &gt; &amp;active_vertices, const int block_id)</td></tr>
+<tr class="memdesc:a440c2243484a34b176ac1903b1982d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the active vertices for a block. <br/></td></tr>
 <tr class="memitem:a991ca2158cc626e8f9d19049d46be8ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a991ca2158cc626e8f9d19049d46be8ba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a991ca2158cc626e8f9d19049d46be8ba">setActiveElements</a> (const Teuchos::Array&lt; short int &gt; &amp;active_elements, const int block_id)</td></tr>
 <tr class="memdesc:a991ca2158cc626e8f9d19049d46be8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the active elements for a block. <br/></td></tr>
-<tr class="memitem:aa5af9588cc3b4ff76957ff72159d9e14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5af9588cc3b4ff76957ff72159d9e14"></a>
-Teuchos::ArrayView&lt; short int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#aa5af9588cc3b4ff76957ff72159d9e14">getActiveNodes</a> (const int block_id)</td></tr>
-<tr class="memdesc:aa5af9588cc3b4ff76957ff72159d9e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active nodes for a block. <br/></td></tr>
+<tr class="memitem:ac3db83d95eb8ef442bdb287593962eb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3db83d95eb8ef442bdb287593962eb8"></a>
+Teuchos::ArrayView&lt; short int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#ac3db83d95eb8ef442bdb287593962eb8">getActiveVertices</a> (const int block_id)</td></tr>
+<tr class="memdesc:ac3db83d95eb8ef442bdb287593962eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active vertices for a block. <br/></td></tr>
 <tr class="memitem:abb7b9b6a76d0fffbb68ad10b17bb1619"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb7b9b6a76d0fffbb68ad10b17bb1619"></a>
 Teuchos::ArrayView&lt; short int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#abb7b9b6a76d0fffbb68ad10b17bb1619">getActiveElements</a> (const int block_id)</td></tr>
 <tr class="memdesc:abb7b9b6a76d0fffbb68ad10b17bb1619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active elements for a block. <br/></td></tr>
-<tr class="memitem:a5f60d06e4dd21bb8a867469060fcd9bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f60d06e4dd21bb8a867469060fcd9bf"></a>
-<a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a5f60d06e4dd21bb8a867469060fcd9bf">globalBoundingBox</a> ()</td></tr>
-<tr class="memdesc:a5f60d06e4dd21bb8a867469060fcd9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the global bounding box around the entire mesh. <br/></td></tr>
+<tr class="memitem:a5f60d06e4dd21bb8a867469060fcd9bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html#a5f60d06e4dd21bb8a867469060fcd9bf">globalBoundingBox</a> ()</td></tr>
+<tr class="memdesc:a5f60d06e4dd21bb8a867469060fcd9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the global bounding box around the entire mesh (all blocks).  <a href="#a5f60d06e4dd21bb8a867469060fcd9bf"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -181,11 +177,11 @@ Private Attributes</h2></td></tr>
 Teuchos::ArrayRCP&lt; Mesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_mesh_blocks</b></td></tr>
 <tr class="memitem:a6f9a70bbdd0769e4fdb788ca8c1b8013"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f9a70bbdd0769e4fdb788ca8c1b8013"></a>
 RCP_Comm&#160;</td><td class="memItemRight" valign="bottom"><b>d_comm</b></td></tr>
-<tr class="memitem:ad4bcbd9338a9de3e03cbb7785b0fd42f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4bcbd9338a9de3e03cbb7785b0fd42f"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>d_dim</b></td></tr>
-<tr class="memitem:adb044ac3c1acd4df5f3804151f81ee3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb044ac3c1acd4df5f3804151f81ee3b"></a>
+<tr class="memitem:a6894ef97dc8e1bfbee9069714c2b1410"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6894ef97dc8e1bfbee9069714c2b1410"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>d_dim</b></td></tr>
+<tr class="memitem:af676c7c48e7f5979a30fdfbc1d3277f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af676c7c48e7f5979a30fdfbc1d3277f0"></a>
 Teuchos::Array&lt; Teuchos::Array<br class="typebreak"/>
-&lt; short int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_active_nodes</b></td></tr>
+&lt; short int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_active_vertices</b></td></tr>
 <tr class="memitem:a038abc4e411cdb8c207e44ec2980c570"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a038abc4e411cdb8c207e44ec2980c570"></a>
 Teuchos::Array&lt; Teuchos::Array<br class="typebreak"/>
 &lt; short int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_active_elements</b></td></tr>
@@ -195,15 +191,123 @@ Teuchos::Array&lt; Teuchos::Array<br class="typebreak"/>
 class DataTransferKit::MeshManager&lt; Mesh &gt;</h3>
 
 <p>Manager object for mesh. </p>
-<p>The mesh manager manages the topology blocks that construct a mesh and its parallel decomposition. The mesh manager also keeps track of the mesh nodes (and implicitly the elements) that are active in partitioning and searching. Those that are not active are typically outside some domain of interest. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<p>The <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html" title="Manager object for mesh.">MeshManager</a> manages the topology blocks that construct a mesh and its parallel decomposition. The mesh manager also keeps track of the mesh vertices and elements that are active in partitioning and searching. Those that are not active are typically outside some domain of interest.</p>
+<p>All elements in a block must have the same topology and number of vertices. A mesh may contain as many blocks as desired. Multiple blocks with the same mesh topology may exist. Vertices may be repeated in different mesh blocks provided that they maintain the same unique global ordinal and coordinates. Elements may be repeated in different mesh blocks provided that they maintain the same unique global ordinal and connectivity list. All elements and vertices in all blocks of the mesh must have the same dimension. Multiple mesh blocks may exist in the same spatial region as they are merely a means of subdividing the mesh into groups of elements based on their topology. This behavior will be the common when hybrid meshes are involved (e.g. a mesh that contains hexahedrons and tetrahedrons). Mesh blocks may be either structured or unstructured.</p>
+<p>Mesh blocks and the elements and vertices they contain may be partitioned in any fashion provided that all vertices, elements, and blocks of a mesh description exist in a communication space operated on by the same parallel communicator. Different blocks in a single mesh description may not have different communicators. Each mesh description may have its own communicator. Global knowledge of the parallel decomposition of a given mesh description is not required. Only local mesh data access along with the proper communicator is required. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2b61f7bc31f5ef56b47ff7b72043a4ca"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">DataTransferKit::MeshManager</a>&lt; Mesh &gt;::<a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">MeshManager</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Teuchos::ArrayRCP&lt; Mesh &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>dim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. If Design-By-Contract is enabled, the constructor will validate the mesh description to the domain model. This requires a few global communications. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh_blocks</td><td>The blocks that construct this mesh. Each block must have <a class="el" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MeshTraits</a>.</td></tr>
+    <tr><td class="paramname">comm</td><td>The communicator the mesh is defined over.</td></tr>
+    <tr><td class="paramname">dim</td><td>The mesh dimension. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a5f60d06e4dd21bb8a867469060fcd9bf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">DataTransferKit::MeshManager</a>&lt; Mesh &gt;::globalBoundingBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the global bounding box around the entire mesh (all blocks). </p>
+<dl class="section return"><dt>Returns:</dt><dd>The global bounding box over all mesh blocks. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6aef69e4100e51895e9ec9a07877e6e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">MeshManager</a>&lt; Mesh &gt;::GlobalOrdinal <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">DataTransferKit::MeshManager</a>&lt; Mesh &gt;::globalNumElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the global number of elements in the mesh across all mesh blocks. </p>
+<dl class="section return"><dt>Returns:</dt><dd>The global number of elements in the mesh across all mesh blocks. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a96d14dd86ab68c06be4664fdf09fa66d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">MeshManager</a>&lt; Mesh &gt;::GlobalOrdinal <a class="el" href="class_data_transfer_kit_1_1_mesh_manager.html">DataTransferKit::MeshManager</a>&lt; Mesh &gt;::localNumElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the local number of elements in the mesh across all mesh blocks. </p>
+<dl class="section return"><dt>Returns:</dt><dd>The local number of elements across all mesh blocks. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___mesh_manager_8hpp_source.html">DTK_MeshManager.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___mesh_manager__def_8hpp_source.html">DTK_MeshManager_def.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

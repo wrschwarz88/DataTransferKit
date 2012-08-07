@@ -126,36 +126,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifndef DTK_FIELDMANAGER_DEF</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DTK_FIELDMANAGER_DEF</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_d_t_k___assertion_8hpp.html" title="Assertions and Design-by-Contract for error handling.">DTK_Assertion.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_t_k___assertion_8hpp.html" title="Assertions and Design-by-Contract for error handling.">DTK_Assertion.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>DataTransferKit</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span><span class="keyword">template</span>&lt;<span class="keyword">class</span> Field&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_manager.html#af46c8cd8beb8da3a0d214c9815d2d87a">   53</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_manager.html#af46c8cd8beb8da3a0d214c9815d2d87a" title="Constructor.">FieldManager&lt;Field&gt;::FieldManager</a>( <span class="keyword">const</span> Field&amp; field, <span class="keyword">const</span> RCP_Comm&amp; comm )</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    : d_field( field )</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    , d_comm( comm )</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{ <span class="comment">/* ... */</span> }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span><span class="keyword">template</span>&lt;<span class="keyword">class</span> Field&gt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_manager.html#a29690f35ba4fd9fc2c53f9be0938727d">   63</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_manager.html#a29690f35ba4fd9fc2c53f9be0938727d" title="Destructor.">FieldManager&lt;Field&gt;::~FieldManager</a>()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{ <span class="comment">/* ... */</span> }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// end namespace DataTransferKit</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // end DTK_FIELDMANAGER_DEF</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// end DTK_FieldManager_def.hpp</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span><span class="keyword">template</span>&lt;<span class="keyword">class</span> Field&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_manager.html#af46c8cd8beb8da3a0d214c9815d2d87a">   60</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_manager.html#af46c8cd8beb8da3a0d214c9815d2d87a" title="Constructor. If Design-By-Contract is enabled, the constructor will validate the field description to...">FieldManager&lt;Field&gt;::FieldManager</a>( <span class="keyword">const</span> Field&amp; field, <span class="keyword">const</span> RCP_Comm&amp; comm )</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    : d_field( field )</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    , d_comm( comm )</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{ <span class="comment">/* ... */</span> }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span><span class="keyword">template</span>&lt;<span class="keyword">class</span> Field&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_data_transfer_kit_1_1_field_manager.html#a29690f35ba4fd9fc2c53f9be0938727d">   70</a></span>&#160;<a class="code" href="class_data_transfer_kit_1_1_field_manager.html#a29690f35ba4fd9fc2c53f9be0938727d" title="Destructor.">FieldManager&lt;Field&gt;::~FieldManager</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{ <span class="comment">/* ... */</span> }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// end namespace DataTransferKit</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // end DTK_FIELDMANAGER_DEF</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// end DTK_FieldManager_def.hpp</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:35 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

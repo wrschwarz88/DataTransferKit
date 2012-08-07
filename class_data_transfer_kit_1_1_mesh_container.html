@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A container for rebuilding mesh data in the rendezvous decomposition after serialization.  
+<p>A default mesh implementation.  
  <a href="class_data_transfer_kit_1_1_mesh_container.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_d_t_k___mesh_container_8hpp_source.html">DTK_MeshContainer.hpp</a>&gt;</code></p>
@@ -113,25 +113,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a446e028be164df6cd762f6558c2d66ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a446e028be164df6cd762f6558c2d66ab"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a446e028be164df6cd762f6558c2d66ab">MeshContainer</a> ()</td></tr>
 <tr class="memdesc:a446e028be164df6cd762f6558c2d66ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br/></td></tr>
-<tr class="memitem:a2495b90e5fdc99776cad683ac897ace1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2495b90e5fdc99776cad683ac897ace1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a2495b90e5fdc99776cad683ac897ace1">MeshContainer</a> (const int node_dim, const Teuchos::ArrayRCP&lt; GlobalOrdinal &gt; &amp;nodes, const Teuchos::ArrayRCP&lt; const double &gt; &amp;coords, const int element_topology, const int nodes_per_element, const Teuchos::ArrayRCP&lt; GlobalOrdinal &gt; &amp;elements, const Teuchos::ArrayRCP&lt; const GlobalOrdinal &gt; &amp;connectivity, const Teuchos::ArrayRCP&lt; const std::size_t &gt; &amp;permutation_list)</td></tr>
-<tr class="memdesc:a2495b90e5fdc99776cad683ac897ace1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:af3b2b95b542e78e0a9bf870defd59059"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#af3b2b95b542e78e0a9bf870defd59059">MeshContainer</a> (const int vertex_dim, const Teuchos::ArrayRCP&lt; GlobalOrdinal &gt; &amp;vertices, const Teuchos::ArrayRCP&lt; const double &gt; &amp;coords, const <a class="el" href="namespace_data_transfer_kit.html#a673ffda6737b51597f90991c5ba8d3a5">DTK_ElementTopology</a> element_topology, const int vertices_per_element, const Teuchos::ArrayRCP&lt; GlobalOrdinal &gt; &amp;elements, const Teuchos::ArrayRCP&lt; const GlobalOrdinal &gt; &amp;connectivity, const Teuchos::ArrayRCP&lt; const int &gt; &amp;permutation_list)</td></tr>
+<tr class="memdesc:af3b2b95b542e78e0a9bf870defd59059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#af3b2b95b542e78e0a9bf870defd59059"></a><br/></td></tr>
 <tr class="memitem:aafd6e626d2cdabcf5b3cea3433071558"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafd6e626d2cdabcf5b3cea3433071558"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#aafd6e626d2cdabcf5b3cea3433071558">~MeshContainer</a> ()</td></tr>
 <tr class="memdesc:aafd6e626d2cdabcf5b3cea3433071558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
-<tr class="memitem:a0695cdb8aaf9c2c6d695bd5f6abdd6cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0695cdb8aaf9c2c6d695bd5f6abdd6cc"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a0695cdb8aaf9c2c6d695bd5f6abdd6cc">getNodeDim</a> () const </td></tr>
-<tr class="memdesc:a0695cdb8aaf9c2c6d695bd5f6abdd6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of the nodes. <br/></td></tr>
-<tr class="memitem:ab7c4844ec42d004aee229a790dc2b847"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7c4844ec42d004aee229a790dc2b847"></a>
+<tr class="memitem:a7b73792183baf87070a15272fb1babce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b73792183baf87070a15272fb1babce"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a7b73792183baf87070a15272fb1babce">getVertexDim</a> () const </td></tr>
+<tr class="memdesc:a7b73792183baf87070a15272fb1babce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of the vertices. <br/></td></tr>
+<tr class="memitem:a09b315de667683a668ee9158d8b5967b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09b315de667683a668ee9158d8b5967b"></a>
 Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; GlobalOrdinal &gt;<br class="typebreak"/>
-::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#ab7c4844ec42d004aee229a790dc2b847">nodesBegin</a> () const </td></tr>
-<tr class="memdesc:ab7c4844ec42d004aee229a790dc2b847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the beginning of the nodes set. <br/></td></tr>
-<tr class="memitem:a28967be265e425f147f03f86e06c5b33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28967be265e425f147f03f86e06c5b33"></a>
+::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a09b315de667683a668ee9158d8b5967b">verticesBegin</a> () const </td></tr>
+<tr class="memdesc:a09b315de667683a668ee9158d8b5967b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the beginning of the vertices set. <br/></td></tr>
+<tr class="memitem:a8bd0d48e8c0048c5499c59f09f139732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd0d48e8c0048c5499c59f09f139732"></a>
 Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; GlobalOrdinal &gt;<br class="typebreak"/>
-::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a28967be265e425f147f03f86e06c5b33">nodesEnd</a> () const </td></tr>
-<tr class="memdesc:a28967be265e425f147f03f86e06c5b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end of the nodes set. <br/></td></tr>
+::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a8bd0d48e8c0048c5499c59f09f139732">verticesEnd</a> () const </td></tr>
+<tr class="memdesc:a8bd0d48e8c0048c5499c59f09f139732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end of the vertices set. <br/></td></tr>
 <tr class="memitem:ab937fff95f20822a22c96a1884928cd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab937fff95f20822a22c96a1884928cd5"></a>
 Teuchos::ArrayRCP&lt; const <br class="typebreak"/>
 double &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#ab937fff95f20822a22c96a1884928cd5">coordsBegin</a> () const </td></tr>
@@ -140,12 +139,12 @@ double &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><
 Teuchos::ArrayRCP&lt; const <br class="typebreak"/>
 double &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a4040f1df04dfccbc5b2ccdfb0522e03d">coordsEnd</a> () const </td></tr>
 <tr class="memdesc:a4040f1df04dfccbc5b2ccdfb0522e03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end of the coordinates array. <br/></td></tr>
-<tr class="memitem:a2a928b4a9780c8499c4c8d6b9d3ca96b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a928b4a9780c8499c4c8d6b9d3ca96b"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a2a928b4a9780c8499c4c8d6b9d3ca96b">getElementTopology</a> () const </td></tr>
-<tr class="memdesc:a2a928b4a9780c8499c4c8d6b9d3ca96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element topology. <br/></td></tr>
-<tr class="memitem:a0c5fc98218d87dbcccdcd74f3e96b890"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c5fc98218d87dbcccdcd74f3e96b890"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a0c5fc98218d87dbcccdcd74f3e96b890">getNodesPerElement</a> () const </td></tr>
-<tr class="memdesc:a0c5fc98218d87dbcccdcd74f3e96b890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of nodes constructing a single element. <br/></td></tr>
+<tr class="memitem:a462c5c56d2a1c6a0f1abb108074471a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a462c5c56d2a1c6a0f1abb108074471a6"></a>
+<a class="el" href="namespace_data_transfer_kit.html#a673ffda6737b51597f90991c5ba8d3a5">DTK_ElementTopology</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a462c5c56d2a1c6a0f1abb108074471a6">getElementTopology</a> () const </td></tr>
+<tr class="memdesc:a462c5c56d2a1c6a0f1abb108074471a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element topology. <br/></td></tr>
+<tr class="memitem:ab6ec0551ed9bbb5507803a5835e787f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6ec0551ed9bbb5507803a5835e787f7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#ab6ec0551ed9bbb5507803a5835e787f7">getVerticesPerElement</a> () const </td></tr>
+<tr class="memdesc:ab6ec0551ed9bbb5507803a5835e787f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of vertices constructing a single element. <br/></td></tr>
 <tr class="memitem:abdf4d4aaf11bec0dfd50ad4f2a15ca0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdf4d4aaf11bec0dfd50ad4f2a15ca0c"></a>
 Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; GlobalOrdinal &gt;<br class="typebreak"/>
@@ -166,48 +165,136 @@ Teuchos::ArrayRCP&lt; const <br class="typebreak"/>
 GlobalOrdinal &gt;<br class="typebreak"/>
 ::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#aabc260c46f31d0b7b299f03e6222db81">connectivityEnd</a> () const </td></tr>
 <tr class="memdesc:aabc260c46f31d0b7b299f03e6222db81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ending of the connectivity array. <br/></td></tr>
-<tr class="memitem:a11662cda146691b2ba17efcfe3bd5fbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11662cda146691b2ba17efcfe3bd5fbf"></a>
-Teuchos::ArrayRCP&lt; const <br class="typebreak"/>
-std::size_t &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a11662cda146691b2ba17efcfe3bd5fbf">permutationBegin</a> () const </td></tr>
-<tr class="memdesc:a11662cda146691b2ba17efcfe3bd5fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the beginning of the permutation list. <br/></td></tr>
-<tr class="memitem:a929dfe8ca7b1957393569e48c26f6029"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a929dfe8ca7b1957393569e48c26f6029"></a>
-Teuchos::ArrayRCP&lt; const <br class="typebreak"/>
-std::size_t &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a929dfe8ca7b1957393569e48c26f6029">permutationEnd</a> () const </td></tr>
-<tr class="memdesc:a929dfe8ca7b1957393569e48c26f6029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ending of the permutation list. <br/></td></tr>
+<tr class="memitem:a22c30cfa196f51b35a35219737aa8179"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22c30cfa196f51b35a35219737aa8179"></a>
+Teuchos::ArrayRCP&lt; const int &gt;<br class="typebreak"/>
+::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a22c30cfa196f51b35a35219737aa8179">permutationBegin</a> () const </td></tr>
+<tr class="memdesc:a22c30cfa196f51b35a35219737aa8179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the beginning of the permutation list. <br/></td></tr>
+<tr class="memitem:a65ac2c05b3209e20906d52b3c3376d5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65ac2c05b3209e20906d52b3c3376d5f"></a>
+Teuchos::ArrayRCP&lt; const int &gt;<br class="typebreak"/>
+::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a65ac2c05b3209e20906d52b3c3376d5f">permutationEnd</a> () const </td></tr>
+<tr class="memdesc:a65ac2c05b3209e20906d52b3c3376d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ending of the permutation list. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a359a6a43db3a88836365c150f1297d65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a359a6a43db3a88836365c150f1297d65"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>d_node_dim</b></td></tr>
-<tr class="memitem:aa61fe4230c50d11ec8388c39444d1ada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa61fe4230c50d11ec8388c39444d1ada"></a>
-Teuchos::ArrayRCP&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_nodes</b></td></tr>
+<tr class="memitem:ab5e41cec9e7204d407e63c07c0539052"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e41cec9e7204d407e63c07c0539052"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>d_vertex_dim</b></td></tr>
+<tr class="memitem:a26498be6ad83328fc85fe3d0700ef0fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26498be6ad83328fc85fe3d0700ef0fc"></a>
+Teuchos::ArrayRCP&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_vertices</b></td></tr>
 <tr class="memitem:a7e8194676b4eed2a8becf6f09cd5f3f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e8194676b4eed2a8becf6f09cd5f3f4"></a>
 Teuchos::ArrayRCP&lt; const double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_coords</b></td></tr>
-<tr class="memitem:a2b13a718cfbb978464f2f77f7ec3ddd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b13a718cfbb978464f2f77f7ec3ddd3"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>d_element_topology</b></td></tr>
-<tr class="memitem:a654bc865d4e5282fe17ed2d6c3389ee4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a654bc865d4e5282fe17ed2d6c3389ee4"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>d_nodes_per_element</b></td></tr>
+<tr class="memitem:a761f2bda31dec44615c0ccebf4c70551"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a761f2bda31dec44615c0ccebf4c70551"></a>
+<a class="el" href="namespace_data_transfer_kit.html#a673ffda6737b51597f90991c5ba8d3a5">DTK_ElementTopology</a>&#160;</td><td class="memItemRight" valign="bottom"><b>d_element_topology</b></td></tr>
+<tr class="memitem:a873568f2cecc2a1213f20b2494a3f27b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a873568f2cecc2a1213f20b2494a3f27b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>d_vertices_per_element</b></td></tr>
 <tr class="memitem:a0a9ae4712834a9b324822a9657d2a3f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a9ae4712834a9b324822a9657d2a3f1"></a>
 Teuchos::ArrayRCP&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_elements</b></td></tr>
 <tr class="memitem:a7519e75f17e33ef20f30f0ea0eacbf6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7519e75f17e33ef20f30f0ea0eacbf6b"></a>
 Teuchos::ArrayRCP&lt; const <br class="typebreak"/>
 GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_connectivity</b></td></tr>
-<tr class="memitem:aa35b6fb9234f7e31ce92c4e4a59749e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa35b6fb9234f7e31ce92c4e4a59749e3"></a>
-Teuchos::ArrayRCP&lt; const <br class="typebreak"/>
-std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_permutation_list</b></td></tr>
+<tr class="memitem:a91772e0080182a6690cda3f3da0ca284"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91772e0080182a6690cda3f3da0ca284"></a>
+Teuchos::ArrayRCP&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_permutation_list</b></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename GlobalOrdinal&gt;<br/>
 class DataTransferKit::MeshContainer&lt; GlobalOrdinal &gt;</h3>
 
-<p>A container for rebuilding mesh data in the rendezvous decomposition after serialization. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>A default mesh implementation. </p>
+<p>The <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html" title="A default mesh implementation.">MeshContainer</a> is a default implementation of <a class="el" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MeshTraits</a> for clients. Its data mimics the structure of <a class="el" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MeshTraits</a> with constructor arguments expected to have the data layout of a <a class="el" href="class_data_transfer_kit_1_1_mesh_traits.html" title="Mesh traits definitions.">MeshTraits</a> object. Each block of mesh must be in a separate mesh container. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af3b2b95b542e78e0a9bf870defd59059"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GlobalOrdinal &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">DataTransferKit::MeshContainer</a>&lt; GlobalOrdinal &gt;::<a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">MeshContainer</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>vertex_dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Teuchos::ArrayRCP&lt; GlobalOrdinal &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Teuchos::ArrayRCP&lt; const double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_data_transfer_kit.html#a673ffda6737b51597f90991c5ba8d3a5">DTK_ElementTopology</a>&#160;</td>
+          <td class="paramname"><em>element_topology</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>vertices_per_element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Teuchos::ArrayRCP&lt; GlobalOrdinal &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Teuchos::ArrayRCP&lt; const GlobalOrdinal &gt; &amp;&#160;</td>
+          <td class="paramname"><em>connectivity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Teuchos::ArrayRCP&lt; const int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>permutation_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex_dim</td><td>The dimension of the vertices in the mesh.</td></tr>
+    <tr><td class="paramname">vertices</td><td>The vertex global ordinals in the mesh block.</td></tr>
+    <tr><td class="paramname">coordinates</td><td>The vertex coordinates in the mesh block. These must be blocked by dimension.</td></tr>
+    <tr><td class="paramname">element_topology</td><td>The DTK_ElementTopology of the elements in the mesh block.</td></tr>
+    <tr><td class="paramname">vertices_per_element</td><td>The number of vertices used to construct each element in the mesh block.</td></tr>
+    <tr><td class="paramname">elements</td><td>The element global ordinals in the mesh block.</td></tr>
+    <tr><td class="paramname">connectivity</td><td>The vertex global ordinals that construct the elements in the mesh block. The connectivity values must be blocked by client canonical vertex ordering.</td></tr>
+    <tr><td class="paramname">permutation_list</td><td>The permuation list describing the difference between DTK canonical vertex ordering and client canonical vertex ordering for the element topology in this mesh block. This list must be the same size as vertices_per_element. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="_d_t_k___mesh_container_8hpp_source.html">DTK_MeshContainer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

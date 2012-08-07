@@ -106,10 +106,10 @@ typedef <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Con
 <tr class="memitem:aa36df6129280deb18c393221b5c25aa4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa36df6129280deb18c393221b5c25aa4"></a>
 typedef <br class="typebreak"/>
 <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html#a57b794956c48588e7e7b4cd3680f52c1">Container::global_ordinal_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>global_ordinal_type</b></td></tr>
-<tr class="memitem:afe88cdfdf5712bde8c47d94840ad73c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe88cdfdf5712bde8c47d94840ad73c2"></a>
+<tr class="memitem:ae590b6fd00fb7c8405c437b3c50d9f27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae590b6fd00fb7c8405c437b3c50d9f27"></a>
 typedef Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; GlobalOrdinal &gt;<br class="typebreak"/>
-::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_node_iterator</b></td></tr>
+::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_vertex_iterator</b></td></tr>
 <tr class="memitem:a0d804f979f60ee7767ca83e70bb49ec0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d804f979f60ee7767ca83e70bb49ec0"></a>
 typedef Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; const double &gt;<br class="typebreak"/>
@@ -122,27 +122,26 @@ typedef Teuchos::ArrayRCP<br class="typebreak"/>
 typedef Teuchos::ArrayRCP<br class="typebreak"/>
 &lt; const GlobalOrdinal &gt;<br class="typebreak"/>
 ::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_connectivity_iterator</b></td></tr>
-<tr class="memitem:a998262a3439028177c1d6614e5fcffe9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a998262a3439028177c1d6614e5fcffe9"></a>
+<tr class="memitem:ab6242a737d04e80ff6d64fb84a65a763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6242a737d04e80ff6d64fb84a65a763"></a>
 typedef Teuchos::ArrayRCP<br class="typebreak"/>
-&lt; const std::size_t &gt;<br class="typebreak"/>
-::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_permutation_iterator</b></td></tr>
+&lt; const int &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_permutation_iterator</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:acf9dbaf91e21605d984f3e277e08e774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf9dbaf91e21605d984f3e277e08e774"></a>
-static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>nodeDim</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
-<tr class="memitem:a8a3a07febda848abb260432d125ce89a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a3a07febda848abb260432d125ce89a"></a>
-static const_node_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>nodesBegin</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
-<tr class="memitem:ab445613dad6d724914f4793bcac463d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab445613dad6d724914f4793bcac463d4"></a>
-static const_node_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>nodesEnd</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
+<tr class="memitem:a406e2083d6cf694b71a9d25387fe0ec8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a406e2083d6cf694b71a9d25387fe0ec8"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexDim</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
+<tr class="memitem:a08cd4b87eca84c7fa8d3e88878471668"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08cd4b87eca84c7fa8d3e88878471668"></a>
+static const_vertex_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>verticesBegin</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
+<tr class="memitem:a13303bfb1aaac66b1db769c3129c8c0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13303bfb1aaac66b1db769c3129c8c0b"></a>
+static const_vertex_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>verticesEnd</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
 <tr class="memitem:a813a2b07d46b8dffe2897e9ef462db72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a813a2b07d46b8dffe2897e9ef462db72"></a>
 static const_coordinate_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>coordsBegin</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
 <tr class="memitem:a9ee10f1682dcccd560f9fbe9e32a7ae7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ee10f1682dcccd560f9fbe9e32a7ae7"></a>
 static const_coordinate_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>coordsEnd</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
-<tr class="memitem:a03adb5c0d30f3333d22630036885dceb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03adb5c0d30f3333d22630036885dceb"></a>
-static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>elementTopology</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
-<tr class="memitem:a4366452bea76b2aaa9302727a5c33149"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4366452bea76b2aaa9302727a5c33149"></a>
-static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>nodesPerElement</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
+<tr class="memitem:af8a37b2899c118a2dedfbb2ad1ac6966"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8a37b2899c118a2dedfbb2ad1ac6966"></a>
+static <a class="el" href="namespace_data_transfer_kit.html#a673ffda6737b51597f90991c5ba8d3a5">DTK_ElementTopology</a>&#160;</td><td class="memItemRight" valign="bottom"><b>elementTopology</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
+<tr class="memitem:a4f7c8422627d733f89c700dfb8a5a014"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f7c8422627d733f89c700dfb8a5a014"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>verticesPerElement</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
 <tr class="memitem:af9d96e0469c5f58f623a27e31356cad3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9d96e0469c5f58f623a27e31356cad3"></a>
 static const_element_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>elementsBegin</b> (const <a class="el" href="class_data_transfer_kit_1_1_mesh_container.html">Container</a> &amp;container)</td></tr>
 <tr class="memitem:a27123750a8458be8c9e868378e610ea6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27123750a8458be8c9e868378e610ea6"></a>
@@ -162,7 +161,7 @@ static const_permutation_iterator&#160;</td><td class="memItemRight" valign="bot
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

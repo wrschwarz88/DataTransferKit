@@ -106,7 +106,7 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a4e399a59da4dd374431de18da1b87379"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e399a59da4dd374431de18da1b87379"></a>
 typedef Teuchos::Comm&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#a4e399a59da4dd374431de18da1b87379">CommType</a></td></tr>
-<tr class="memdesc:a4e399a59da4dd374431de18da1b87379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Useful typedefs. <br/></td></tr>
+<tr class="memdesc:a4e399a59da4dd374431de18da1b87379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedefs. <br/></td></tr>
 <tr class="memitem:a9f2e11765b0f4a65864016466182ca9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f2e11765b0f4a65864016466182ca9e"></a>
 typedef Teuchos::RCP&lt; const <br class="typebreak"/>
 <a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#a4e399a59da4dd374431de18da1b87379">CommType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RCP_Comm</b></td></tr>
@@ -115,15 +115,13 @@ typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bo
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05c9f96600cfdc2e1c927e49c4db2e86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05c9f96600cfdc2e1c927e49c4db2e86"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#a05c9f96600cfdc2e1c927e49c4db2e86">CommIndexer</a> (RCP_Comm global_comm, RCP_Comm local_comm)</td></tr>
-<tr class="memdesc:a05c9f96600cfdc2e1c927e49c4db2e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:a05c9f96600cfdc2e1c927e49c4db2e86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#a05c9f96600cfdc2e1c927e49c4db2e86">CommIndexer</a> (RCP_Comm global_comm, RCP_Comm local_comm)</td></tr>
+<tr class="memdesc:a05c9f96600cfdc2e1c927e49c4db2e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Given a global communicator and a local communicator, index the local communicator process ranks into the global communicator process ranks.  <a href="#a05c9f96600cfdc2e1c927e49c4db2e86"></a><br/></td></tr>
 <tr class="memitem:adc5e104bb620eb3b2b9a0ef82afe25a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc5e104bb620eb3b2b9a0ef82afe25a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#adc5e104bb620eb3b2b9a0ef82afe25a3">~CommIndexer</a> ()</td></tr>
 <tr class="memdesc:adc5e104bb620eb3b2b9a0ef82afe25a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
-<tr class="memitem:a395d014467b975a71a94aed81df18051"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395d014467b975a71a94aed81df18051"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#a395d014467b975a71a94aed81df18051">l2g</a> (const int local_id) const </td></tr>
-<tr class="memdesc:a395d014467b975a71a94aed81df18051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a process id in the local communicator, return the distributed object's process id in the global communicator. Return -1 if this local id does not exist in the map. <br/></td></tr>
+<tr class="memitem:a395d014467b975a71a94aed81df18051"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#a395d014467b975a71a94aed81df18051">l2g</a> (const int local_id) const </td></tr>
+<tr class="memdesc:a395d014467b975a71a94aed81df18051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a process id in the local communicator, return the distributed object's process id in the global communicator.  <a href="#a395d014467b975a71a94aed81df18051"></a><br/></td></tr>
 <tr class="memitem:aed9508191af0a7d5397050a2b17f6bea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed9508191af0a7d5397050a2b17f6bea"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_indexer.html#aed9508191af0a7d5397050a2b17f6bea">size</a> () const </td></tr>
 <tr class="memdesc:aed9508191af0a7d5397050a2b17f6bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the local to global map. <br/></td></tr>
@@ -135,14 +133,76 @@ IndexMap&#160;</td><td class="memItemRight" valign="bottom"><b>d_l2gmap</b></td>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Map the process ids of a local communicator into a global communicator that encompasses it. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a05c9f96600cfdc2e1c927e49c4db2e86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataTransferKit::CommIndexer::CommIndexer </td>
+          <td>(</td>
+          <td class="paramtype">RCP_Comm&#160;</td>
+          <td class="paramname"><em>global_comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCP_Comm&#160;</td>
+          <td class="paramname"><em>local_comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. Given a global communicator and a local communicator, index the local communicator process ranks into the global communicator process ranks. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">global_comm</td><td>The global communicator.</td></tr>
+    <tr><td class="paramname">local_comm</td><td>The local communicator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a395d014467b975a71a94aed81df18051"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DataTransferKit::CommIndexer::l2g </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>local_id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a process id in the local communicator, return the distributed object's process id in the global communicator. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">local_id</td><td>The local communicator process rank.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>The global process rank. Return -1 if this local id does not exist in the map. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___comm_indexer_8hpp_source.html">DTK_CommIndexer.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___comm_indexer_8cpp.html">DTK_CommIndexer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

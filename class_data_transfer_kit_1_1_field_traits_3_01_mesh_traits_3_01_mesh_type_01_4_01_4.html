@@ -94,6 +94,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_data_transfer_kit_1_1_field_traits.html" title="Field traits definitions.">FieldTraits</a> adapter for mesh coordinates. This allows the coordinate information stored in a block of mesh to be accessed as a field with field traits. Other mesh information is not available through this interface. The mesh object must have mesh traits.  
+ <a href="class_data_transfer_kit_1_1_field_traits_3_01_mesh_traits_3_01_mesh_type_01_4_01_4.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_d_t_k___mesh_traits_field_adapter_8hpp_source.html">DTK_MeshTraitsFieldAdapter.hpp</a>&gt;</code></p>
+
 <p><a href="class_data_transfer_kit_1_1_field_traits_3_01_mesh_traits_3_01_mesh_type_01_4_01_4-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-types"></a>
@@ -117,10 +122,10 @@ typedef <br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a41078f27f5060b6cb6ac42d02fb461e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41078f27f5060b6cb6ac42d02fb461e5"></a>
-static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>dim</b> (const MeshType &amp;mesh)</td></tr>
-<tr class="memitem:a166662dce1aa7c5d3992eb94363c2419"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a166662dce1aa7c5d3992eb94363c2419"></a>
-static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> (const MeshType &amp;mesh)</td></tr>
+<tr class="memitem:a1ea9e780e9ed184785ad007d02978e95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ea9e780e9ed184785ad007d02978e95"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>dim</b> (const MeshType &amp;mesh)</td></tr>
+<tr class="memitem:a78df52d72abb871aec280177c1d780a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78df52d72abb871aec280177c1d780a1"></a>
+static size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> (const MeshType &amp;mesh)</td></tr>
 <tr class="memitem:a3cf22bf5e8f6f083adbb1fb395f64033"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cf22bf5e8f6f083adbb1fb395f64033"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> (const MeshType &amp;mesh)</td></tr>
 <tr class="memitem:af764deb14beb9ba5341a2a657f391878"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af764deb14beb9ba5341a2a657f391878"></a>
@@ -132,13 +137,18 @@ static iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> (M
 <tr class="memitem:a9df10ff6ffe273db3579e47e6d3594ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9df10ff6ffe273db3579e47e6d3594ef"></a>
 static const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> (const MeshType &amp;mesh)</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;&gt;<br/>
+class DataTransferKit::FieldTraits&lt; MeshTraits&lt; MeshType &gt; &gt;</h3>
+
+<p><a class="el" href="class_data_transfer_kit_1_1_field_traits.html" title="Field traits definitions.">FieldTraits</a> adapter for mesh coordinates. This allows the coordinate information stored in a block of mesh to be accessed as a field with field traits. Other mesh information is not available through this interface. The mesh object must have mesh traits. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="_d_t_k___mesh_traits_field_adapter_8hpp_source.html">DTK_MeshTraitsFieldAdapter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

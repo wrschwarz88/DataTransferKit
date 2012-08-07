@@ -117,9 +117,8 @@ CommType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RCP_Comm</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af46c8cd8beb8da3a0d214c9815d2d87a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af46c8cd8beb8da3a0d214c9815d2d87a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_manager.html#af46c8cd8beb8da3a0d214c9815d2d87a">FieldManager</a> (const Field &amp;<a class="el" href="class_data_transfer_kit_1_1_field_manager.html#a31b5a2696f730973b4fdc646ad8ea51d">field</a>, const RCP_Comm &amp;<a class="el" href="class_data_transfer_kit_1_1_field_manager.html#afb9c55a9b916886bf24b5136377ef754">comm</a>)</td></tr>
-<tr class="memdesc:af46c8cd8beb8da3a0d214c9815d2d87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:af46c8cd8beb8da3a0d214c9815d2d87a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_manager.html#af46c8cd8beb8da3a0d214c9815d2d87a">FieldManager</a> (const Field &amp;<a class="el" href="class_data_transfer_kit_1_1_field_manager.html#a31b5a2696f730973b4fdc646ad8ea51d">field</a>, const RCP_Comm &amp;<a class="el" href="class_data_transfer_kit_1_1_field_manager.html#afb9c55a9b916886bf24b5136377ef754">comm</a>)</td></tr>
+<tr class="memdesc:af46c8cd8beb8da3a0d214c9815d2d87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. If Design-By-Contract is enabled, the constructor will validate the field description to the domain model. This requires a few global communications.  <a href="#af46c8cd8beb8da3a0d214c9815d2d87a"></a><br/></td></tr>
 <tr class="memitem:a29690f35ba4fd9fc2c53f9be0938727d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29690f35ba4fd9fc2c53f9be0938727d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_field_manager.html#a29690f35ba4fd9fc2c53f9be0938727d">~FieldManager</a> ()</td></tr>
 <tr class="memdesc:a29690f35ba4fd9fc2c53f9be0938727d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
@@ -145,15 +144,53 @@ RCP_Comm&#160;</td><td class="memItemRight" valign="bottom"><b>d_comm</b></td></
 class DataTransferKit::FieldManager&lt; Field &gt;</h3>
 
 <p>Manager object for fields. </p>
-<p>The field manager manages a field and its parallel decomposition. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<p>The field manager manages a field and its parallel decomposition. A field has a dimension of arbitrary size. As examples, for scalar fields this dimension is 1, for 3-vectors (such as the velocity example above in a 3 dimensional computation) the dimension is 3, and for a 3x3 tensor the dimension is 9. All local instances of the field must have the same dimension. A field can have an arbitrary number of local degrees of freedom and this size can differ from local domain to local domain. No knowledge of the global field decomposition is required, however, it must exist on a single communicator. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af46c8cd8beb8da3a0d214c9815d2d87a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Field &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_field_manager.html">DataTransferKit::FieldManager</a>&lt; Field &gt;::<a class="el" href="class_data_transfer_kit_1_1_field_manager.html">FieldManager</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Field &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. If Design-By-Contract is enabled, the constructor will validate the field description to the domain model. This requires a few global communications. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>The field that this object is managing. This field must have <a class="el" href="class_data_transfer_kit_1_1_field_traits.html" title="Field traits definitions.">FieldTraits</a>.</td></tr>
+    <tr><td class="paramname">comm</td><td>The communicator over which the field is defined. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___field_manager_8hpp_source.html">DTK_FieldManager.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___field_manager__def_8hpp_source.html">DTK_FieldManager_def.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

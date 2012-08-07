@@ -130,67 +130,65 @@ typedef ZOLTAN_ID_PTR&#160;</td><td class="memItemRight" valign="bottom"><b>zolt
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac38e3f3f3344f7c82fdb635eb53d1828"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac38e3f3f3344f7c82fdb635eb53d1828"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#ac38e3f3f3344f7c82fdb635eb53d1828">RCB</a> (const RCP_MeshManager &amp;mesh_manager)</td></tr>
-<tr class="memdesc:ac38e3f3f3344f7c82fdb635eb53d1828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:ac38e3f3f3344f7c82fdb635eb53d1828"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#ac38e3f3f3344f7c82fdb635eb53d1828">RCB</a> (const RCP_MeshManager &amp;mesh_manager)</td></tr>
+<tr class="memdesc:ac38e3f3f3344f7c82fdb635eb53d1828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ac38e3f3f3344f7c82fdb635eb53d1828"></a><br/></td></tr>
 <tr class="memitem:a502fa022604ca4cc9857536e3fe061a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a502fa022604ca4cc9857536e3fe061a7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a502fa022604ca4cc9857536e3fe061a7">~RCB</a> ()</td></tr>
-<tr class="memdesc:a502fa022604ca4cc9857536e3fe061a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
+<tr class="memdesc:a502fa022604ca4cc9857536e3fe061a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Zoltan memory deallocation happens here and only here. <br/></td></tr>
 <tr class="memitem:a718968029957a544e48a83ca7b75f920"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a718968029957a544e48a83ca7b75f920"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a718968029957a544e48a83ca7b75f920">partition</a> ()</td></tr>
 <tr class="memdesc:a718968029957a544e48a83ca7b75f920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute <a class="el" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCB</a> partitioning of the mesh. <br/></td></tr>
-<tr class="memitem:a004463edac8731efceb967d8452ef500"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a004463edac8731efceb967d8452ef500"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a004463edac8731efceb967d8452ef500">getDestinationProc</a> (Teuchos::Array&lt; double &gt; coords) const </td></tr>
-<tr class="memdesc:a004463edac8731efceb967d8452ef500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the destination process for a node given its coordinates. <br/></td></tr>
+<tr class="memitem:a004463edac8731efceb967d8452ef500"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a004463edac8731efceb967d8452ef500">getDestinationProc</a> (Teuchos::Array&lt; double &gt; coords) const </td></tr>
+<tr class="memdesc:a004463edac8731efceb967d8452ef500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the destination process for a point given its coordinates.  <a href="#a004463edac8731efceb967d8452ef500"></a><br/></td></tr>
 <tr class="memitem:ac7cbc51b37461117cb3f7df3958d4739"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7cbc51b37461117cb3f7df3958d4739"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#ac7cbc51b37461117cb3f7df3958d4739">getNumImport</a> () const </td></tr>
-<tr class="memdesc:ac7cbc51b37461117cb3f7df3958d4739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of imported nodes. <br/></td></tr>
+<tr class="memdesc:ac7cbc51b37461117cb3f7df3958d4739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of imported vertices. <br/></td></tr>
 <tr class="memitem:a520a5a7d353cb297ff5750fa885891a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a520a5a7d353cb297ff5750fa885891a8"></a>
 Teuchos::ArrayView<br class="typebreak"/>
 &lt; zoltan_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a520a5a7d353cb297ff5750fa885891a8">getImportGlobalIds</a> () const </td></tr>
-<tr class="memdesc:a520a5a7d353cb297ff5750fa885891a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global import node ID's. <br/></td></tr>
+<tr class="memdesc:a520a5a7d353cb297ff5750fa885891a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global import vertex ID's. <br/></td></tr>
 <tr class="memitem:a276ed7a89de9e9e96a9df05393698ecc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a276ed7a89de9e9e96a9df05393698ecc"></a>
 Teuchos::ArrayView<br class="typebreak"/>
 &lt; zoltan_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a276ed7a89de9e9e96a9df05393698ecc">getImportLocalIds</a> () const </td></tr>
-<tr class="memdesc:a276ed7a89de9e9e96a9df05393698ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local import node ID's. <br/></td></tr>
+<tr class="memdesc:a276ed7a89de9e9e96a9df05393698ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local import vertex ID's. <br/></td></tr>
 <tr class="memitem:ae3e5e8068b4d5110e75de4ba97e56678"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3e5e8068b4d5110e75de4ba97e56678"></a>
 Teuchos::ArrayView&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#ae3e5e8068b4d5110e75de4ba97e56678">getImportProcs</a> () const </td></tr>
-<tr class="memdesc:ae3e5e8068b4d5110e75de4ba97e56678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process rank source for imported nodes. <br/></td></tr>
+<tr class="memdesc:ae3e5e8068b4d5110e75de4ba97e56678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process rank source for imported vertices. <br/></td></tr>
 <tr class="memitem:a0f59958b7a31a8805ea84cd18ffdcc44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f59958b7a31a8805ea84cd18ffdcc44"></a>
 Teuchos::ArrayView&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a0f59958b7a31a8805ea84cd18ffdcc44">getImportParts</a> () const </td></tr>
-<tr class="memdesc:a0f59958b7a31a8805ea84cd18ffdcc44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the new partition for imported nodes. <br/></td></tr>
+<tr class="memdesc:a0f59958b7a31a8805ea84cd18ffdcc44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the new partition for imported vertices. <br/></td></tr>
 <tr class="memitem:a0f910864245a320002e0481f87ef33de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f910864245a320002e0481f87ef33de"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a0f910864245a320002e0481f87ef33de">getNumExport</a> () const </td></tr>
-<tr class="memdesc:a0f910864245a320002e0481f87ef33de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of exported nodes. <br/></td></tr>
+<tr class="memdesc:a0f910864245a320002e0481f87ef33de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of exported vertices. <br/></td></tr>
 <tr class="memitem:afb1a3ba0202a817810fa9db24e770eac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb1a3ba0202a817810fa9db24e770eac"></a>
 Teuchos::ArrayView<br class="typebreak"/>
 &lt; zoltan_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#afb1a3ba0202a817810fa9db24e770eac">getExportGlobalIds</a> () const </td></tr>
-<tr class="memdesc:afb1a3ba0202a817810fa9db24e770eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global export node ID's. <br/></td></tr>
+<tr class="memdesc:afb1a3ba0202a817810fa9db24e770eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global export vertex ID's. <br/></td></tr>
 <tr class="memitem:a7db2e7c7e56054c05298eca9c78eaa8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7db2e7c7e56054c05298eca9c78eaa8c"></a>
 Teuchos::ArrayView<br class="typebreak"/>
 &lt; zoltan_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a7db2e7c7e56054c05298eca9c78eaa8c">getExportLocalIds</a> () const </td></tr>
-<tr class="memdesc:a7db2e7c7e56054c05298eca9c78eaa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local export node ID's. <br/></td></tr>
+<tr class="memdesc:a7db2e7c7e56054c05298eca9c78eaa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local export vertex ID's. <br/></td></tr>
 <tr class="memitem:a181cde4755953e24a0c722339d83e8d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a181cde4755953e24a0c722339d83e8d1"></a>
 Teuchos::ArrayView&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a181cde4755953e24a0c722339d83e8d1">getExportProcs</a> () const </td></tr>
-<tr class="memdesc:a181cde4755953e24a0c722339d83e8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process rank target for exported nodes. <br/></td></tr>
+<tr class="memdesc:a181cde4755953e24a0c722339d83e8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process rank target for exported vertices. <br/></td></tr>
 <tr class="memitem:af4d2e3ef33ebf6f58501308147e853c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4d2e3ef33ebf6f58501308147e853c0"></a>
 Teuchos::ArrayView&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#af4d2e3ef33ebf6f58501308147e853c0">getExportParts</a> () const </td></tr>
-<tr class="memdesc:af4d2e3ef33ebf6f58501308147e853c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the new partition for exported nodes. <br/></td></tr>
+<tr class="memdesc:af4d2e3ef33ebf6f58501308147e853c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the new partition for exported vertices. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a3ad06c6ba3dc330d7a86ce46ef1a9818"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ad06c6ba3dc330d7a86ce46ef1a9818"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a3ad06c6ba3dc330d7a86ce46ef1a9818">getNumberOfObjects</a> (void *data, int *ierr)</td></tr>
-<tr class="memdesc:a3ad06c6ba3dc330d7a86ce46ef1a9818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the number of nodes. <br/></td></tr>
+<tr class="memdesc:a3ad06c6ba3dc330d7a86ce46ef1a9818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the number of vertices. <br/></td></tr>
 <tr class="memitem:afb370e303f235b16f50a9767d69184cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb370e303f235b16f50a9767d69184cb"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#afb370e303f235b16f50a9767d69184cb">getObjectList</a> (void *data, int sizeGID, int sizeLID, ZOLTAN_ID_PTR globalID, ZOLTAN_ID_PTR localID, int wgt_dim, float *obj_wgts, int *ierr)</td></tr>
-<tr class="memdesc:afb370e303f235b16f50a9767d69184cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the local and global node ID's. <br/></td></tr>
+<tr class="memdesc:afb370e303f235b16f50a9767d69184cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the local and global vertex ID's. <br/></td></tr>
 <tr class="memitem:aaaa7689e4f6cb827ee311e62715d054f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaa7689e4f6cb827ee311e62715d054f"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#aaaa7689e4f6cb827ee311e62715d054f">getNumGeometry</a> (void *data, int *ierr)</td></tr>
-<tr class="memdesc:aaaa7689e4f6cb827ee311e62715d054f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the dimension of the nodes. <br/></td></tr>
+<tr class="memdesc:aaaa7689e4f6cb827ee311e62715d054f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the dimension of the vertices. <br/></td></tr>
 <tr class="memitem:a2858dfe0a8816a67b76755ebcb828e82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2858dfe0a8816a67b76755ebcb828e82"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html#a2858dfe0a8816a67b76755ebcb828e82">getGeometryList</a> (void *data, int sizeGID, int sizeLID, int num_obj, ZOLTAN_ID_PTR globalID, ZOLTAN_ID_PTR localID, int num_dim, double *geom_vec, int *ierr)</td></tr>
-<tr class="memdesc:a2858dfe0a8816a67b76755ebcb828e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the node coordinates. <br/></td></tr>
+<tr class="memdesc:a2858dfe0a8816a67b76755ebcb828e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoltan callback for getting the vertex coordinates. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -230,14 +228,69 @@ int *&#160;</td><td class="memItemRight" valign="bottom"><b>d_export_to_part</b>
 class DataTransferKit::RCB&lt; Mesh &gt;</h3>
 
 <p>Recursive Coordinate Bisectioning partitioner. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac38e3f3f3344f7c82fdb635eb53d1828"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_r_c_b.html">DataTransferKit::RCB</a>&lt; Mesh &gt;::<a class="el" href="class_data_transfer_kit_1_1_r_c_b.html">RCB</a> </td>
+          <td>(</td>
+          <td class="paramtype">const RCP_MeshManager &amp;&#160;</td>
+          <td class="paramname"><em>mesh_manager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh_manager</td><td>The mesh to be partitioned with <a class="el" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCB</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a004463edac8731efceb967d8452ef500"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_data_transfer_kit_1_1_r_c_b.html">DataTransferKit::RCB</a>&lt; Mesh &gt;::getDestinationProc </td>
+          <td>(</td>
+          <td class="paramtype">Teuchos::Array&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>coords</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the destination process for a point given its coordinates. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>Point coordinates. The dimension of the point must be equal to or less than one.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>The <a class="el" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCB</a> destination proc for the point. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___r_c_b_8hpp_source.html">DTK_RCB.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___r_c_b__def_8hpp_source.html">DTK_RCB_def.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

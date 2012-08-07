@@ -124,26 +124,168 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9604af354fd5d1f9dde42e61dc7637e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9604af354fd5d1f9dde42e61dc7637e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>getMpiCommWorld</b> (RCP_Comm &amp;mpi_comm_world)</td></tr>
-<tr class="memitem:a1b02f829f3f52c0a1a8c0ec5acd044b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b02f829f3f52c0a1a8c0ec5acd044b6"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html#a1b02f829f3f52c0a1a8c0ec5acd044b6">equal</a> (const RCP_Comm &amp;comm_A, const RCP_Comm &amp;comm_B)</td></tr>
-<tr class="memdesc:a1b02f829f3f52c0a1a8c0ec5acd044b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether two communicators own the same communication space. <br/></td></tr>
-<tr class="memitem:abad4d022ebe4c3bafb4a292c9bc70cf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abad4d022ebe4c3bafb4a292c9bc70cf4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html#abad4d022ebe4c3bafb4a292c9bc70cf4">unite</a> (const RCP_Comm &amp;comm_A, const RCP_Comm &amp;comm_B, RCP_Comm &amp;comm_union)</td></tr>
-<tr class="memdesc:abad4d022ebe4c3bafb4a292c9bc70cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the union of two communicators. <br/></td></tr>
-<tr class="memitem:a78f3ea66a92bf04f4f8b95fe0cecd865"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78f3ea66a92bf04f4f8b95fe0cecd865"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html#a78f3ea66a92bf04f4f8b95fe0cecd865">intersect</a> (const RCP_Comm &amp;comm_A, const RCP_Comm &amp;comm_B, RCP_Comm &amp;comm_intersection)</td></tr>
-<tr class="memdesc:a78f3ea66a92bf04f4f8b95fe0cecd865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the intersection of two communicators. <br/></td></tr>
+<tr class="memitem:a1b02f829f3f52c0a1a8c0ec5acd044b6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html#a1b02f829f3f52c0a1a8c0ec5acd044b6">equal</a> (const RCP_Comm &amp;comm_A, const RCP_Comm &amp;comm_B)</td></tr>
+<tr class="memdesc:a1b02f829f3f52c0a1a8c0ec5acd044b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether two communicators own the same communication space.  <a href="#a1b02f829f3f52c0a1a8c0ec5acd044b6"></a><br/></td></tr>
+<tr class="memitem:abad4d022ebe4c3bafb4a292c9bc70cf4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html#abad4d022ebe4c3bafb4a292c9bc70cf4">unite</a> (const RCP_Comm &amp;comm_A, const RCP_Comm &amp;comm_B, RCP_Comm &amp;comm_union)</td></tr>
+<tr class="memdesc:abad4d022ebe4c3bafb4a292c9bc70cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the union of two communicators.  <a href="#abad4d022ebe4c3bafb4a292c9bc70cf4"></a><br/></td></tr>
+<tr class="memitem:a78f3ea66a92bf04f4f8b95fe0cecd865"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_comm_tools.html#a78f3ea66a92bf04f4f8b95fe0cecd865">intersect</a> (const RCP_Comm &amp;comm_A, const RCP_Comm &amp;comm_B, RCP_Comm &amp;comm_intersection)</td></tr>
+<tr class="memdesc:a78f3ea66a92bf04f4f8b95fe0cecd865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the intersection of two communicators.  <a href="#a78f3ea66a92bf04f4f8b95fe0cecd865"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A stateless class with tools for operating on communicators. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a1b02f829f3f52c0a1a8c0ec5acd044b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataTransferKit::CommTools::equal </td>
+          <td>(</td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check whether two communicators own the same communication space. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comm_A</td><td>Communicator A.</td></tr>
+    <tr><td class="paramname">comm_B</td><td>Communicator B.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Return true if communicator A and B operate on the same group of processes. These processes do not have to have the same ranks in the communicators to be considered equivalent, they are only required to be the same physical process. The same result is produced independent of the ordering of A and B in the input parameters. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78f3ea66a92bf04f4f8b95fe0cecd865"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataTransferKit::CommTools::intersect </td>
+          <td>(</td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_intersection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate the intersection of two communicators. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comm_A</td><td>Communicator A.</td></tr>
+    <tr><td class="paramname">comm_B</td><td>Communicator B.</td></tr>
+    <tr><td class="paramname">comm_intersection</td><td>Return the intersection of communicator A and B. The intersection of A and B is defined to be the group of physical processes that exist in both A and B. The same result is produced independent of the ordering of A and B in the input parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abad4d022ebe4c3bafb4a292c9bc70cf4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataTransferKit::CommTools::unite </td>
+          <td>(</td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm_union</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate the union of two communicators. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comm_A</td><td>Communicator A.</td></tr>
+    <tr><td class="paramname">comm_B</td><td>Communicator B.</td></tr>
+    <tr><td class="paramname">comm_union</td><td>Return the union of communicator A and B. The union of A and B is defined as the physical processes that exist in either communicator. The same result is produced independent of the ordering of A and B in the input parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___comm_tools_8hpp_source.html">DTK_CommTools.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___comm_tools_8cpp.html">DTK_CommTools.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

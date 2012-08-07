@@ -133,6 +133,15 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 class DataTransferKit::FieldEvaluator&lt; Mesh, Field &gt;</h3>
 
 <p>Interface definition for function evaluation kernels. </p>
+<p>The actual discretization of the field is not explicitly formulated. Rather, access to discretization of fields and the associated data is generated through function evaluations at points in physical space. Consider a <img class="formulaInl" alt="$D$" src="form_3.png"/>-dimensional function <img class="formulaInl" alt="$F(r)$" src="form_4.png"/> of arbitrary discretization over the spatial domain <img class="formulaInl" alt="$\Omega \in \mathcal{R}^n $" src="form_15.png"/> where <img class="formulaInl" alt="$r \in \mathcal{R}^n$" src="form_16.png"/> and <img class="formulaInl" alt="$F : \mathcal{R}^n \rightarrow \mathcal{R}^D$" src="form_17.png"/>. Via polynomial interpolation, projection, or any other means necessary to most appropriately reflect the discretization of <img class="formulaInl" alt="$F(r)$" src="form_4.png"/>, it then follows that evaluation operations of the following type can be performed:</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \hat{f} \leftarrow F(\hat{r}), \forall \hat{r} \in \Omega \]" src="form_1.png"/>
+</p>
+<p>where <img class="formulaInl" alt="$\hat{r} \in \mathcal{R}^n$" src="form_18.png"/> is a single point and <img class="formulaInl" alt="$\hat{f} \in \mathcal{R}^D$" src="form_19.png"/> is representative of the function <img class="formulaInl" alt="$F(r)$" src="form_4.png"/> evaluated at <img class="formulaInl" alt="$\hat{r}$" src="form_10.png"/>. This operation is not valid for <img class="formulaInl" alt="$\hat{r} \notin \Omega$" src="form_11.png"/>. In the context of <img class="formulaInl" alt="$\Omega$" src="form_12.png"/> discretized by a mesh, these evaluations can instead be written in terms of a single mesh element, <img class="formulaInl" alt="$\omega \in \Omega$" src="form_13.png"/>.</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \hat{f} \leftarrow F(\hat{r}), \forall \hat{r} \in \omega \]" src="form_2.png"/>
+</p>
+<p>This operation is then not valid for <img class="formulaInl" alt="$\hat{r} \notin \omega$" src="form_14.png"/>. If <img class="formulaInl" alt="$\hat{r} \notin \omega$" src="form_14.png"/> and <img class="formulaInl" alt="$\hat{r} \notin \Omega$" src="form_11.png"/>, then alternative schemes may be chosen, such as extrapolation, in order to apply the field to <img class="formulaInl" alt="$\hat{r}$" src="form_10.png"/>. A <a class="el" href="class_data_transfer_kit_1_1_field_evaluator.html" title="Interface definition for function evaluation kernels.">FieldEvaluator</a> is the object that drives the function evaluations. </p>
 </div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="ad41e6f1f5fa55d93aee6593b04347455"></a>
 <div class="memitem">
@@ -172,7 +181,7 @@ template&lt;class Mesh , class Field &gt; </div>
 <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
     <tr><td class="paramname">elements</td><td>A vector of valid element handles in which to evaluate the field.</td></tr>
-    <tr><td class="paramname">coords</td><td>A vector of blocked coordinates ( x0, x1, x2, ... , xN, y0, y1, y2, ... , yN, z0, z1, z2, ... , zN ) at which to evaluate the field. Coordinates ( xN, yN, zN ) should be evaluated in the Nth element in the elements vector.</td></tr>
+    <tr><td class="paramname">coords</td><td>A vector of blocked coordinates { x0, x1, x2, ... , xN, y0, y1, y2, ... , yN, z0, z1, z2, ... , zN } at which to evaluate the field. Coordinates { xN, yN, zN } should be evaluated in the Nth element in the elements vector.</td></tr>
   </table>
   </dd>
 </dl>
@@ -186,7 +195,7 @@ template&lt;class Mesh , class Field &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

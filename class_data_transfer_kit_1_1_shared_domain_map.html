@@ -152,36 +152,29 @@ typedef Teuchos::RCP&lt; ExportType &gt;&#160;</td><td class="memItemRight" vali
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acdfe7f01d92c98b63929a85aa1cdc372"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdfe7f01d92c98b63929a85aa1cdc372"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#acdfe7f01d92c98b63929a85aa1cdc372">SharedDomainMap</a> (const RCP_Comm &amp;comm, bool keep_missed_points=false)</td></tr>
-<tr class="memdesc:acdfe7f01d92c98b63929a85aa1cdc372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br/></td></tr>
+<tr class="memitem:acdfe7f01d92c98b63929a85aa1cdc372"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#acdfe7f01d92c98b63929a85aa1cdc372">SharedDomainMap</a> (const RCP_Comm &amp;comm, bool keep_missed_points=false)</td></tr>
+<tr class="memdesc:acdfe7f01d92c98b63929a85aa1cdc372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#acdfe7f01d92c98b63929a85aa1cdc372"></a><br/></td></tr>
 <tr class="memitem:a846270d991e5d145958df281d06f0a4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a846270d991e5d145958df281d06f0a4e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a846270d991e5d145958df281d06f0a4e">~SharedDomainMap</a> ()</td></tr>
 <tr class="memdesc:a846270d991e5d145958df281d06f0a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br/></td></tr>
-<tr class="memitem:a86ee2c568205167c831694de692f686c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86ee2c568205167c831694de692f686c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a86ee2c568205167c831694de692f686c">setup</a> (const RCP_MeshManager &amp;source_mesh_manager, const RCP_CoordFieldManager &amp;target_coord_manager)</td></tr>
-<tr class="memdesc:a86ee2c568205167c831694de692f686c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the shared domain map. <br/></td></tr>
-<tr class="memitem:a875cac754c03ea2e516bcd1bc9f7862d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a875cac754c03ea2e516bcd1bc9f7862d"></a>
-template&lt;class SourceField , class TargetField &gt; </td></tr>
+<tr class="memitem:a86ee2c568205167c831694de692f686c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a86ee2c568205167c831694de692f686c">setup</a> (const RCP_MeshManager &amp;source_mesh_manager, const RCP_CoordFieldManager &amp;target_coord_manager)</td></tr>
+<tr class="memdesc:a86ee2c568205167c831694de692f686c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the shared domain map.  <a href="#a86ee2c568205167c831694de692f686c"></a><br/></td></tr>
+<tr class="memitem:a875cac754c03ea2e516bcd1bc9f7862d"><td class="memTemplParams" colspan="2">template&lt;class SourceField , class TargetField &gt; </td></tr>
 <tr class="memitem:a875cac754c03ea2e516bcd1bc9f7862d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a875cac754c03ea2e516bcd1bc9f7862d">apply</a> (const Teuchos::RCP&lt; <a class="el" href="class_data_transfer_kit_1_1_field_evaluator.html">FieldEvaluator</a>&lt; Mesh, SourceField &gt; &gt; &amp;source_evaluator, Teuchos::RCP&lt; <a class="el" href="class_data_transfer_kit_1_1_field_manager.html">FieldManager</a>&lt; TargetField &gt; &gt; &amp;target_space_manager)</td></tr>
-<tr class="memdesc:a875cac754c03ea2e516bcd1bc9f7862d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the shared domain map for a valid source field evaluator and target data space to the target points that were mapped. <br/></td></tr>
+<tr class="memdesc:a875cac754c03ea2e516bcd1bc9f7862d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the shared domain map for a valid source field evaluator and target data space to the target points that were mapped.  <a href="#a875cac754c03ea2e516bcd1bc9f7862d"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a6be0234af6de49e3867cdc27e3c5873a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6be0234af6de49e3867cdc27e3c5873a"></a>
-Teuchos::ArrayView&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a6be0234af6de49e3867cdc27e3c5873a">getMissedTargetPoints</a> ()</td></tr>
-<tr class="memdesc:a6be0234af6de49e3867cdc27e3c5873a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If keep_missed_points is true, return the local indices of the points provided by target_coord_manager that were not mapped. An exception will be thrown if keep_missed_points is false. Returns a null view if all points have been mapped or the map has not yet been generated. <br/></td></tr>
-<tr class="memitem:ab998338794c11a9379e94e15081cdcb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab998338794c11a9379e94e15081cdcb3"></a>
-Teuchos::ArrayView&lt; const <br class="typebreak"/>
+<tr class="memitem:a6be0234af6de49e3867cdc27e3c5873a"><td class="memItemLeft" align="right" valign="top">Teuchos::ArrayView&lt; GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a6be0234af6de49e3867cdc27e3c5873a">getMissedTargetPoints</a> ()</td></tr>
+<tr class="memdesc:a6be0234af6de49e3867cdc27e3c5873a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the points missed in the map generation.  <a href="#a6be0234af6de49e3867cdc27e3c5873a"></a><br/></td></tr>
+<tr class="memitem:ab998338794c11a9379e94e15081cdcb3"><td class="memItemLeft" align="right" valign="top">Teuchos::ArrayView&lt; const <br class="typebreak"/>
 GlobalOrdinal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#ab998338794c11a9379e94e15081cdcb3">getMissedTargetPoints</a> () const </td></tr>
-<tr class="memdesc:ab998338794c11a9379e94e15081cdcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If keep_missed_points is true, return the local indices of the points provided by target_coord_manager that were not mapped. An exception will be thrown if keep_missed_points is false. Returns a null view if all points have been mapped or the map has not yet been generated. <br/></td></tr>
+<tr class="memdesc:ab998338794c11a9379e94e15081cdcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the points missed in the map generation.  <a href="#ab998338794c11a9379e94e15081cdcb3"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a1fe5f316f6533a55d07499b503d23ae7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fe5f316f6533a55d07499b503d23ae7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a1fe5f316f6533a55d07499b503d23ae7">computePointOrdinals</a> (const CoordinateField &amp;target_coords, Teuchos::Array&lt; GlobalOrdinal &gt; &amp;target_ordinals)</td></tr>
-<tr class="memdesc:a1fe5f316f6533a55d07499b503d23ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute globally unique ordinals for the target points. <br/></td></tr>
-<tr class="memitem:a66cca884da8b0709af94cce34d7a257f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66cca884da8b0709af94cce34d7a257f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a66cca884da8b0709af94cce34d7a257f">getTargetPointsInBox</a> (const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> &amp;box, const CoordinateField &amp;target_coords, const Teuchos::Array&lt; GlobalOrdinal &gt; &amp;target_ordinals, Teuchos::Array&lt; GlobalOrdinal &gt; &amp;targets_in_box)</td></tr>
-<tr class="memdesc:a66cca884da8b0709af94cce34d7a257f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target points that are in the rendezvous decomposition box. <br/></td></tr>
+<tr class="memitem:a1fe5f316f6533a55d07499b503d23ae7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a1fe5f316f6533a55d07499b503d23ae7">computePointOrdinals</a> (const CoordinateField &amp;target_coords, Teuchos::Array&lt; GlobalOrdinal &gt; &amp;target_ordinals)</td></tr>
+<tr class="memdesc:a1fe5f316f6533a55d07499b503d23ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute globally unique ordinals for the target points.  <a href="#a1fe5f316f6533a55d07499b503d23ae7"></a><br/></td></tr>
+<tr class="memitem:a66cca884da8b0709af94cce34d7a257f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html#a66cca884da8b0709af94cce34d7a257f">getTargetPointsInBox</a> (const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> &amp;box, const CoordinateField &amp;target_coords, const Teuchos::Array&lt; GlobalOrdinal &gt; &amp;target_ordinals, Teuchos::Array&lt; GlobalOrdinal &gt; &amp;targets_in_box)</td></tr>
+<tr class="memdesc:a66cca884da8b0709af94cce34d7a257f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target points that are in the rendezvous decomposition box.  <a href="#a66cca884da8b0709af94cce34d7a257f"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -210,14 +203,275 @@ Teuchos::Array&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom
 class DataTransferKit::SharedDomainMap&lt; Mesh, CoordinateField &gt;</h3>
 
 <p>A map for shared domain problems. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<p>A parallel topology map is an operator, <img class="formulaInl" alt="$M$" src="form_42.png"/>, that defines the translation of a field, <img class="formulaInl" alt="$F(s)$" src="form_43.png"/>, from a source spatial domain, <img class="formulaInl" alt="$\Omega_S$" src="form_44.png"/>, to a field, <img class="formulaInl" alt="$G(t)$" src="form_45.png"/>, in the target spatial domain <img class="formulaInl" alt="$\Omega_T$" src="form_46.png"/>, such that <img class="formulaInl" alt="$M: \mathcal{R}^D \rightarrow \mathcal{R}^D, \forall r \in [\Omega_S \cap \Omega_T]$" src="form_47.png"/>, using both geometric and parallel operations.</p>
+<p>A shared domain problem is one in which the geometric domains of the source and target intersect over all dimensions of the problem. The shared domain map is a parallel topology map that has several properties. It is defined over a communicator that encapsulates the union of the communication spaces owned by the source and target geometries. The map is of the same dimension as the source and target geometries. A shared domain map cannot be generated with source and target geometries of different dimensions (e.g. a 3 dimensional source geometry and a 2 dimensional target geometry cannot be used to generate a shared domain map).</p>
+<p>There are several steps in the mapping where target objects may or may not be found in the source mesh. Both the <a class="el" href="class_data_transfer_kit_1_1_r_c_b.html" title="Recursive Coordinate Bisectioning partitioner.">RCB</a> decomposition search and kD-tree search have the potential to return target objects that were not found in the source mesh. The source function will not be evaluated at these points as they are not in the domain <img class="formulaInl" alt="$\Omega_S$" src="form_44.png"/>, and therefore the evaluation operation will not be valid. However, a list of these points in the target decomposition may be generated for further processing by the client. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="acdfe7f01d92c98b63929a85aa1cdc372"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh , class CoordinateField &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">DataTransferKit::SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::<a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">SharedDomainMap</a> </td>
+          <td>(</td>
+          <td class="paramtype">const RCP_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>keep_missed_points</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comm</td><td>The communicator over which the map is generated.</td></tr>
+    <tr><td class="paramname">keep_missed_points</td><td>Set to true if it is desired to keep track of the local target points missed during map generation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a875cac754c03ea2e516bcd1bc9f7862d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh , class CoordinateField &gt; </div>
+<div class="memtemplate">
+template&lt;class SourceField , class TargetField &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">DataTransferKit::SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const Teuchos::RCP&lt; <a class="el" href="class_data_transfer_kit_1_1_field_evaluator.html">FieldEvaluator</a>&lt; Mesh, SourceField &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source_evaluator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Teuchos::RCP&lt; <a class="el" href="class_data_transfer_kit_1_1_field_manager.html">FieldManager</a>&lt; TargetField &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_space_manager</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply the shared domain map for a valid source field evaluator and target data space to the target points that were mapped. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source_evaluator</td><td>Function evaluator used to apply the mapping. This <a class="el" href="class_data_transfer_kit_1_1_field_evaluator.html" title="Interface definition for function evaluation kernels.">FieldEvaluator</a> must be valid for the source mesh used to generate the map.</td></tr>
+    <tr><td class="paramname">target_space_manager</td><td>Target space into which the function evaluations will be written. Enough space must be allocated to hold evaluations at all points in all dimensions of the field. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1fe5f316f6533a55d07499b503d23ae7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh , class CoordinateField &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">DataTransferKit::SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::computePointOrdinals </td>
+          <td>(</td>
+          <td class="paramtype">const CoordinateField &amp;&#160;</td>
+          <td class="paramname"><em>target_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Teuchos::Array&lt; GlobalOrdinal &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_ordinals</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute globally unique ordinals for the target points. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_coords</td><td>The coordinates to compute global ordinals for.</td></tr>
+    <tr><td class="paramname">target_ordinals</td><td>The computed globally unique ordinals for the target coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6be0234af6de49e3867cdc27e3c5873a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh , class CoordinateField &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayView&lt; typename <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">DataTransferKit::SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::getMissedTargetPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the points missed in the map generation. </p>
+<dl class="section return"><dt>Returns:</dt><dd>If keep_missed_points is true, return the local indices of the points provided by target_coord_manager that were not mapped. An exception will be thrown if keep_missed_points is false. Returns a null view if all points have been mapped or the map has not yet been generated. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab998338794c11a9379e94e15081cdcb3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh , class CoordinateField &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Teuchos::ArrayView&lt; const typename <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::GlobalOrdinal &gt; <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">DataTransferKit::SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::getMissedTargetPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the points missed in the map generation. </p>
+<dl class="section return"><dt>Returns:</dt><dd>If keep_missed_points is true, return the local indices of the points provided by target_coord_manager that were not mapped. An exception will be thrown if keep_missed_points is false. Returns a null view if all points have been mapped or the map has not yet been generated. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a66cca884da8b0709af94cce34d7a257f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh , class CoordinateField &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">DataTransferKit::SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::getTargetPointsInBox </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_data_transfer_kit_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>box</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CoordinateField &amp;&#160;</td>
+          <td class="paramname"><em>target_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Teuchos::Array&lt; GlobalOrdinal &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_ordinals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Teuchos::Array&lt; GlobalOrdinal &gt; &amp;&#160;</td>
+          <td class="paramname"><em>targets_in_box</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the target points that are in the rendezvous decomposition box. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_coords</td><td>The target coordinates to search the box with.</td></tr>
+    <tr><td class="paramname">target_ordinals</td><td>The globally unique ordinals for the target coordinates.</td></tr>
+    <tr><td class="paramname">targets_in_box</td><td>The global ordinals of the target coordinates in the box. If a target point was not found in the box, return an invalid ordinal, -1, in its positition. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a86ee2c568205167c831694de692f686c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Mesh , class CoordinateField &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_data_transfer_kit_1_1_shared_domain_map.html">DataTransferKit::SharedDomainMap</a>&lt; Mesh, CoordinateField &gt;::setup </td>
+          <td>(</td>
+          <td class="paramtype">const RCP_MeshManager &amp;&#160;</td>
+          <td class="paramname"><em>source_mesh_manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCP_CoordFieldManager &amp;&#160;</td>
+          <td class="paramname"><em>target_coord_manager</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate the shared domain map. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source_mesh_manager</td><td>Source mesh in the shared domain problem.</td></tr>
+    <tr><td class="paramname">target_coord_manager</td><td>Target coordinates in the shared domain problem. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_d_t_k___shared_domain_map_8hpp_source.html">DTK_SharedDomainMap.hpp</a></li>
 <li>src/<a class="el" href="_d_t_k___shared_domain_map__def_8hpp_source.html">DTK_SharedDomainMap_def.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 3 2012 16:56:36 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 18:09:49 for Data Transfer Kit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
