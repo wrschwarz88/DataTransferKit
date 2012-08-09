@@ -1,0 +1,34 @@
+\form#0:\[ |I_2|=\left| \int_{0}^T \psi(t) \left\{ u(a,t)- \int_{\gamma(t)}^a \frac{d\theta}{k(\theta,t)} \int_{a}^\theta c(\xi)u_t(\xi,t)\,d\xi \right\} dt \right| \]
+\form#1:$D$
+\form#2:$F(r)$
+\form#3:$\Omega \in \mathcal{R}^n $
+\form#4:$r \in \mathcal{R}^n$
+\form#5:$F : \mathcal{R}^n \rightarrow \mathcal{R}^D$
+\form#6:\[ \hat{f} \leftarrow F(\hat{r}), \forall \hat{r} \in \Omega \]
+\form#7:$\hat{r} \in \mathcal{R}^n$
+\form#8:$\hat{f} \in \mathcal{R}^D$
+\form#9:$\hat{r}$
+\form#10:$\hat{r} \notin \Omega$
+\form#11:$\Omega$
+\form#12:$\omega \in \Omega$
+\form#13:\[ \hat{f} \leftarrow F(\hat{r}), \forall \hat{r} \in \omega \]
+\form#14:$\hat{r} \notin \omega$
+\form#15:$ \Big[ f_0, f_1, f_2, ..., f_D \big] $
+\form#16:$ \Big[ f^0_0, f^1_0, f^2_0, ..., f^N_0, f^0_1, f^1_1, f^2_1, ..., f^N_1, ... , f^0_D, f^1_D, f^2_D, ..., f^N_D \Big] $
+\form#17:$ \Big\{ d_0, ..., d_D \Big\} $
+\form#18:$ \Big\{ n^0, n^1, n^2, ..., n^N \Big\} $
+\form#19:\[ \Big\{ x^0_0, x^1_0, x^2_0, ..., x^N_0, x^0_1, x^1_1, x^2_1, ... x^N_1, x^0_2, x^1_2, x^2_2, ... x^N_2 \Big\} \]
+\form#20:$ n_N $
+\form#21:$ \Big\{ x^N_0, x^N_1, x^N_2 \Big\} $
+\form#22:$ \Big\{ m^0, m^1, m^2, ..., m^M \Big\} $
+\form#23:$ \Big\{ n_0^m, n_1^m, ..., n_P^m \Big\} $
+\form#24:\[ \Big\{ n_0^0, n_0^1, n_0^2, ..., n_0^M, n_1^0, n_1^1, n_1^2, ..., n_1^M, ..., n_P^0, n_P^1, ..., n_P^M \Big\} \]
+\form#25:$ \Big\{ p_0, p_1, ..., p_P \Big\}$
+\form#26:$ p_P $
+\form#27:$ P^{th} $
+\form#28:$M$
+\form#29:$F(s)$
+\form#30:$\Omega_S$
+\form#31:$G(t)$
+\form#32:$\Omega_T$
+\form#33:$M: \mathcal{R}^D \rightarrow \mathcal{R}^D, \forall r \in [\Omega_S \cap \Omega_T]$

@@ -1,9 +1,10 @@
 var searchData=
 [
   ['celltopologyfactory',['CellTopologyFactory',['../class_data_transfer_kit_1_1_cell_topology_factory.html#a191271000fcf5eabedefdef02b919b22',1,'DataTransferKit::CellTopologyFactory']]],
-  ['comm',['comm',['../class_data_transfer_kit_1_1_mesh_manager.html#ac31baafb05e3a9d2175889f7068400f7',1,'DataTransferKit::MeshManager::comm()'],['../class_data_transfer_kit_1_1_field_manager.html#afb9c55a9b916886bf24b5136377ef754',1,'DataTransferKit::FieldManager::comm()']]],
+  ['comm',['comm',['../class_data_transfer_kit_1_1_field_manager.html#afb9c55a9b916886bf24b5136377ef754',1,'DataTransferKit::FieldManager::comm()'],['../class_data_transfer_kit_1_1_mesh_manager.html#ac31baafb05e3a9d2175889f7068400f7',1,'DataTransferKit::MeshManager::comm()']]],
   ['commindexer',['CommIndexer',['../class_data_transfer_kit_1_1_comm_indexer.html#a05c9f96600cfdc2e1c927e49c4db2e86',1,'DataTransferKit::CommIndexer']]],
   ['commtools',['CommTools',['../class_data_transfer_kit_1_1_comm_tools.html#a0854ffd6e31b95e179b4430bfcaf95e5',1,'DataTransferKit::CommTools']]],
+  ['computepointordinals',['computePointOrdinals',['../class_data_transfer_kit_1_1_shared_domain_map.html#a1fe5f316f6533a55d07499b503d23ae7',1,'DataTransferKit::SharedDomainMap']]],
   ['connectivitybegin',['connectivityBegin',['../class_data_transfer_kit_1_1_mesh_container.html#a214ee9fc00705f31392819048df054f1',1,'DataTransferKit::MeshContainer::connectivityBegin()'],['../class_data_transfer_kit_1_1_mesh_traits.html#a46d1da9aff157e4486da389454236126',1,'DataTransferKit::MeshTraits::connectivityBegin()']]],
   ['connectivityend',['connectivityEnd',['../class_data_transfer_kit_1_1_mesh_container.html#aabc260c46f31d0b7b299f03e6222db81',1,'DataTransferKit::MeshContainer::connectivityEnd()'],['../class_data_transfer_kit_1_1_mesh_traits.html#af7104119cf92937433f5ca5dc2b51a98',1,'DataTransferKit::MeshTraits::connectivityEnd()']]],
   ['connectivitynonconstview',['connectivityNonConstView',['../class_data_transfer_kit_1_1_mesh_tools.html#a0b9baba8d0bd97f459900f17adb6b7dd',1,'DataTransferKit::MeshTools']]],
@@ -14,6 +15,6 @@ var searchData=
   ['coordsend',['coordsEnd',['../class_data_transfer_kit_1_1_mesh_container.html#a4040f1df04dfccbc5b2ccdfb0522e03d',1,'DataTransferKit::MeshContainer::coordsEnd()'],['../class_data_transfer_kit_1_1_mesh_traits.html#a3e5cca794d4ce5e56460a27cb9b6e70c',1,'DataTransferKit::MeshTraits::coordsEnd()']]],
   ['coordsnonconstview',['coordsNonConstView',['../class_data_transfer_kit_1_1_mesh_tools.html#abcc0f589ad93201d8d1960e1285e7ac9',1,'DataTransferKit::MeshTools']]],
   ['coordsview',['coordsView',['../class_data_transfer_kit_1_1_mesh_tools.html#a54b8f075979ed432c05adb8cbf378ea9',1,'DataTransferKit::MeshTools']]],
-  ['create',['create',['../class_data_transfer_kit_1_1_cell_topology_factory.html#a584ea4a0852ebb7104ebfbde77239f29',1,'DataTransferKit::CellTopologyFactory']]],
+  ['create',['create',['../class_data_transfer_kit_1_1_cell_topology_factory.html#a81b9ac26f44601433787bb7076e6d49d',1,'DataTransferKit::CellTopologyFactory']]],
   ['createrendezvousmesh',['createRendezvousMesh',['../namespace_data_transfer_kit.html#ad0e3e47c3c2f0aee90100ba832d3512b',1,'DataTransferKit']]]
 ];
